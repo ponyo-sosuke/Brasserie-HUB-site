@@ -1,0 +1,19 @@
+
+/* Bases  */
+html { 
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    box-sizing: border-box; 
+    background-color: #EBE6DD;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .active {
+    color: #C34839;
+    text-decoration: underline 0.2rem;
+  }

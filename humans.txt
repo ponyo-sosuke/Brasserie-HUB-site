@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <Julia Badita> -- <Développeuse web junior> -- <lien Github : https://github.com/JuliaBadita>
+
+    <> -- <>
+
+# THANKS
+
+    < >  <  >
+# TECHNOLOGY COLOPHON
+
+    React, Tailwind CSS
+

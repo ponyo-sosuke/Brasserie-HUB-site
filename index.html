@@ -1,92 +1,359 @@
-<!doctype html>
-<html class="no-js" lang="fr">
+<!DOCTYPE html>
+<html lang="en_US_fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>HUB</title>
 
-<head>
-  <meta charset="utf-8">
-  
-  <title>Hoppy Urban Brew</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    
+    <!-- google -->
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta property="og:title" content="HUB" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-  <meta property="og:title" content="Hoppy Urban Brew">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest">
 
-  <link rel="manifest" href="site.webmanifest">
- 
-  <!-- Place favicon.ico in the root directory -->
+    <!-- Favicon -->
+    <link rel="icon" href="public/img/HUB-logo-simple.jpg" type="image/x-icon" />
+    <!-- Inter font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font tourney -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@600&display=swap" rel="stylesheet">
+    <!-- font Goldman 700 (ou400) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
+    <!-- font Poppins (300, 400) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <!-- script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Elements CSS -->
+    <link rel="stylesheet" href="src/scss/nav.scss" />
+    <link rel="stylesheet" href="css/index.min.css" />
+    <link rel="stylesheet" href="src/index.css" />
+    
+    <!-- Custom styles -->
+    <style></style>
+  </head>
 
-  <link rel="icon" href="logo-HUB-short.png" type="image/x-icon" />
+  <body>
+    <!-- Start your project here-->
 
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/footer.css" />
+    
+    
+    <!-- NAV 
+    <nav
+    class="relative w-full flex flex-wrap items-center justify-between py-3 bg-white text-gray-800 shadow-lg navbar navbar-expand-lg navbar-light"
+    >
+      <section class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+        <button
+          class="navbar-toggler text-gray-200 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent1"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="bars"
+            class="w-6"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            ></path>
+          </svg>
+        </button>
+        <!-- nav header -->
+        <articles class="collapse navbar-collapse flex-grow justify-center" id="navbarSupportedContent1">
+          <!-- nav titles -->
+          <ul class="navbar-nav flex flex-col align-middle pl-0 list-style-none mr-auto text-base">
+            <li class="nav-item p-2">
+              <a class="nav-link font-semibold text-black hover:opacity-80 focus:opacity-80 p-0" href="#">
+                ACTU'BRASSERIE</a>
+            </li>
+            <li class="nav-item p-2">
+              <a href="#" id="."
+              class="nav-link font-semibold text-black hover:opacity-80 focus:opacity-80 p-0">
+                HUB'STORY</a>
+            </li>
+            <li class="nav-item p-2">
+              <a id="#" href="#"
+                class="nav-lin font-semibold text-black hover:text-orange-700 focus:opacity-80 p-0 mr-4">
+                ENGAGEMENTS</a>
+            </li>
+            <!-- logo -->
+            <li>
+              <img src="public/img/HUB-logo.png" class="w-28 h-28" ><a href="#"></a></img>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link font-semibold text-black hover:opacity-80 focus:opacity-80 p-0" href="#">
+                HOPPY GAMMES</a>
+            </li>
+            <li class="nav-item p-2">
+              <a href="#" id="."
+              class="nav-link font-semibold text-black hover:opacity-80 focus:opacity-80 p-0">
+                CONTACT</a>
+            </li>
+            <li class="nav-item p-2">
+              <a id="#" href="https://shop.easybeer.fr/hoppyurbanbrew"
+                class="nav-link font-semibold text-black hover:opacity-80 focus:opacity-80 p-0">
+                BEERSHOP</a>
+            </li>
+            
+          </ul>
+          <!-- Left links -->
+        </articles>
+        
 
-  <!-- Différentes Fonts utilisées pour le site -->
+        
+        <!-- Right elements -->
+      </section>
 
-   <!-- Inter font -->
-   <link
-   href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    </nav> -->
 
- <!-- font tourney -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@600&display=swap" rel="stylesheet">
- 
- <!-- font Goldman 700 (ou400) -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
- 
- <!-- font Poppins (300, 400) -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
- 
- 
- <!-- script -->
- <script src="https://cdn.tailwindcss.com"></script>
- 
- <!-- Elements CSS -->
- <link rel="stylesheet" href="src/scss/nav.scss" />
- <link rel="stylesheet" href="css/index.min.css" />
- <link rel="stylesheet" href="src/footer.css" />
+    <!-- NAV -->
+    
+<nav
+class="relative w-full flex flex-wrap items-center md:justify-around bg-white text-black shadow-sm navbar navbar-expand-lg navbar-light"
+> 
+<!-- alignment menu burger also -->
+<section class="container-fluid w-full flex flex-wrap align-items-center justify-between px-6">
+  <!-- button burger -->
+  <button
+    class="navbar-toggler flex space-x-4 text-gray-400 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarSupportedContent1"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      data-prefix="fas"
+      data-icon="bars"
+      class="w-6"
+      role="img"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 448 512"
+    >
+      <path
+        fill="currentColor"
+        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+      ></path>
+    </svg>
+    <h2 class="flex justify-center text-black">HOPPY URBAN BREW</h2>
+  </button>
+  <!-- nav menu -->
+  <div class="collapse navbar-collapse flex-grow justify-around" id="navbarSupportedContent1">
+    
+    <!-- Left links -->
+    <ul class="navbar-nav flex flex-col md:justify-around list-style-none px-12 md:px-0">
+      <!-- title button brewery -->
+      <li class="nav-item p-2">
+          <a class="nav-link flex home-title-menu text-black space-x-2 mt-7 md:mr-6" href="#">
+              <button type="button" class="inline-block rounded-full bg-yellow-300 text-white leading-normal uppercase hover:bg-yellow-400 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7">
+              <img src="public/img/pictos/2722445-brewery-flaticon.png" class="w-7 h-7" />
+              </button>
+              <h5 class="home-title-menu mt-1">La Brasserie</h5>
+          </a>
+      </li>
+      <!-- title button beers -->
+      <li class="nav-item p-2 mr-6 md:mr-12">
+          <a class="nav-link flex home-title-menu text-black space-x-2 md:mt-7" href="#">
+              <button type="button" class="inline-block rounded-full bg-yellow-300 text-white leading-normal uppercase hover:bg-yellow-400 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7">
+              <img src="public/img/pictos/1676287-beer-flaticon.png" class="w-6 h-6" />
+              </button>
+              <h5 class="home-title-menu md:mt-1">Nos bières</h5>
+          </a>
+      </li>
+      <li class="h-28 w-28 align-middle justify-center mt-5 mr-2 md:mt-0 md:mr-12">
+          <a href="#"><img src="public/img/HUB-logo-2.png" /></a> 
+      </li>
+      <li class="nav-item p-2">
+          <a class="nav-link flex home-title-menu text-black space-x-2 mt-7 md:mr-6" href="#">
+              <button type="button" class="inline-block rounded-full bg-purple-200 text-white leading-normal uppercase hover:bg-purple-300 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7">
+              <img src="public/img/pictos/3595845-contact-flaticon.png" class="w-7 h-7" />
+              </button>
+              <h5 class="home-title-menu mt-1">Nous Contacter</h5>
+          </a>
+      </li>
+      <li class="nav-item p-2">
+          <a class="nav-link flex home-title-menu text-black space-x-2 md:mt-7" href="#">
+              <button type="button" class="inline-block rounded-full bg-purple-200 text-white leading-normal uppercase hover:bg-purple-300 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7">
+              <img src="public/img/pictos/1981748-delivery-bike-flaticon.png" class="w-7 h-7" />
+              </button>
+              <h5 class="home-title-menu mt-1">BeerShop</h5>
+          </a>
+      </li>
+    </ul>
+    <!-- Left links -->
+  </div>
+  <!-- Collapsible wrapper -->
 
-  <meta name="theme-color" content="#fafafa">
-</head>
+  <!-- Right elements -->
+  <div class="flex items-center relative">
+    <!-- Icon -->
+    <a class="text-white opacity-60 hover:opacity-80 focus:opacity-80 mr-4" href="#">
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fas"
+        data-icon="shopping-cart"
+        class="w-4"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 576 512"
+      >
+        <path
+          fill="currentColor"
+          d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+        ></path>
+      </svg>
+    </a>
+    
+  </div>
+  <!-- Right elements -->
+</section>
+</nav>
 
-<body>
-<main>
-  
-  <!-- Pour le feed Instagram -->
-  <div class="elfsight-app-d46b0653-c58b-4c0f-b883-5b78068ce440"></div>
+    <!-- background 
+    <img src="https://mdbootstrap.com/img/new/slides/041.jpg" class="max-w-full h-auto" alt="..." />-->
 
-  <!-- Google MAP -->
-  <section class="flex-wrap md:flex justify-center bg-black gap-9 mt-2 sm:flex-auto">
-    <img src="img/HUB-Brasserie.jpg" class="md:w-1/4 p-2" />
-    <article class="p font-poppins text-white md:mt-16 mt-6 mb-2 ml-5">
-      <h4 class="footer-titles">Brasserie Hoppy Urban Brew</h4>
-      <p>26 rue des Fabricants, 59100 Roubaix, Hauts-de-France, FRANCE</p>
-      <p>06 32 00 90 68</p>
-      <p>contact@hoppyurbanbrew.com</p>
-    </article>
-    <article class="p font-poppins text-white md:mt-16 mt-6 ml-5">
-      <h4 class="footer-titles">Nos horaires</h4>
-      <p>Mercredi, jeudi, vendredi</p>
-      <p>12:30 - 20:30</p>
-      <p>Samedi : 15:00 - 19:00</p>
-      <br />
-    </article>
-  </section>
-  <!-- map hub -->
-  <section class="bg-gray-100">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2527.595998533367!2d3.1697907157400915!3d50.69032367950919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c329b8d9827f59%3A0x35c9b130d51bc668!2sBrasserie%20HUB%20-%20Hoppy%20Urban%20Brew!5e0!3m2!1sfr!2sfr!4v1651766728017!5m2!1sfr!2sfr" width="1490" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
+    <!-- NAVBAR 2-->
+    <header>
+      <!-- Background image 
+      <section class="relative overflow-hidden bg-no-repeat bg-cover" style="
+        background-position: 50%;
+        background-image: url('https://mdbootstrap.com/img/new/slides/041.jpg');
+        height: 350px;
+      ">-->
+      <!-- Background image -->
+    <section class="relative overflow-hidden bg-no-repeat bg-cover">
+      <!--
+      <img
+        src="public/img/unsplash/elevate-nYgy58eb9aw-unsplash.jpg"
+        class="w-full h-full">
+      </img>-->
+      <img src="public/img/AU3A2328-2_hub_team.jpg" class="w-full" />
+        <!-- img text -->
+        <section class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+          style="background-color: rgba(0, 0, 0, 0.2)">
+          <article class="flex justify-center items-center h-full">
+            <div class="text-center text-white px-6 md:px-12">
+              <h1 class="home-principal-title drop-shadow-md text-3xl md:text-6xl mt-12 md:mt-4 mb-6">Hoppy (Urban Brew) Beer</h1>
+              <h3 class="home-secondary-title drop-shadow-xl text-3xl md:text-6xl font-semibold text-orange-600 mb-12 md:mb-8">made in Roubaix</h3>
+              <!-- Discord 
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+              <!-- Github 
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-5 h-5"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+              
+              <!--button 
+              <button type="button"
+                class="inline-block px-6 py-2.5 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                data-mdb-ripple="true" data-mdb-ripple-color="light">
+                En savoir plus
+              </button>-->
+            </div>
+          </article>
+          <article>
+            
+          </article>
+        </section>
+      </section>
+      <!-- Background image -->
+    </header>
+
+    <main>
+      <!-- beer -->
+      <section class="flex flex-col mb-4 md:flex-row md:mb-0 justify-evenly mt-6">
+        <article class="outline border-1 p-2 text-center mb-4 md:p-4 md:mb-0 flex-col md:flex-row">
+          <h4 class="home-beer-star1">
+          BIERES STARS
+        </h4>
+        <h4 class="home-beer-star2">
+          HOPPY URBAN BREW
+        </h4>
+        </article>
+        
+        <img src="public/img/gammes/ETNA_HUB_Mockup_2021_33cl.jpg" class="md:w-1/5"></img>
+        <img src="public/img/gammes/La-Solidaire_HUB_Mockup_2021_33cl.png" class="md:w-1/5"></img>
+        <img src="public/img/gammes/transition-33cl.jpg" class="md:w-1/5"></img>
+      </section>
+      <section class="flex justify-center">
+        <!--button -->
+              <button type="button"
+                class="button-plus px-6 py-2.5 border-2 border-purple-500 text-purple-500 leading-tight uppercase rounded mt-4 mb-6 hover:bg-purple-600 hover:text-white focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                data-mdb-ripple="true" data-mdb-ripple-color="light"><a href="https://untappd.com/HoppyUrbanBrew/beer" alt="Vos bières préférées">
+                Voir vos bières HUB Préférées sur UNTAPPD</a>
+              </button>
+      </section>
+
+      <!-- NEW BEER -->
+      <section class="max-w-full h-auto">
+        <h2 class="font-[goldman] text-[1.2rem] md:text-[1.5rem] text-center my-3 md:my-6 mb-12"><span class="font-sans text-[1.25rem]">———&nbsp; &nbsp;</span>
+          &nbsp;La petite dernière est arrivée&nbsp;<span class="font-sans text-[1.4rem]">&nbsp; &nbsp;———</span>
+      </h2>
+
+        <!-- partie a remplacer par code de julia 
+        
+      </section>
+
+      <!-- GALLERY -->
+      <section class="overflow-hidden text-gray-700 ">
+        <h2 class="font-[goldman] text-[1.2rem] md:text-[1.5rem] text-center my-3 md:my-6 mb-12"><span class="font-sans text-[1.25rem]">———&nbsp; &nbsp;</span>
+          &nbsp;Notre gamme de bières&nbsp;<span class="font-sans text-[1.4rem]">&nbsp; &nbsp;———</span>
+      </h2>
+        
+      <!-- code de Julia pour produits -->
+
+        
+      </section>
+
+      <!-- MAP -->
+      <section class="flex-wrap md:flex justify-center bg-black gap-9 mt-2 sm:flex-auto">
+        <img src="public/img/HUB-anim.gif" class="md:w-1/4 p-2" />
+        <article class="p font-poppins text-white md:mt-20 mt-6 mb-2 ml-5">
+          <h4 class="footer-titles">Brasserie Hoppy Urban Brew</h4>
+          <p>26 rue des Fabricants, 59100 Roubaix, Hauts-de-France, FRANCE</p>
+          <p>06 32 00 90 68</p>
+          <p>contact@hoppyurbanbrew.com</p>
+        </article>
+        <article class="p font-poppins text-white md:mt-20 mt-6 ml-5">
+          <h4 class="footer-titles">Nos horaires</h4>
+          <p>Mercredi, jeudi, vendredi</p>
+          <p>12:30 - 20:30</p>
+          <p>Samedi : 15:00 - 19:00</p>
+          <br />
+        </article>
+      </section>
+      <section class="bg-gray-100">
+        <iframe class="m-auto w-96 align-items-center md:w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2527.595998533367!2d3.1697907157400915!3d50.69032367950919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c329b8d9827f59%3A0x35c9b130d51bc668!2sBrasserie%20HUB%20-%20Hoppy%20Urban%20Brew!5e0!3m2!1sfr!2sfr!4v1651766728017!5m2!1sfr!2sfr" width="1490" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+    </main>
 
 
-  
-  
-</main>
 
   <!-- FOOTER -->
 
@@ -94,16 +361,16 @@
     <hr class="mb-6">
     <section class="container">
       <!-- cols -->
-      <article class="flex md:flex-row justify-evenly text-orange-600 columns-4 gap-5 ml-4 mr-2 sm:flex-col sm:mb-30">
+      <article class="flex flex-col md:flex-row ml-16 md:justify-evenly text-orange-600 columns-4 gap-5 ml-4 mr-2 sm:flex-col sm:mb-30">
         <!-- col 1 -->
-        <article class="text-black w-52">
-          <img src="img/HUB-logosimple.jpg" class="w-16 mb-4"/>
+        <article class="text-black w-52 ml-16">
+          <a href="src/index.html" alt="Brasserie HUB : accueil" title="Brasserie HUB : accueil"><img src="public/img/HUB-logo-simple.jpg" class="w-16 mb-4"></img></a>
           <h5 class="footer-logo-title">HOPPY URBAN BREW</h5>
           <p class="text-xs text-left mb-1">Située à Roubaix (France), <br />la Brasserie HUB est une micro-brasserie urbaine et responsable : un lieu de production respectueux de l'environnement et de l'humain à dimension locale.
           </p>
         </article>
         <!-- col 2 -->
-        <article class="text-black text-left max-w-28 mt-3">
+        <article class="ml-16 md:ml-0 text-black text-left max-w-28 mt-3">
           <h4 class="footer-titles">HUB'infos</h4>
           <ul class="footer-subtitles mt-2 mb-4">
             <li>Notre actualité</li>
@@ -120,46 +387,46 @@
         </article>
         <!-- col 3 -->
         <article class="text-black text-left max-w-28 mt-3">
-          <h4 class="footer-titles">Nous trouver</h4>
-          <ul class="footer-subtitles mt-2 mb-4">
+          <h4 class="footer-titles ml-16 md:ml-0">Nous trouver</h4>
+          <ul class="footer-subtitles mt-2 mb-4 ml-16 md:ml-0">
             <li>Brasserie à Roubaix</li>
             <li><a href="https://shop.easybeer.fr/hoppyurbanbrew">Boutique en ligne</a></li>
             <li>Partenaires vendeurs</li>
           </ul>
           <!-- a voir 
-          <h4 class="footer-titles">Nos partenaires</h4>
-          <ul class="footer-subtitles mt-2 mb-2">
+          <h4 class="footer-titles ml-16 md:ml-0">Nos partenaires</h4>
+          <ul class="footer-subtitles mt-2 mb-2 ml-16 md:ml-0">
             <li>XXX</li>
             <li>XXX</li>
           </ul>-->
         </article>
         <!-- col 4 -->
         <article class="text-black text-left max-w-28 mt-3">
-          <h4 class="footer-titles">Nous suivre</h4>
+          <h4 class="footer-titles ml-16 md:ml-0">Nous suivre</h4>
           
           <!-- SOCIAL MEDIAS -->
-          <div class="mt-3 mb-4 md:flex md:items-center md:justify-between">
+          <div class="mt-3 mb-4 m-auto md:ml-0 md:flex md:items-center md:justify-between">
             
-            <div class="flex mt-4 space-x-4 sm:justify-center md:mt-0">
+            <div class="flex ml-16 md:ml-0 space-x-4 sm:justify-center md:mt-0">
                 <!-- FB -->
-                <a href="https://www.facebook.com/hoppyurbanbrew" target="_blank" rel="noreferrer" class="text-yellow-400 hover:text-orange-400">
+                <a href="https://www.facebook.com/hoppyurbanbrew" class="text-yellow-400 hover:text-orange-400">
                     <svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
                 </a>
                 <!-- INSTA -->
-                <a href="https://www.instagram.com/hoppyurbanbrew/?hl=fr" target="_blank" rel="noreferrer" class="text-yellow-400 hover:text-orange-400">
+                <a href="https://www.instagram.com/hoppyurbanbrew/?hl=fr" class="text-yellow-400 hover:text-orange-400">
                     <svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
                 </a>
                 <!-- TWITTER -->
-                <a href="https://twitter.com/hoppyurbanbrew" target="_blank" rel="noreferrer" class="text-yellow-400 hover:text-orange-400">
+                <a href="https://twitter.com/hoppyurbanbrew" class="text-yellow-400 hover:text-orange-400">
                     <svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
                 </a>
-                <a href="https://untappd.com/HoppyUrbanBrew/" target="_blank" rel="noreferrer"><img src="img/untappd-logo-6.png" class="mt-0.5 w-8 h-8" /></a>
+                <a href="https://untappd.com/HoppyUrbanBrew/"><img src="public/img/untappd-logo-6.png" class="mt-0.5 w-8 h-8" /></a>
             </div>
         </div>
           <!---->
-          <h4 class="footer-titles">Newsletter</h4>
+          <h4 class="footer-titles ml-16 md:ml-0">Newsletter</h4>
           <div class="text-center pt-3 sm:pt-3 font-light flex items-center justify-center">
-            <form class="flex flex-col md:flex-row w-3/4 md:w-full md:space-x-3 space-y-3 md:space-y-0 justify-center">
+            <form class="flex flex-col mb-6 md:flex-row w-3/4 md:w-full md:space-x-3 space-y-3 md:space-y-0 justify-center">
                 <div class=" relative ">
                   <input type="text" id="&quot;form-subscribe-Subscribe" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-sm hover:bg-gray-100 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent" placeholder="Email"/>
                 </div>
@@ -175,32 +442,36 @@
     
     <section class="text-sm text-black text-center p-3 mt-4" style="background-color: rgba(0, 0, 0, 0.1);">
       <p>© 2022 
-      Hoppy Urban Brew, brasserie à Roubaix, France / CGV / Mentions l&eacute;gales</p>
+      Hoppy Urban Brew, brasserie à Roubaix, France / <a href="src/cgv.html" alt="Conditions Générales de Vente" title="Conditions Générales de Vente">CGV</a> / <a href="src/legals.html" alt="Mentions légales" title="Mentions Légales">Mentions l&eacute;gales</a></p>
     </section>
     <section class="text-xs text-black text-center p-3 mb-2" style="background-color: rgba(0, 0, 0, 0.0);">
       L'abus d'alcool est dangereux pour la santé, à consommer avec modération.
     </section>
   </footer>
 
-  <!-- Scripts -->
-
-  <!--Script pour le feed Instagram-->
-  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-  
-  <!--Pour Flowbite-->
-  <script src="../path/to/flowbite/dist/flowbite.js"></script>
-  
-  
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-  
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-    </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
+    <!-- End your project here-->
+  </body>
+  <!-- Arrow Back To Top -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+    $('#return-to-top').fadeIn(200);    // Fade in the arrow
+} else {
+    $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+}
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+$('body,html').animate({
+    scrollTop : 0                       // Scroll to top of body
+}, 500);
+});
+</script>
+  <!-- scripts -->
+  <script type="text/javascript" src="js/index.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+  <!-- Form scripts -->
+  <script src=" https://unpkg.com/formik/dist/formik.umd.production.min.js "> </script>
 </html>

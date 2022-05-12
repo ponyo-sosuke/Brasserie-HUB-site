@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en_US_fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>HUB</title>
+
+    <meta name="description" content="">
+    
+    <!-- google -->
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta property="og:title" content="HUB Hoppy Urban Brew" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Favicon -->
+    <link rel="icon" href="public/img/HUB-logo-simple.jpg" type="image/x-icon" />
+    <!-- Inter font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font tourney -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@600&display=swap" rel="stylesheet">
+    <!-- font Goldman 700 (ou400) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
+    <!-- font Poppins (300, 400) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <!-- script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Elements CSS -->
+    <link rel="stylesheet" href="src/scss/nav.scss" />
+    <link rel="stylesheet" href="css/index.min.css" />
+    <link rel="stylesheet" href="src/index.css" />
+    <link rel="stylesheet" href="src/navbar.css" />
+    <link rel="stylesheet" href="src/cgv.css" />
+    
+    <!-- Custom styles -->
+    <style></style>
+  </head>
+
+  <body>
+    <!-- Start your project here-->
+
+    <!-- NAV -->
+    
+    <nav
+    class="relative w-full flex flex-wrap items-center md:justify-around bg-white text-black shadow-sm navbar navbar-expand-lg navbar-light"
+    > 
+    <!-- alignment menu burger also -->
+    <section class="container-fluid w-full flex flex-wrap align-items-center justify-between px-6">
+    <!-- button burger -->
+    <button
+        class="navbar-toggler flex space-x-4 text-gray-400 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent1"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+    >
+        <svg
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fas"
+        data-icon="bars"
+        class="w-6"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+        >
+        <path
+            fill="currentColor"
+            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+        ></path>
+        </svg>
+        <h2 class="flex justify-center text-black">HOPPY URBAN BREW</h2>
+    </button>
+    <!-- nav menu -->
+    <div class="collapse navbar-collapse flex-grow justify-around" id="navbarSupportedContent1">
+        
+        <!-- Left links -->
+        <ul class="navbar-nav flex flex-col md:justify-around mb-4 md:space-x-12 list-style-none px-12 md:px-0">
+        <!-- title button brewery -->
+        <li class="nav-item p-2">
+            <a class="nav-link flex home-title-menu text-black space-x-2 mt-7" href="#">
+                <button type="button" class="inline-block rounded-full bg-yellow-300 text-white leading-normal uppercase hover:bg-yellow-400 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7">
+                <img src="public/img/pictos/2722445-brewery-flaticon.png" class="w-7 h-7" />
+                </button>
+                <h5 class="home-title-menu mt-1">La Brasserie</h5>
+            </a>
+        </li>
+        <!-- title button beers -->
+        <li class="nav-item p-2 mr-6">
+            <a class="nav-link flex home-title-menu text-black space-x-2 md:mt-7" href="#">
+                <button type="button" class="inline-block rounded-full bg-yellow-300 text-white leading-normal uppercase hover:bg-yellow-400 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7">
+                <img src="public/img/pictos/1676287-beer-flaticon.png" class="w-6 h-6" />
+                </button>
+                <h5 class="home-title-menu md:mt-1">Nos bières</h5>
+            </a>
+        </li>
+        <li class="h-28 w-28 align-middle justify-center mt-4 md:mt-0 md:mr-7">
+            <a href="#"><img src="public/img/HUB-logo.png" /></a> 
+        </li>
+        <li class="nav-item p-2">
+            <a class="nav-link flex home-title-menu text-black space-x-2 mt-7" href="#">
+                <button type="button" class="inline-block rounded-full bg-purple-200 text-white leading-normal uppercase hover:bg-purple-300 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7">
+                <img src="public/img/pictos/3595845-contact-flaticon.png" class="w-7 h-7" />
+                </button>
+                <h5 class="home-title-menu mt-1">Nous Contacter</h5>
+            </a>
+        </li>
+        <li class="nav-item p-2">
+            <a class="nav-link flex home-title-menu text-black space-x-2 md:mt-7" href="#">
+                <button type="button" class="inline-block rounded-full bg-purple-200 text-white leading-normal uppercase hover:bg-purple-300 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7">
+                <img src="public/img/pictos/1981748-delivery-bike-flaticon.png" class="w-7 h-7" />
+                </button>
+                <h5 class="home-title-menu mt-1">BeerShop</h5>
+            </a>
+        </li>
+        </ul>
+        <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+
+    <!-- Right elements -->
+    <div class="flex items-center relative">
+        <!-- Icon -->
+        <a class="text-white opacity-60 hover:opacity-80 focus:opacity-80 mr-4" href="#">
+        <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="shopping-cart"
+            class="w-4"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+        >
+            <path
+            fill="currentColor"
+            d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+            ></path>
+        </svg>
+        </a>
+        
+    </div>
+    <!-- Right elements -->
+    </section>
+    </nav>
+
+
+    <!-- CGV -->
+    <main>
+        <!-- ariane -->
+        <section class="bg-white flex pt-2 pb-2">
+            <article class="flex mt-2 mx-7 bg-white" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-2">
+          <li class="inline-flex items-center">
+            <a
+              href="/"
+              class="inline-flex items-center text-[0.875rem] font-regular text-gray-700 hover:text-gray-800 dark:text-gray-100 dark:hover:text-white"
+            >
+              <svg
+                class="mr-2 w-4 h-4"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+              </svg>
+              Accueil
+            </a>
+          </li>
+          <li aria-current="page">
+            <div class="flex items-center">
+              <svg
+                class="w-6 h-6 text-purple-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <a href="cgv.html" alt="Conditions Générales des Ventes" title="Conditions Générales des Ventes"><span class="ml-1 text-[0.875rem] font-medium text-purple-500 hover:text-purple-400 md:ml-2 dark:text-gray-500">
+                Conditions Générales des Ventes
+              </span></a>
+            </div>
+          </li>
+        </ol>
+      </article>
+        </section>
+
+      
+      <!-- cgv -->
+      
+
+      <div class="bg-white py-4 px-4 mb-4">
+        <div class="mx-auto max-w-6xl flex flex-col md:flex-row">
+            <dl class="ml-6 mr-2 w-full md:w-3/7 md:ml-24">
+                <h2 class="justify-center ml-0 font-[goldman] text-[1.2rem] md:text-[1.5rem] text-center my-3 mb-8 md:my-6 mb-12"><span class="font-sans text-[1.25rem]">—&nbsp; &nbsp;</span>
+                    &nbsp;Conditions Générales des Ventes&nbsp;<span class="font-sans text-[1.4rem]">&nbsp; &nbsp;—</span>
+                </h2>
+                
+                
+                
+                <article class="flex md:flex-wrap md:justify-center ml-0 mt-12 md:ml-12">
+                    <div class="mt-6">
+                        <h3 class="font-[goldman] text-2xl font-semibold px-7">
+                            HUB SAS SCOP 
+                        </h3>
+                        <p class="font-poppins mb-16 px-7">
+                            26 rue des Fabricants - 59100 Roubaix 
+                        </p>
+                    </div>
+                    <img class="h-16 mt-5 md:h-20" src="public/img/HUB-logo-2.png" alt="HUB Brasserie logo" title="HUB Brasserie logo" />
+                    <img class="h-16 mt-5 md:h-20" src="public/img/brasseurs-independants-logo.PNG" alt="Brasseurs Indépendants logo" title="Brasseurs indépendants logo" /> 
+                </article>
+                
+                <!-- article 1 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 1 / Champ d'application
+                </h2>
+                <dt class="mb-8">
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Les présentes conditions générales de vente (ci-après désignées les « CGV ») constituent, conformément à l'article L 441-1 du Code 
+                        de commerce, le socle unique de la relation commerciale entre les parties. Elles ont pour objet de définir les conditions dans 
+                        lesquelles la Société HUB SAS SCOP, ayant son siège social sis 26 rue des Fabricants 59100 Roubaix, immatriculée au Registre du 
+                        Commerce et des Sociétés de Lille Métropole, sous le N°SIREN 853178606, représentée par Verbeke Sébastien, président, domicilié 
+                        en cette qualité audit siège « Le Fournisseur » fournit aux Acheteurs « Les Acheteurs ou l'Acheteur » qui lui en font la demande, via le 
+                        site internet du Fournisseur, par contact direct ou via un support papier, de la bière artisanale : « Les Produits ».<br/>
+                        Elles s'appliquent sans restriction ni réserves à toutes les ventes conclues par le Fournisseur auprès des Acheteurs de même 
+                        catégorie, quelles que soient les clauses pouvant figurer sur les documents de l'Acheteur, et notamment ses conditions générales 
+                        d'achat.<br/>
+                        Conformément à la réglementation en vigueur, ces CGV sont systématiquement communiquées à tout Acheteur qui en fait la 
+                        demande, pour lui permettre de passer commande auprès du Fournisseur.<br/>
+                        Elles sont également communiquées à tout distributeur (hors grossiste) préalablement à la conclusion d'une convention unique 
+                        visée aux articles L 441-3 et suivants du Code de commerce, dans les délais légaux.<br/>
+                        Toute commande de Produits implique, de la part de l'Acheteur, l'acceptation des présentes CGV et des conditions générales 
+                        d'utilisation du site internet du Fournisseur pour les commandes électroniques. Le commencement d’exécution par l’Acheteur d’une 
+                        commande emporte adhésion aux présentes CGV.<br/>
+                        Les renseignements figurant sur les catalogues, prospectus et tarifs du Fournisseur sont donnés à titre indicatif et sont révisables à 
+                        tout moment. Le Fournisseur est en droit d'y apporter toutes modifications qui lui paraîtront utiles. Conformément à la 
+                        réglementation en vigueur, le Fournisseur se réserve le droit de déroger à certaines clauses des présentes CGV, en fonction des 
+                        négociations menées avec l'Acheteur, par l'établissement de Conditions de Vente Particulières qui peuvent figurer sur les Devis ou 
+                        par échanges de mails.
+                    </p>
+                </dt>
+                <!-- article 2 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 2 / Commandes - Tarifs
+                </h2>
+                <dt class="mb-4">
+                    <h4 class="font-poppins cgv-subtitles text-base mb-2">2.1 / Validité de la commande</h4>
+                    <p class="font-poppins cgv-text mb-4 px-7 border-l-2 text-justify">
+                        Les ventes ne sont parfaites qu'après acceptation expresse et par écrit de la commande de l'Acheteur, par le Fournisseur, qui
+                        s'assurera notamment, de la disponibilité des produits demandés, matérialisée par l’envoi d’un e-mail.<br/>
+                        Les commandes doivent être confirmées par écrit, au moyen d'un bon de commande dûment signé par l'Acheteur.<br/>
+                        Le Fournisseur dispose de moyens de commande (y compris d'acceptation et de confirmation) électroniques (références des sites) 
+                        permettant à l'Acheteur de commander les produits dans les meilleures conditions de commodité et de rapidité. La prise en compte 
+                        de la commande et l'acceptation de celle-ci sont confirmées par l'envoi d'un email. Les données enregistrées dans le système 
+                        informatique du Fournisseur constituent la preuve de l'ensemble des transactions conclues avec l'Acheteur.
+                    </p>
+                </dt>
+                <dt class="mb-4">
+                    <h4 class="font-poppins cgv-subtitles text-base mb-2">2.2 / Modifications de la commande</h4>
+                    <p class="font-poppins cgv-text mb-4 px-7 border-l-2 text-justify">
+                        Les éventuelles modifications demandées par l'Acheteur ne pourront être prises en compte, dans la limite des possibilités du 
+                        Fournisseur et à sa seule discrétion, que si elles sont notifiées par écrit 3 (TROIS) jours au moins avant la date prévue pour la 
+                        livraison des Produits commandés, après signature par l'Acheteur d'un bon de commande spécifique et ajustement éventuel du prix.                        
+                    </p>
+                </dt>
+                <dt class="mb-4">
+                    <h4 class="font-poppins cgv-subtitles text-base mb-1">2.3 / Sorts des acomptes versés à la commande</h4>
+                    <h4 class="font-poppins cgv-subtitles2 text-sm mb-1">2.3.1 / En cas d'acompte</h4>
+                    <p class="font-poppins cgv-text mb-4 px-7 border-l-2 text-justify">
+                        En cas d'annulation de la commande par l'Acheteur après son acceptation par le Fournisseur moins de 3 (TROIS) jours au moins 
+                        avant la date prévue pour la fourniture des Produits commandés, pour quelque raison que ce soit hormis la force majeure, l'acompte 
+                        versé à la commande, tel que défini à l'article « Conditions de paiement » des présentes CGV sera de plein droit acquis au Fournisseur 
+                        et ne pourra donner lieu à un quelconque remboursement.
+                    </p>
+                    <h4 class="font-poppins cgv-subtitles2 text-sm mb-1">2.3.2 / En cas d'absence d'acompte</h4>
+                    <p class="font-poppins cgv-text mb-4 px-7 border-l-2 text-justify">
+                        En cas d'annulation de la commande par l'Acheteur après son acceptation par le Fournisseur moins de 3 (TROIS) jours au moins 
+                        avant la date prévue pour la fourniture des Produits commandés, pour quelque raison que ce soit hormis la force majeure, une 
+                        somme correspondant à 30% (TRENTE POURCENT) du prix total HT des Services sera acquise au Fournisseur et facturée au Client, à 
+                        titre de dommages et intérêts, en réparation du préjudice ainsi subi.
+                    </p>
+                </dt>
+                <dt class="mb-4">
+                    <h4 class="font-poppins cgv-subtitles text-base mb-2">2.4 / Tarifs des produits et conditions tarifaires</h4>
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Les produits sont fournis aux tarifs du Fournisseur en vigueur au jour de la passation de la commande, et, le cas échéant, dans la 
+                        proposition commerciale spécifique adressée à l'Acquéreur. Ces tarifs sont fermes et non révisables pendant leur période de validité, 
+                        telle qu'indiquée par le Fournisseur.<br/>
+                        Ces prix sont nets et HT, départ usine et emballage en sus. Ils ne comprennent pas le transport, ni les frais de douane éventuels et les 
+                        assurances qui restent à la charge de l'Acheteur.<br/>
+                        Des conditions tarifaires particulières peuvent être pratiquées en fonction des spécificités demandées par l'Acheteur concernant, 
+                        notamment, les modalités et délais de livraison, ou les délais et conditions de règlement. Une offre commerciale particulière sera 
+                        alors adressée à l'Acheteur par le Fournisseur et/ou sera reportée sur le devis adressé à l’Acheteur.                        
+                    </p>
+                </dt>
+                <!-- article 3 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 3 / Conditions de paiement
+                </h2>
+                <dt class="mb-4">
+                    <h4 class="font-poppins cgv-subtitles text-base mb-2">3.1 / Acompte</h4>
+                    <p class="font-poppins cgv-text mb-4 px-7 border-l-2 text-justify">
+                        Pour toute commande d’un montant supérieur à 1500€ HT, un acompte correspondant à 30% (TRENTE POURCENT) du prix total 
+                        d'acquisition des Produits susvisés est exigé lors de la passation de la commande.<br/>
+                        Le solde du prix est payable au comptant, au jour de la livraison.<br/>
+                        Le Fournisseur ne sera pas tenu de procéder à la livraison des produits commandés par l'Acheteur si celui-ci ne lui en paye pas le 
+                        prix dans les conditions et selon les modalités ci-dessus indiquées.
+                    </p>
+                    <h4 class="font-poppins cgv-subtitles text-base mb-2">3.2 / Première commande</h4>
+                    <p class="font-poppins cgv-text mb-4 px-7 border-l-2 text-justify">
+                        Les premières commandes sont payables comptant, en totalité au jour de la commande des Produits et comme indiqué sur la facture 
+                        remise à l'Acheteur.
+                    </p>
+                    <h4 class="font-poppins cgv-subtitles text-base mb-2">3.3 / A partir de la deuxième commande</h4>
+                    <p class="font-poppins cgv-text mb-4 px-7 border-l-2 text-justify">
+                        A compter de la deuxième commande de l’Acheteur, ce dernier a la possibilité de payer dans un délai de 30 (TRENTE) jours à 
+                        compter de la commande, délai arrêté d'un commun accord entre l'Acheteur et le Fournisseur lors de la négociation commerciale. Ce 
+                        délai sera mentionné sur la facture adressée à l'Acheteur.
+                    </p>
+                    <h4 class="font-poppins cgv-subtitles text-base mb-2">3.4 / Modes de paiement</h4>
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Les modes de paiement suivants peuvent être utilisés :<br/>
+                        ➢ par virement bancaire ;<br/>
+                        ➢ par chèque ;<br/>
+                        ➢ par espèces.<br/>
+                        En cas de paiement par chèque bancaire, celui-ci doit être émis par une banque domiciliée en France métropolitaine ou à Monaco.
+                        Les paiements effectués par l'Acheteur ne seront considérés comme définitifs qu'après encaissement effectif des sommes dues, par le 
+                        Fournisseur.<br/>
+                        En cas de retard de paiement et de versement des sommes dues par l'Acheteur au-delà du délai ci-dessus fixé, et après la date de 
+                        paiement figurant sur la facture adressée à celui-ci, des pénalités de retard calculées au taux d'intérêt appliqué par la BCE à son 
+                        opération de refinancement la plus récente majoré de 10 points de pourcentage du montant TTC du prix figurant sur ladite facture, 
+                        seront automatiquement et de plein droit acquises au Fournisseur, sans formalité aucune ni mise en demeure préalable.
+                        En cas de non-respect des conditions de paiement figurant ci-dessus, le Fournisseur se réserve en outre le droit de suspendre ou 
+                        d'annuler la livraison des commandes en cours de la part de l'Acheteur et/ou de suspendre l'exécution de ses obligations et/ou de 
+                        diminuer ou d'annuler les éventuelles remises accordées à ce dernier.<br/>
+                        Sauf accord exprès, préalable et écrit du Fournisseur, et à condition que les créances et dettes réciproques soient certaines, liquides 
+                        et exigibles aucune compensation ne pourra être valablement effectuée entre d'éventuelles pénalités pour retard dans la livraison ou 
+                        non-conformité des produits commandés par l'Acheteur d'une part, et les sommes dues, par ce dernier, au Fournisseur, au titre de 
+                        l'achat desdits produits, d'autre part.<br/>
+                        Enfin, une indemnité forfaitaire pour frais de recouvrement, d'un montant de 40 euros sera due, de plein droit et sans notification 
+                        préalable par l'Acheteur en cas de retard de paiement. Le Fournisseur se réserve le droit de demander à l'Acheteur une 
+                        indemnisation complémentaire si les frais de recouvrement effectivement engagés dépassaient ce montant, sur présentation des 
+                        justificatifs.<br/>
+                        Le Fournisseur se réserve, jusqu'au complet paiement du prix par l'Acheteur, un droit de propriété sur les produits vendus, lui 
+                        permettant de reprendre possession desdits produits. Tout acompte versé par l'Acheteur restera acquis au Fournisseur à titre 
+                        d'indemnisation forfaitaire, sans préjudice de toutes autres actions qu'il serait en droit d'intenter de ce fait à l'encontre de l'Acheteur.
+                        En revanche, le risque de perte et de détérioration sera transféré à l'Acheteur dès la livraison des produits commandés.
+                        L'Acheteur s'oblige, en conséquence, à faire assurer, à ses frais, les produits commandés, au profit du Fournisseur, par une assurance 
+                        ad hoc, jusqu'au complet transfert de propriété et à en justifier à ce dernier lors de la livraison. A défaut, le Fournisseur serait en 
+                        droit de retarder la livraison jusqu'à la présentation de ce justificatif.<br/>
+                        Aucun escompte ne sera pratiqué par le Fournisseur pour paiement avant la date figurant sur la facture.
+                    </p>
+                </dt>
+                <!-- article 4 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 4 / Obligations des Parties
+                </h2>
+                <dt class="mb-8">
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        L’Acheteur s’engage à : <br/>
+                        ➢ s’informer sur l’utilisation des Produits qu’il commande et sur leur conservation,<br/>
+                        ➢ payer le prix convenu et respecter les délais figurant dans les présentes ou sur le devis et conditions particulières.<br/><br/>
+                        Le Fournisseur s’engage à :<br/>
+                        ➢ travailler dans les règles de l’art,<br/>
+                        ➢ livrer les produits dans les délais figurant dans les présentes, ou sur le devis et conditions particulières,<br/>
+                        ➢ informer l’Acheteur de l’avancement de la commande, notamment en cas de retard (fabrication et livraison),<br/>
+                        ➢ informer l’Acheteur sur l’utilisation des Produits.
+                    </p>
+                </dt>
+                <!-- article 5 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 5 / Remises et Ristournes
+                </h2>
+                <dt class="mb-8">
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        L'Acheteur pourra bénéficier des remises et ristournes figurant aux tarifs du Fournisseur, en fonction des quantités acquises ou 
+                        livrées par le Fournisseur en une seule fois et un seul lieu, ou de la régularité de ses commandes.
+                    </p>
+                </dt>
+                <!-- article 6 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 6 / Livraisons
+                </h2>
+                <dt class="mb-8">
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Les Produits acquis par l'Acheteur seront livrés dans un délai maximum de 7 jours ouvrés à compter de la validation du bon de 
+                        commande par le Fournisseur. Les Produits acquis par l'Acheteur seront livrés à ses frais.<br/>
+                        Ce délai ne constitue pas un délai de rigueur et le Fournisseur ne pourra voir sa responsabilité engagée à l'égard de l'Acheteur en cas 
+                        de retard de livraison n'excédant pas 7 jours ouvrés. En cas de retard supérieur à 14 jours ouvrés, l'Acheteur pourra demander la 
+                        résolution de la vente. Les acomptes déjà versés lui seront alors restitués par le Fournisseur.<br/>
+                        La responsabilité du Fournisseur ne pourra en aucun cas être engagée en cas de retard ou de suspension de la livraison imputable à 
+                        l'Acheteur ou en cas de force majeure. La livraison sera effectuée par la délivrance dans les locaux du Fournisseur, à un expéditeur ou 
+                        transporteur, les produits voyageant aux risques et périls de l'Acheteur. L'Acheteur est tenu de vérifier l'état apparent des produits 
+                        lors de la livraison. A défaut de réserves expressément émises par l'Acheteur lors de la livraison, les Produits délivrés par le 
+                        Fournisseur seront réputés conformes en quantité et qualité à la commande. L'Acheteur disposera d'un délai de 24 heures à compter 
+                        de la livraison et de la réception des produits commandés pour émettre, par écrit, de telles réserves auprès du Fournisseur.<br>
+                        Aucune réclamation ne pourra être valablement acceptée en cas de non-respect de ces formalités par l'Acheteur.<br/>
+                        Le Fournisseur remplacera dans les plus brefs délais et à ses frais, les Produits livrés dont le défaut de conformité aura été dûment 
+                        prouvé par l'Acheteur.
+                    </p>
+                </dt>
+                <!-- article 7 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 7 / Transfert de Propriété - Transfert des Risques
+                </h2>
+                <dt class="mb-4">
+                    <h4 class="font-poppins cgv-subtitles text-base mb-2">7.1 / Transfert de Propriété</h4>
+                    <p class="font-poppins cgv-text mb-4 px-7 border-l-2 text-justify">
+                        Le transfert de propriété des Produits, au profit de l'Acheteur, ne sera réalisé qu'après complet paiement du prix par ce dernier, et ce 
+                        quelle que soit la date de livraison desdits Produits.
+                    </p>
+                    <h4 class="font-poppins cgv-subtitles text-base mb-2">7.2 / Transfert des Risques</h4>
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Le transfert à l'Acheteur des risques de perte et de détérioration des produits sera réalisé dès livraison et réception desdits produits, 
+                        indépendamment du transfert de propriété, et ce quelle que soit la date de la commande et du paiement de celle-ci.<br/>
+                        L'Acheteur reconnaît que c'est au transporteur qu'il appartient d'effectuer la livraison, le Fournisseur étant réputé avoir rempli son 
+                        obligation de délivrance dès lors qu'il a remis les produits commandés au transporteur qui les a acceptées sans réserves. L'Acheteur
+                        ne dispose donc d'aucun recours en garantie contre le Fournisseur en cas de défaut de livraison des Produits commandés ni des
+                        dommages survenus en cours de transport ou de déchargement.
+                    </p>
+                </dt>
+                <!-- article 8 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 8 / Responsabilité du Fournisseur - Garantie
+                </h2>
+                <dt class="mb-8">
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Le Fournisseur garantit à l’Acheteur que les produits commercialisés sous la dénomination agriculture biologique sont 
+                        régulièrement certifiés par l’organisme CERTIPAQ. Le certificat est consultable sur le site CERTIPAQ.<br/>
+                        Concernant la consommation et la vente des Produits, les dates optimales de consommation indiquées doivent être respectées. A ce 
+                        titre le Fournisseur ne pourra être tenu pour responsable si des produits à la date de consommation dépassée se retrouvent 
+                        commercialisés sur le marché par des revendeurs ou des distributeurs. Les produits livrés par le Fournisseur bénéficient d'une 
+                        garantie contractuelle d'une durée équivalente à la DDM, à compter de la date de livraison, couvrant la non-conformité des produits à 
+                        la commande et tout vice caché, provenant d'un défaut de matière, de conception ou de fabrication affectant les produits livrés et les 
+                        rendant impropres à l'utilisation. La garantie forme un tout indissociable avec le Produit vendu par le Fournisseur. Le Produit ne 
+                        peut être vendu ou revendu, altéré, transformé ou modifié. Cette garantie est limitée au remplacement ou au remboursement des 
+                        produits non conformes ou affectés d'un vice.<br/>
+                        Toute garantie est exclue en cas de mauvaise utilisation, négligence ou défaut d'entretien de la part de l'Acheteur, comme en cas 
+                        d'usure normale du Produit ou de force majeure, par un stockage du produit non conforme à la nature du produit tel que l’exposition 
+                        à la chaleur, lumière.....Afin de faire valoir ses droits, l'Acheteur devra, sous peine de déchéance de toute action s'y rapportant, 
+                        informer le Fournisseur, par écrit, de l'existence des vices dans un délai maximum de 24 Heures à compter de leur découverte. Le 
+                        Fournisseur remplacera ou fera réparer les Produits ou pièces sous garantie jugés défectueux. Cette garantie couvre également les 
+                        frais de main d'œuvre.<br/>
+                        Le remplacement des Produits ou pièces défectueux n'aura pas pour effet de prolonger la durée de la garantie ci-dessus fixée. La 
+                        garantie ne peut intervenir si les Produits ont fait l'objet d'un usage anormal, ou ont été employés dans des conditions différentes de 
+                        celles pour lesquelles ils ont été fabriqués, en particulier en cas de non-respect des conditions prescrites dans la notice d'utilisation. 
+                        Elle ne s'applique pas non plus au cas de détérioration ou d'accident provenant de choc, chute, négligence, défaut de surveillance ou 
+                        d'entretien, ou bien en cas de transformation du Produit.
+                    </p>
+                </dt>
+                <!-- article 9 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 9 / Propriété intellectuelle
+                </h2>
+                <dt class="mb-8">
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Le Fournisseur conserve l'ensemble des droits de propriété industrielle et intellectuelle afférents aux Produits, photos et 
+                        documentations techniques qui ne peuvent être communiqués ni exécutés sans son autorisation écrite.
+                    </p>
+                </dt>
+                <!-- article 10 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 10 / Données personnelles
+                </h2>
+                <dt class="mb-8">
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Afin notamment de respecter ses obligations légales et d’exécuter le Contrat, le Fournisseur est amené à traiter (collecter, utiliser, 
+                        conserver…) des informations relatives à l’Acheteur, qui peuvent être qualifiées de données à caractère personnel ou « données 
+                        personnelles ». L’utilisation des données personnelles par le Fournisseur est encadrée principalement par le Règlement européen 
+                        2016-679 dit « Règlement Général sur la Protection des Données » ou « RGPD » et la loi n° 78-17 du 6 janvier 1978 modifiée, dite loi 
+                        «&nbsp;Informatique et Libertés ». En cas de questions, observations ou suggestions concernant les droits en tant que personnes 
+                        concernées concernant le traitement des données personnelles par le vendeur, l’acheteur peut contacter le vendeur par mail à 
+                        l’adresse communiquée en tête des présentes. Toute note d’information pourra être mise à jour régulièrement. Lorsque le 
+                        Fournisseur traite des données personnelles pour les besoins de l’exécution du Présent Contrat, il agit comme personne autorisée à 
+                        traiter ces données personnelles. A ce titre, il respectera la réglementation applicable en matière de protection des données
+                        personnelles et notamment, sans que ceci soit limitatif, les principes suivants : licéité, loyauté, transparence, limitation des finalités, 
+                        minimisation des données, exactitude, limitation de la conservation ainsi qu’intégrité, sécurité et confidentialité (RGPD, art. 5).<br/><br/> 
+                        Plus généralement l’Acheteur dispose des droits suivants en ce qui concerne ses données personnelles :<br/>
+                        ➢ droits d’accès, article 15 du RGPD,<br/>
+                        ➢ droit de rectification, article 16 du RGPD,<br/>
+                        ➢ droits de l’effacement, article 17 du RGPD,<br/>
+                        ➢ droit à la limitation du traitement, article 18 du RGPD,<br/>
+                        ➢ droit à la portabilité des données, article 20 du RGPD,<br/>
+                        ➢ droit de s’opposer au traitement, article 21 du RGPD.<br/><br/>
+                        Pour toute demande il conviendra de contacter le Fournisseur à l’adresse mail : contact@hoppyurbanbrew.com<br/>
+                        L’acheteur peut également saisir à tout moment la commission nationale informatique et libertés (trois places de Fontenoy – TS à 87 
+                        115 – 75334 Paris CEDEX 7).
+                    </p>
+                </dt>
+                <!-- article 11 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 11 / Imprévision
+                </h2>
+                <dt class="mb-8">
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Dans l'hypothèse où le Fournisseur ou l'Acheteur souhaiterait soulever, dans le cadre de la Vente de Produits du Fournisseur à 
+                        l'Acheteur soumise aux présentes CGV, un cas d'imprévision telle que définie par l'article 1195 du Code civil, tel qu’un changement 
+                        de circonstances économiques entourant la conclusion de la vente et affectant de façon significativement défavorable l'équilibre de 
+                        celle-ci, comme par exemple une augmentation du coût des matières premières agricoles, ou un changement de circonstances 
+                        économique et organisationnelle entourant la bonne exécution des présentes CGV, en particulier du fait d’une pandémie et épidémie 
+                        de type Covid-19 donnant lieu à des restrictions administratives et géographiques (confinement, absence de transports, impossibilité 
+                        de se déplacer ou de travailler sur Site…), une tentative préalable et obligatoire de conciliation sera organisée, le Fournisseur et 
+                        l'Acheteur s'interdisant tout refus de renégociation.<br/><br/>
+                        La renégociation du prix pour le cas d’imprévision de l’augmentation du coût des matières premières agricoles se fera sur la base des
+                        indicatifs suivants, sans que cette liste ne soit limitative :<br/> 
+                        ➢ orge de brasserie : indice IPPAP septembre 2021 150,1<br/>
+                        ➢ blé tendre : indice IPPAP septembre 2021 147,2<br/>
+                        ➢ houblon : indice IPPAP décembre 2017 100,7<br/><br/>
+                        Cette conciliation se déroulera selon les modalités suivantes :<br/>
+                        La Partie victime d’un déséquilibre adressera à son co-contractant une notification de renégociation par lettre recommandée avec 
+                        avis de réception ou par recommandés électroniques. ( ci-après « AR24 » : accessible sur l’adresse web suivante : 
+                        https://www.ar24.fr/).<br/><br/>
+                        Ce courrier devra préciser explicitement et de manière cumulative :<br/>
+                        ➢ Les raisons pour lesquelles l’équilibre du Contrat est bouleversé et devenu trop défavorable ;<br/>
+                        ➢ Les modalités qui pourraient être mises en place pour rééquilibrer les intérêts des Parties.<br/><br/>
+                        La Partie destinataire de ladite notification de renégociation, devra faire connaître, à la Partie initiatrice, sa position et ce dans les 8 
+                        (HUIT) jours suivant réception de ladite notification. En cas de désaccord total ou partiel, la Partie destinataire devra faire connaître 
+                        les motifs de son refus et devra adresser une contre-proposition à la Partie initiatrice.<br/>
+                        En cas de désaccord total ou partiel, la Partie à l’initiative de la demande de renégociation disposera d’un délai de 4 (QUATRE) jours 
+                        pour adresser sa réponse relative à ladite contre-proposition.<br/>
+                        Chaque partie conservera ses frais, débours, honoraires et coûts liés à la tentative de conciliation. Cette conciliation suspend le délai 
+                        de prescription et les obligations des parties relativement à l'opération de Vente de Produits affectée par l'imprévision pendant toute 
+                        la durée de la conciliation.<br/>
+                        En cas de succès de la renégociation, les Parties établiront dans les 15 (QUINZE) jours suivant la notification de renégociation, un 
+                        nouveau Contrat ou un avenant aux présentes, formalisant le résultat de cette renégociation.<br/>
+                        En cas d’échec de la renégociation, les Parties pourront, conformément aux dispositions de l'article 1195 du Code civil, demander 
+                        d'un commun accord au juge, la résolution, selon les modalités définies à l’article « Résolution du contrat ». Cependant, si le 
+                        changement de circonstances imprévisibles lors de la conclusion du contrat était définitif ou perdurait au-delà de 6 (SIX) mois les 
+                        présentes seraient purement et simplement résolues selon les modalités définies à l'article «Résolution pour Imprévision».
+                    </p>
+                </dt>
+                <!-- article 12 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 12 / Exécution forcée en nature
+                </h2>
+                <dt class="mb-8">
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Par dérogation aux dispositions de l'article 1221 du Code civil, les Parties conviennent qu'en cas de manquement de l'une ou l'autre 
+                        des Parties à ses obligations, la Partie victime de la défaillance ne pourra en demander l'exécution forcée.<br/>
+                        La Partie victime de la défaillance pourra, en cas d'inexécution de l'une quelconque des obligations incombant à l'autre Partie, 
+                        demander la résolution du contrat selon les modalités définies à l'article «Résolution du contrat».
+                    </p>
+                </dt>
+                <!-- article 13 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 13 / Exception d'inexécution
+                </h2>
+                <dt class="mb-8">
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Il est rappelé qu'en application de l'article 1219 du Code civil, chaque Partie pourra refuser d'exécuter son obligation, alors même 
+                        que celle-ci est exigible, si l'autre Partie n'exécute pas la sienne et si cette inexécution est suffisamment grave, c'est-à-dire, 
+                        susceptible de remettre en cause la poursuite du contrat ou de bouleverser fondamentalement son équilibre économique. <br/>La 
+                        suspension d'exécution prendra effet immédiatement, à réception par la Partie défaillante de la notification de manquement qui lui 
+                        aura été adressée à cet effet par la Partie victime de la défaillance indiquant l'intention de faire application de l'exception 
+                        d'inexécution tant que la Partie défaillante n'aura pas remédié au manquement constaté, signifiée par lettre recommandée avec 
+                        demande d'avis de réception ou sur tout autre support durable écrit permettant de ménager une preuve de l'envoi. Cette exception 
+                        d'inexécution pourra également être utilisée à titre préventif, conformément aux dispositions de l'article 1220 du Code civil, s'il est 
+                        manifeste que l'une des Parties n'exécutera pas à l'échéance les obligations qui lui incombent et que les conséquences de cette 
+                        inexécution sont suffisamment graves pour la Partie victime de la défaillance. Cette faculté est utilisée aux risques et périls de la 
+                        Partie qui en prend l'initiative. La suspension d'exécution prendra effet immédiatement, à réception par la Partie présumée 
+                        défaillante de la notification de l'intention de faire application de l'exception d'inexécution préventive jusqu'à ce que la Partie 
+                        présumée défaillante exécute l'obligation pour laquelle un manquement à venir est manifeste, signifiée par lettre recommandée avec 
+                        demande d'avis de réception ou sur tout autre support durable écrit permettant de ménager une preuve de l'envoi. Cependant, si 
+                        l'empêchement était définitif ou perdurait au-delà de 3 (TROIS) mois à compter de la constatation de l'empêchement par lettre 
+                        recommandé, exploit d'huissier ou encore AR24, les présentes seraient purement et simplement résolues selon les modalités 
+                        définies à l'article « Résolution pour manquement d'une partie à ses obligations ».
+                    </p>
+                </dt>
+                <!-- article 14 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 14 / Confidentialité
+                </h2>
+                <dt class="mb-8">
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Les Parties s'engagent à titre de clause de confidentialité, pendant toute la durée du présent contrat et pendant une durée de 3 
+                        (TROIS) années après l'expiration de celui-ci, pour quelque cause que soit, à la confidentialité la plus totale, en s'interdisant de 
+                        divulguer, directement ou indirectement, quelques informations, connaissances ou savoir-faire que ce soient concernant leur co-contractant et leurs modalités de fonctionnement, auxquels ils auraient pu avoir accès dans le cadre de l'exécution du présent 
+                        contrat, à moins que lesdites informations, connaissances ou savoir-faire ne soient tombés dans le domaine public ou que leur 
+                        divulgation soit rendue nécessaire en vertu d'un règlement particulier ou d'une injonction administrative ou judiciaire. Elles 
+                        s'engagent également à faire respecter cette obligation par tous les membres de leur personnel concernés, dont elles se portent fort. 
+                        Elles s'interdisent de même, de révéler à des tiers l'existence du présent contrat et de tout ou partie de la prestation confiée.
+                    </p>
+                </dt>
+                <!-- article 15 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 15 / Force majeure
+                </h2>
+                <dt class="mb-8">
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Les Parties ne pourront être tenues pour responsables si la non-exécution ou le retard dans l'exécution de l'une quelconque de leurs 
+                        obligations, telles que décrites dans les présentes découle d'un cas de force majeure, au sens de l'article 1218 du Code civil. De 
+                        convention expresse, constitue un cas de force majeure une pandémie de type Covid-19 rendant toute production, livraison ou 
+                        conditions logistiques complexes. La Partie constatant l'événement devra sans délai informer l'autre Partie de son impossibilité à 
+                        exécuter sa prestation et s'en justifier auprès de celle-ci. La suspension des obligations ne pourra en aucun cas être une cause de 
+                        responsabilité pour non-exécution de l'obligation en cause, ni induire le versement de dommages et intérêts ou pénalités de retard.<br/> 
+                        L'exécution de l'obligation est suspendue pendant toute la durée de la force majeure si elle est temporaire. Par conséquent, dès la 
+                        disparition de la cause de la suspension de leurs obligations réciproques, les Parties feront tous leurs efforts pour reprendre le plus 
+                        rapidement possible l'exécution normale de leurs obligations contractuelles. A cet effet, la Partie empêchée avertira l'autre de la 
+                        reprise de son obligation par lettre recommandée avec demande d'avis de réception ou tout acte extrajudiciaire. Si l'empêchement est définitif, les présentes seront purement et simplement résolues selon les modalités définies à l'article «Résolution pour force 
+                        majeure».
+                    </p>
+                </dt>
+                <!-- article 16 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 16 / Respect des lois, des réglements et des usages professionnels
+                </h2>
+                <dt class="mb-8">
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Les Parties s'engagent expressément à respecter en tous points la réglementation applicable à leurs activités, notamment le droit 
+                        économique, ainsi que, le cas échéant, les règles en usage dans la profession.
+                    </p>
+                </dt>
+                <!-- article 17 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 17 / Comportement loyal et de bonne foi
+                </h2>
+                <dt class="mb-8">
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Les Parties s’engagent à toujours se comporter comme partenaire loyal et de bonne foi, et notamment, à porter sans délai à la 
+                        connaissance de l’autre Partie, tout différend ou toute difficulté qu'elle pourrait rencontrer dans le cadre de l’exécution du présent 
+                        Contrat. Les deux Parties reconnaissent expressément qu’elles ne peuvent en aucun cas, ni pendant le temps de l’exécution du 
+                        présent Contrat et de ses éventuels prolongations ou avenants, ni après leurs fins normales - quelle qu'en soit la cause -, exercer 
+                        directement ou indirectement une concurrence déloyale préjudiciable à l’autre Partie.<br/> 
+                        Les Parties ayant ainsi parfaitement connaissance qu’aucun acte de concurrence déloyale et/ou illicite ne peut être mené par elle-même de manière directe ou indirecte à l’encontre de l’autre Partie, s’engagent expressément à ne pas mener ou faire mener de tels 
+                        actes contraires à la probité commerciale. Les Parties reconnaissent avoir connaissance du fait que dans le cas contraire leur 
+                        responsabilité ainsi que celle de ceux ayant profité des actes déloyaux et/ou illicites seraient mises en œuvre à l’effet d’obtenir 
+                        réparation des préjudices découlant pour elles de tous actes contraires à la probité commerciale.
+                    </p>
+                </dt>
+                <!-- article 18 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 18 / Résolution du contrat
+                </h2>
+                <dt class="mb-4">
+                    <h4 class="font-poppins cgv-subtitles text-base mb-2">18.1 / Résolution pour imprévision</h4>
+                    <p class="font-poppins cgv-text mb-4 px-7 border-l-2 text-justify">
+                        La résolution pour l'impossibilité de l'exécution d'une obligation devenue excessivement onéreuse ne pourra, nonobstant la clause 
+                        Résolution pour manquement d'une partie à ses obligations figurant ci-après, intervenir que 30 (TRENTE) jours après la réception 
+                        d'une mise en demeure déclarant l'intention d'appliquer la présente clause notifiée par lettre recommandée avec demande d'avis de 
+                        réception, AR24, ou tout acte extrajudiciaire.
+                    </p>
+                    <h4 class="font-poppins cgv-subtitles text-base mb-2">18.2 / Résolution pour inexécution d'une obligation suffisamment grave</h4>
+                    <p class="font-poppins cgv-text mb-4 px-7 border-l-2 text-justify">
+                        La Partie victime de la défaillance pourra, nonobstant la clause « Résolution pour manquement d'une partie à ses obligations » 
+                        figurant ci-après, en cas d'inexécution suffisamment grave de l'une quelconque des obligations incombant à l'autre Partie, notifier 
+                        par lettre recommandée avec demande d'avis de réception ou AR24 à la Partie Défaillante, la résolution fautive des présentes, 15 
+                        (QUINZE) jours après l'envoi réception d'une mise en demeure de s'exécuter restée infructueuse, et ce en application des 
+                        dispositions de l'article 1224 du Code civil.
+                    </p>
+                    <h4 class="font-poppins cgv-subtitles text-base mb-2">18.3 / Résolution pour cas de force majeure</h4>
+                    <p class="font-poppins cgv-text mb-4 px-7 border-l-2 text-justify">
+                        La résolution de plein droit pour force majeure, ne pourra, nonobstant la clause Résolution pour manquement d'une partie à ses 
+                        obligations figurant ci-après, avoir lieu que 15 (QUINZE) jours après l'envoi d'une mise en demeure notifiée par lettre recommandée 
+                        avec demande d'avis de réception, AR24 ou tout acte extrajudiciaire.
+                    </p>
+                    <h4 class="font-poppins cgv-subtitles text-base mb-2">18.4 / Résolution pour manquement d'une partie à ses obligations</h4>
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        En cas de non-respect par l'une ou l'autre des parties des obligations stipulées aux articles suivants : « Commande », « Conditions de 
+                        paiement », « livraison », « Confidentialité », « Comportement loyal et de bonne foi », « Respect des lois, des règlements et des usages 
+                        professionnels », visées aux articles des présentes CGV, celui-ci pourra être résolu au gré de la partie lésée.<br/>
+                        Il est expressément entendu que cette résolution pour manquement d'une partie à ses obligations aura lieu de plein droit 15 
+                        (QUINZE) jours après l'envoi d'une mise en demeure de s'exécuter, restée, en tout ou partie, sans effet. La mise en demeure pourra 
+                        être notifiée par lettre recommandée avec demande d'avis de réception, AR24 ou tout acte extrajudiciaire.<br/>
+                        Cette mise en demeure devra mentionner l'intention d'appliquer la présente clause.
+                    </p>
+                </dt>
+                <!-- article 19 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 19 / Dispositions communes aux cas de résolution
+                </h2>
+                <dt class="mb-8">
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Les prestations échangées entre les Parties depuis la conclusion du contrat et jusqu'à sa résolution, ayant trouvé leur utilité au fur et 
+                        à mesure de l'exécution réciproque de celui-ci, ne donneront pas lieu à restitution pour la période antérieure à la dernière 
+                        prestation n'ayant pas reçu sa contrepartie.<br/>
+                        En tout état de cause, la Partie lésée pourra demander en justice l'octroi de dommages et intérêts.
+                    </p>
+                </dt>
+                <!-- article 20 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 20 / Litiges
+                </h2>
+                <dt class="mb-4">
+                    <h4 class="font-poppins cgv-subtitles text-base mb-2">20.1 / Tentative de résolution du litige</h4>
+                    <p class="font-poppins cgv-text mb-4 px-7 border-l-2 text-justify">
+                        En vue de trouver ensemble une solution à tout litige qui surviendrait dans l'exécution du présent contrat, les Parties conviennent de 
+                        se réunir dans les 3 (TROIS) jours, de manière dématérialisée à compter de la réception d'une lettre recommandée avec demande
+                        d'avis de réception, AR24, notifiée par l'une des deux Parties.<br/>
+                        La présente procédure de règlement amiable constitue un préalable obligatoire à l'introduction d'une action en justice entre les 
+                        Parties. Toute action introduite en justice en violation de la présente clause serait déclarée irrecevable.<br/>
+                        Toutefois, si au terme d'un délai de 15 (QUINZE) jours, les Parties n'arrivaient pas à se mettre d'accord sur un compromis ou une 
+                        solution, le litige serait alors soumis à la compétence juridictionnelle désignée ci-après.
+                    </p>
+                    <h4 class="font-poppins cgv-subtitles text-base mb-2">20.2 / Attribution de juridiction</h4>
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Tous les litiges auxquels le présent contrat et les accords qui en découlent pourraient donner lieu, concernant tant leur validité, leur 
+                        interprétation, leur exécution, leur résolution, leurs conséquences et leurs suites seront soumis au tribunal de Lille.
+                    </p>
+                </dt>
+                <!-- article 21 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 21 / Nullité et indépendance des clauses
+                </h2>
+                <dt class="mb-8">
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        L’annulation éventuelle d’une ou plusieurs clauses du présent contrat ne saurait porter atteinte à ses autres stipulations qui 
+                        continueront de produire leur plein et entier effet dès lors que l’économie générale de la convention pourra être sauvegardée. Au cas 
+                        où l’exécution de l’une ou plusieurs des clauses du présent contrat serait rendue impossible du fait de son annulation, les Parties 
+                        tenteront de se rapprocher afin d’établir une nouvelle clause dont l’esprit et la lettre seront aussi proches que possible de l’ancienne 
+                        clause, les autres stipulations du contrat demeurant en vigueur.
+                    </p>
+                </dt>
+                <!-- article 22 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 22 / Election de domicile
+                </h2>
+                <dt class="mb-8">
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Pour l’exécution des présentes et de leurs suites, les Parties font élection de domicile en leur siège social respectif indiqué en tête des 
+                        présentes.<br/>
+                        Toutes les notifications ou communications au titre des présentes devront être faites à ces adresses par lettre recommandée avec 
+                        accusé de réception, AR24 ou par lettre remise en mains propres contre décharge ou, si la notification ou communication ne revêt 
+                        aucun caractère de gravité ou comminatoire, par tous moyens présentant date certaine (notamment par courriel). Elles pourront, en 
+                        cas d'urgence, être faites par courriel ou par voie dématérialisée sous réserve d'être confirmées sans délai par lettre recommandée 
+                        avec accusé de réception, AR24 ou par lettre remise en mains propres contre décharge si l’objet le justifie.<br/>
+                        Toute modification d’une de ces adresses devra être signifiée sans délai à l’autre Partie.
+                    </p>
+                </dt>
+                <!-- article 23 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 23 / Droit applicable
+                </h2>
+                <dt class="mb-8">
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Les présentes CGV sont régies par le droit français.<br/>
+                        Elles sont rédigées en langue française. Dans le cas où elles seraient traduites en une ou plusieurs langues, seul le texte français ferait 
+                        foi en cas de litige.
+                    </p>
+                </dt>
+                <!-- article 24 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 24 / Acceptation de l'Acheteur
+                </h2>
+                <dt class="mb-8">
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Les présentes CGV ainsi que les tarifs et barèmes concernant les remises et ristournes ci-joints, sont expressément agréés et acceptés 
+                        par l'Acheteur, qui déclare et reconnaît en avoir une parfaite connaissance, et renonce, de ce fait, à se prévaloir de tout document 
+                        contradictoire et, notamment, ses propres conditions générales d'achat.
+                    </p>
+                </dt>
+                <!-- article 25 -->
+                <h2 class="w-full font-goldman cgv-titles mb-2 text-lg font-extrabold leading-7">
+                    Article 25 / Indépendance réciproque
+                </h2>
+                <dt class="mb-8">
+                    <p class="font-poppins cgv-text mb-6 px-7 border-l-2 text-justify">
+                        Les Parties déclarent expressément qu'elles sont et demeureront, pendant toute la durée du présent contrat, des partenaires 
+                        commerciaux et professionnels indépendants.
+                    </p>
+                </dt>
+                
+            </dl>
+        </div>
+        <!-- button -->
+                <section class="flex justify-center">
+                    <!-- bicolor pink -->
+                    <button type="button" class="button-bicolor-pink text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+                        <a href="" alt="retour à l'accueil" title="Retour à l'accueil">
+                        RETOUR A L'ACCUEIL
+                        </a>
+                    </button>
+                </section>
+      </div>
+    
+
+    </main>
+
+    <!-- FOOTER -->
+
+  <!-- FOOTER -->
+
+  <footer class="text-center bg-white text-gray-900 pt-2">
+    <hr class="mb-6">
+    <section class="container">
+      <!-- cols -->
+      <article class="flex flex-col md:flex-row ml-16 md:justify-evenly text-orange-600 columns-4 gap-5 ml-4 mr-2 sm:flex-col sm:mb-30">
+        <!-- col 1 -->
+        <article class="text-black w-52 ml-16">
+          <a href="src/index.html" alt="Brasserie HUB : accueil" title="Brasserie HUB : accueil"><img src="public/img/HUB-logo-simple.jpg" class="w-16 mb-4"></img></a>
+          <h5 class="footer-logo-title">HOPPY URBAN BREW</h5>
+          <p class="text-xs text-left mb-1">Située à Roubaix (France), <br />la Brasserie HUB est une micro-brasserie urbaine et responsable : un lieu de production respectueux de l'environnement et de l'humain à dimension locale.
+          </p>
+        </article>
+        <!-- col 2 -->
+        <article class="ml-16 md:ml-0 text-black text-left max-w-28 mt-3">
+          <h4 class="footer-titles">HUB'infos</h4>
+          <ul class="footer-subtitles mt-2 mb-4">
+            <li>Notre actualité</li>
+            <li>Nos gammes de bières</li>
+            <li>Notre histoire</li>
+            <li>Nos engagements</li>
+          </ul>
+          <!--
+          <h4 class="footer-titles">Sur rdv</h4>
+          <ul class="footer-subtitles mt-2 mb-4">
+            <li>Brasser votre bière</li>
+            <li>Visiter la Brasserie</li>
+          </ul>-->
+        </article>
+        <!-- col 3 -->
+        <article class="text-black text-left max-w-28 mt-3">
+          <h4 class="footer-titles ml-16 md:ml-0">Nous trouver</h4>
+          <ul class="footer-subtitles mt-2 mb-4 ml-16 md:ml-0">
+            <li>Brasserie à Roubaix</li>
+            <li><a href="https://shop.easybeer.fr/hoppyurbanbrew">Boutique en ligne</a></li>
+            <li>Partenaires vendeurs</li>
+          </ul>
+          <!-- a voir 
+          <h4 class="footer-titles ml-16 md:ml-0">Nos partenaires</h4>
+          <ul class="footer-subtitles mt-2 mb-2 ml-16 md:ml-0">
+            <li>XXX</li>
+            <li>XXX</li>
+          </ul>-->
+        </article>
+        <!-- col 4 -->
+        <article class="text-black text-left max-w-28 mt-3">
+          <h4 class="footer-titles ml-16 md:ml-0">Nous suivre</h4>
+          
+          <!-- SOCIAL MEDIAS -->
+          <div class="mt-3 mb-4 m-auto md:ml-0 md:flex md:items-center md:justify-between">
+            
+            <div class="flex ml-16 md:ml-0 space-x-4 sm:justify-center md:mt-0">
+                <!-- FB -->
+                <a href="https://www.facebook.com/hoppyurbanbrew" class="text-yellow-400 hover:text-orange-400">
+                    <svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                </a>
+                <!-- INSTA -->
+                <a href="https://www.instagram.com/hoppyurbanbrew/?hl=fr" class="text-yellow-400 hover:text-orange-400">
+                    <svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+                </a>
+                <!-- TWITTER -->
+                <a href="https://twitter.com/hoppyurbanbrew" class="text-yellow-400 hover:text-orange-400">
+                    <svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                </a>
+                <a href="https://untappd.com/HoppyUrbanBrew/"><img src="public/img/untappd-logo-6.png" class="mt-0.5 w-8 h-8" /></a>
+            </div>
+        </div>
+          <!---->
+          <h4 class="footer-titles ml-16 md:ml-0">Newsletter</h4>
+          <div class="text-center pt-3 sm:pt-3 font-light flex items-center justify-center">
+            <form class="flex flex-col mb-6 md:flex-row w-3/4 md:w-full md:space-x-3 space-y-3 md:space-y-0 justify-center">
+                <div class=" relative ">
+                  <input type="text" id="&quot;form-subscribe-Subscribe" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-sm hover:bg-gray-100 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent" placeholder="Email"/>
+                </div>
+                <button class="flex-shrink-0 px-4 py-2 button-news bg-yellow-300 rounded-lg shadow-xs hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:ring-offset-yellow-200" type="submit">
+                  S'ABONNER
+                </button>
+            </form>
+          </div>
+        </article>
+      </article>
+      
+    </section>
+    
+    <section class="text-sm text-black text-center p-3 mt-4" style="background-color: rgba(0, 0, 0, 0.1);">
+      <p>© 2022 
+      Hoppy Urban Brew, brasserie à Roubaix, France / <a href="cgv.html" alt="Conditions Générales de Vente" title="Conditions Générales de Vente">CGV</a> / <a href="legals.html" alt="Mentions légales" title="Mentions Légales">Mentions l&eacute;gales</a></p>
+    </section>
+    <section class="text-xs text-black text-center p-3 mb-2" style="background-color: rgba(0, 0, 0, 0.0);">
+      L'abus d'alcool est dangereux pour la santé, à consommer avec modération.
+    </section>
+  </footer>
+    
+
+  
+
+    <!-- End your project here-->
+  </body>
+  <!-- Arrow Back To Top -->
+
+  <!-- scripts -->
+  <script type="text/javascript" src="js/index.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+  <!-- Form scripts -->
+  <script src=" https://unpkg.com/formik/dist/formik.umd.production.min.js "> </script>
+</html>

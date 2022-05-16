@@ -5,12 +5,12 @@
 
     <Julia Badita> -- <Développeuse web junior> -- <lien Github : https://github.com/JuliaBadita>
 
-    <> -- <>
+    <Dorothée Dupont Croquet> -- <Développeuse web junior> -- <lien Github : https://github.com/ponyo-sosuke>
 
 # THANKS
 
     < >  <  >
 # TECHNOLOGY COLOPHON
 
-    React, Tailwind CSS
+   Tailwind CSS
 

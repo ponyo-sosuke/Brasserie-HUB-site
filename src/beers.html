@@ -18,8 +18,8 @@
 
     <link rel="manifest" href="site.webmanifest" />
 
-    <!-- Favicon ici  -->
-    <link rel="icon" href="logo-HUB-short.png" type="image/x-icon" />
+    <!-- Favicon -->
+    <link rel="icon" href="../img/HUB-logo-simple.jpg" type="image/x-icon" />
 
     <!-- Différentes Fonts utilisées pour le site -->
 
@@ -49,6 +49,20 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 
+    <!-- Tailwind elements -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+
     <!-- Script -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -58,6 +72,161 @@
   </head>
 
   <body>
+    <!-- NAV -->
+
+    <nav
+      class="relative w-full flex flex-wrap items-center md:justify-around bg-white text-black shadow-sm navbar navbar-expand-lg navbar-light"
+    >
+      <!-- alignment menu burger also -->
+      <section
+        class="container-fluid w-full flex flex-wrap align-items-center justify-between px-6"
+      >
+        <!-- button burger -->
+        <button
+          class="navbar-toggler flex space-x-4 text-gray-400 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent1"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="bars"
+            class="w-6"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            ></path>
+          </svg>
+          <h2 class="flex justify-center text-black">HOPPY URBAN BREW</h2>
+        </button>
+        <!-- nav menu -->
+        <div
+          class="collapse navbar-collapse flex-grow justify-around"
+          id="navbarSupportedContent1"
+        >
+          <!-- Left links -->
+          <ul
+            class="navbar-nav flex flex-col md:justify-around mb-4 md:space-x-12 list-style-none px-12 md:px-0"
+          >
+            <!-- title button brewery -->
+            <li class="nav-item p-2">
+              <a
+                class="nav-link flex home-title-menu text-black space-x-2 mt-7"
+                href="#"
+              >
+                <button
+                  type="button"
+                  class="inline-block rounded-full bg-yellow-300 text-white leading-normal uppercase hover:bg-yellow-400 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7"
+                >
+                  <img
+                    src="../img/pictos/2722445-brewery-flaticon.png"
+                    class="w-7 h-7"
+                  />
+                </button>
+                <h5 class="home-title-menu mt-1">La Brasserie</h5>
+              </a>
+            </li>
+            <!-- title button beers -->
+            <li class="nav-item p-2 mr-6">
+              <a
+                class="nav-link flex home-title-menu text-black space-x-2 md:mt-7"
+                href="beers.html"
+              >
+                <button
+                  type="button"
+                  class="inline-block rounded-full bg-yellow-300 text-white leading-normal uppercase hover:bg-yellow-400 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7"
+                >
+                  <img
+                    src="../img/pictos/1676287-beer-flaticon.png"
+                    class="w-6 h-6"
+                  />
+                </button>
+                <h5 class="home-title-menu md:mt-1">Nos bières</h5>
+              </a>
+            </li>
+            <li
+              class="h-28 w-28 align-middle justify-center mt-4 md:mt-0 md:mr-7"
+            >
+              <a href="index.html"><img src="../img/HUB-logo.png" /></a>
+            </li>
+            <!-- title button contact -->
+            <li class="nav-item p-2">
+              <a
+                class="nav-link flex home-title-menu text-black space-x-2 mt-7"
+                href="../src/contact.html"
+              >
+                <button
+                  type="button"
+                  class="inline-block rounded-full bg-purple-200 text-white leading-normal uppercase hover:bg-purple-300 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7"
+                >
+                  <img
+                    src="../img/pictos/3595845-contact-flaticon.png"
+                    class="w-7 h-7"
+                  />
+                </button>
+                <h5 class="home-title-menu mt-1">Nous Contacter</h5>
+              </a>
+            </li>
+            <!-- title button shop -->
+            <li class="nav-item p-2">
+              <a
+                class="nav-link flex home-title-menu text-black space-x-2 md:mt-7"
+                href="#"
+              >
+                <button
+                  type="button"
+                  class="inline-block rounded-full bg-purple-200 text-white leading-normal uppercase hover:bg-purple-300 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7"
+                >
+                  <img
+                    src="../img/pictos/1981748-delivery-bike-flaticon.png"
+                    class="w-7 h-7"
+                  />
+                </button>
+                <h5 class="home-title-menu mt-1">BeerShop</h5>
+              </a>
+            </li>
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+
+        <!-- Right elements -->
+        <div class="flex items-center relative">
+          <!-- Icon -->
+          <a
+            class="text-white opacity-60 hover:opacity-80 focus:opacity-80 mr-4"
+            href="#"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="shopping-cart"
+              class="w-4"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+            >
+              <path
+                fill="currentColor"
+                d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <!-- Right elements -->
+      </section>
+    </nav>
+
     <!-- Contenu principal de la page -->
     <main>
       <!-- ariane -->
@@ -96,7 +265,7 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <a href="beers.html">
+                <a href="./beers.html">
                   <span
                     class="ml-1 text-[0.875rem] font-medium text-purple-500 hover:text-purple-400 md:ml-2 dark:text-gray-500"
                   >
@@ -111,27 +280,27 @@
 
       <!-- Titre Bières permanentes -->
 
-      <h2
-        class="font-[goldman] lg:text-[2rem] md:text-[1.7rem] sm:text-[1.6rem] text-[1.35rem] text-center my-6"
+      <h1
+        class="font-[goldman] lg:text-[2rem] md:text-[1.7rem] sm:text-[1.6rem] text-[1.2rem] text-center my-6"
       >
         <span
-          class="font-sans lg:text-[1.4rem] md:text-[1.2rem] text-[0.8rem] font-semibold"
+          class="font-sans lg:text-[1.4rem] md:text-[1.2rem] sm:text-[0.7rem] text-[0.5rem] sm:font-semibold font-extrabold"
         >
           ——————&nbsp; &nbsp;
         </span>
         Nos bières permanentes
         <span
-          class="font-sans lg:text-[1.4rem] md:text-[1.2rem] text-[0.8rem] font-semibold"
+          class="font-sans lg:text-[1.4rem] md:text-[1.2rem] sm:text-[0.7rem] text-[0.5rem] sm:font-semibold font-extrabold"
         >
           &nbsp; &nbsp;——————
         </span>
-      </h2>
+      </h1>
 
       <!-- Présentation bières permanentes en carrousel -->
 
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <!-- Présentation bière 1 : Frida -->
+          <!-- Présentation bière 1 : La Trêve -->
           <article
             class="swiper-slide flex justify-center lg:my-8 mt-6 p-6 md:mb-12 block"
           >
@@ -139,10 +308,10 @@
               class="flex flex-col md:flex-row md:max-w-3xl md:justify-start justify-center md:mx-auto rounded-lg bg-white shadow-lg md:mb-12"
             >
               <img
-                src="../img/bières/mockup-Frida-33cl.png"
-                alt="Mockup bouteille 'Frida' de 33cl"
-                title="Bière Frida"
-                class="w-6/12 m-auto md:h-[32rem] md:w-full md:object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg lg:-translate-y-14 md:-translate-y-12 md:absolute"
+                src="../img/bières/La-Treve_HUB_Mockup_2021_33cl.png"
+                alt="Mockup bouteille 'La Trêve' de 33cl"
+                title="Bière La Trêve"
+                class="w-6/12 m-auto md:h-[36rem] md:object-cover w-full md:w-52 rounded-t-lg md:rounded-none md:rounded-l-lg lg:-translate-y-20 md:-translate-y-16 md:absolute"
               />
               <div
                 class="md:ml-48 md:pb-10 md:px-10 flex flex-col justify-start"
@@ -150,15 +319,16 @@
                 <h2
                   class="text-[1.7rem] md:text-[2rem] md:mt-2 font-[goldman] m-auto md:m-0"
                 >
-                  Frida
+                  La Trêve
                 </h2>
                 <div class="border-2 border-yellow-200 md:mt-4 md:p-8">
                   <span class="">
                     <p
                       class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
                     >
-                      Une petite Sour Ale, légère et pleine de peps dont la
-                      confusion peut vite se faire avec un mojito
+                      Une Pale Ale à la française toute en légèreté et brassée
+                      avec des houblons Alsaciens tirant sur des notes subtiles
+                      de fruits rouges
                     </p>
                   </span>
                   <hr class="my-6 mx-2" />
@@ -186,10 +356,18 @@
                     >
                       Style
                     </p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">3%</p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">11</p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">Blanche</p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">Sour Ale</p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      5%
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      42
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      Blonde
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      Pale Ale
+                    </p>
                   </div>
                 </div>
               </div>
@@ -208,7 +386,7 @@
                 src="../img/bières/La-Solidaire_HUB_Mockup_2021_33cl.png"
                 alt="Mockup bouteille 'La Solidaire' de 33cl"
                 title="Bière La Solidaire"
-                class="w-6/12 m-auto md:h-[32rem] md:w-full md:object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg lg:-translate-y-14 md:-translate-y-12 md:absolute"
+                class="w-6/12 m-auto md:h-[36rem] md:object-cover w-full md:w-52 rounded-t-lg md:rounded-none md:rounded-l-lg lg:-translate-y-20 md:-translate-y-16 md:absolute"
               />
               <div
                 class="md:ml-48 md:pb-10 md:px-10 flex flex-col justify-start"
@@ -255,10 +433,18 @@
                     >
                       Style
                     </p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">4.7%</p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">15</p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">Blonde</p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">Lager</p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      4.7%
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      15
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      Blonde
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      Lager
+                    </p>
                   </div>
                 </div>
               </div>
@@ -276,7 +462,7 @@
                 src="../img/bières/Mockup_Le-Manifeste_HUB_2021_33cl.png"
                 alt="Mockup bouteille 'Le Manifeste' de 33cl"
                 title="Bière Le Manifeste"
-                class="w-6/12 m-auto md:h-[32rem] md:w-full md:object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg lg:-translate-y-14 md:-translate-y-12 md:absolute"
+                class="w-6/12 m-auto md:h-[36rem] md:object-cover w-full md:w-52 rounded-t-lg md:rounded-none md:rounded-l-lg lg:-translate-y-20 md:-translate-y-16 md:absolute"
               />
               <div
                 class="md:ml-48 md:pb-10 md:px-10 flex flex-col justify-start"
@@ -321,10 +507,91 @@
                     >
                       Style
                     </p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">3%</p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">11</p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">Blanche</p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">Sour Ale</p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      5%
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      ??
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      Brune
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      Porter
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Présentation bière 4 : La Transition -->
+          <article
+            class="swiper-slide flex justify-center lg:my-8 mt-6 p-6 md:mb-12 block"
+          >
+            <div
+              class="flex flex-col md:flex-row md:max-w-3xl md:justify-start justify-center md:mx-auto rounded-lg bg-white shadow-lg md:mb-12"
+            >
+              <img
+                src="../img/bières/transition-33cl.jpg"
+                alt="Mockup bouteille 'La Transition' de 33cl"
+                title="Bière La Transition"
+                class="w-6/12 m-auto md:h-[36rem] md:object-cover w-full md:w-52 rounded-t-lg md:rounded-none md:rounded-l-lg lg:-translate-y-20 md:-translate-y-16 md:absolute"
+              />
+              <div
+                class="md:ml-48 md:pb-10 md:px-10 flex flex-col justify-start"
+              >
+                <h2
+                  class="text-[1.7rem] md:text-[2rem] md:mt-2 font-[goldman] m-auto md:m-0"
+                >
+                  La Transition
+                </h2>
+                <div class="border-2 border-yellow-200 md:mt-4 md:p-8">
+                  <span class="">
+                    <p
+                      class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
+                    >
+                      Bière blonde et légèrement trouble, d'inspiration fermière
+                      aux arômes fruités
+                    </p>
+                  </span>
+                  <hr class="my-6 mx-2" />
+                  <div
+                    class="grid md:grid-rows-2 md:grid-cols-4 grid-rows-4 grid-cols-2 justify-items-center my-1 grid-flow-col gap-5 md:gap-1 md:grid-flow-row"
+                  >
+                    <img
+                      src="../img/pictos/icône-bières.png"
+                      alt="icône réprésentant des choppes de bières "
+                      title="icône bières"
+                    />
+                    <p
+                      class="font-extrabold font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+                    >
+                      IBU
+                      <span class="font-thin text-[0.9rem]">(amertume)</span>
+                    </p>
+                    <p
+                      class="font-extrabold font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+                    >
+                      Couleur
+                    </p>
+                    <p
+                      class="font-extrabold font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+                    >
+                      Style
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      6%
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      35
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      Blonde
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      Saison
+                    </p>
                   </div>
                 </div>
               </div>
@@ -340,27 +607,101 @@
 
       <!-- Titre Bières éphémères  -->
 
-      <h2
-        class="font-[goldman] lg:text-[2rem] md:text-[1.7rem] sm:text-[1.6rem] text-[1.35rem] text-center my-6"
+      <h3
+        class="font-[goldman] lg:text-[2rem] md:text-[1.7rem] sm:text-[1.6rem] text-[1.2rem] text-center my-6"
       >
         <span
-          class="font-sans lg:text-[1.4rem] md:text-[1.2rem] text-[0.8rem] font-semibold"
+          class="font-sans lg:text-[1.4rem] md:text-[1.2rem] sm:text-[0.7rem] text-[0.5rem] sm:font-semibold font-extrabold"
         >
           ——————&nbsp; &nbsp;
         </span>
         Nos bières saisonnières
         <span
-          class="font-sans lg:text-[1.4rem] md:text-[1.2rem] text-[0.8rem] font-semibold"
+          class="font-sans lg:text-[1.4rem] md:text-[1.2rem] sm:text-[0.7rem] text-[0.5rem] sm:font-semibold font-extrabold"
         >
           &nbsp; &nbsp;——————
         </span>
-      </h2>
+      </h3>
 
       <!-- Présentation bières éphémères en carrousel -->
 
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <!-- Présentation bière 1 : Frida -->
+          <!-- Présentation bière 1 : La Felicita -->
+          <article
+            class="swiper-slide flex justify-center lg:my-8 mt-6 p-6 md:mb-12 block"
+          >
+            <div
+              class="flex flex-col md:flex-row md:max-w-3xl md:justify-start justify-center md:mx-auto rounded-lg bg-white shadow-lg md:mb-12"
+            >
+              <!-- Ici le mockup de la bière, changeable en ajoutant le bon lien dans la partie src="../img/" -->
+              <img
+                src="../img/bières/Mockup_La-Felicita_HUB_2022_33cl.png"
+                alt="Mockup bouteille 'La Felicita' de 33cl"
+                title="Bière La Felicita"
+                class="w-6/12 m-auto md:h-[36rem] md:object-cover w-full md:w-52 rounded-t-lg md:rounded-none md:rounded-l-lg lg:-translate-y-20 md:-translate-y-16 md:absolute"
+              />
+              <div
+                class="md:ml-48 md:pb-10 md:px-10 flex flex-col justify-start"
+              >
+                <h2
+                  class="text-[1.7rem] md:text-[2rem] md:mt-2 font-[goldman] m-auto md:m-0"
+                >
+                  <!-- Ici possibilité de changer le titre selon les bières -->
+                  La Felicita
+                </h2>
+                <div class="border-2 border-yellow-200 md:mt-4 md:p-8">
+                  <span class="">
+                    <p
+                      class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
+                    >
+                      Bière de printemps aux goûts d'agrumes
+                    </p>
+                  </span>
+                  <hr class="my-6 mx-2" />
+                  <div
+                    class="grid md:grid-rows-2 md:grid-cols-4 grid-rows-4 grid-cols-2 justify-items-center my-1 grid-flow-col gap-5 md:gap-1 md:grid-flow-row"
+                  >
+                    <img
+                      src="../img/pictos/icône-bières.png"
+                      alt="icône réprésentant des choppes de bières "
+                      title="icône bières"
+                    />
+                    <p
+                      class="font-extrabold text-center font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+                    >
+                      IBU
+                      <span class="font-thin text-[0.9rem]">(amertume)</span>
+                    </p>
+                    <p
+                      class="font-extrabold font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+                    >
+                      Couleur
+                    </p>
+                    <p
+                      class="font-extrabold font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+                    >
+                      Style
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      5%
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      ??
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      Blonde
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      Ale Blonde
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Présentation bière 2 : Frida -->
           <article
             class="swiper-slide flex justify-center lg:my-8 mt-6 p-6 md:mb-12 block"
           >
@@ -371,7 +712,7 @@
                 src="../img/bières/mockup-Frida-33cl.png"
                 alt="Mockup bouteille 'Frida' de 33cl"
                 title="Bière Frida"
-                class="w-6/12 m-auto md:h-[32rem] md:w-full md:object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg lg:-translate-y-14 md:-translate-y-12 md:absolute"
+                class="w-6/12 m-auto md:h-[36rem] md:object-cover w-full md:w-52 rounded-t-lg md:rounded-none md:rounded-l-lg lg:-translate-y-20 md:-translate-y-16 md:absolute"
               />
               <div
                 class="md:ml-48 md:pb-10 md:px-10 flex flex-col justify-start"
@@ -415,17 +756,25 @@
                     >
                       Style
                     </p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">3%</p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">11</p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">Blanche</p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">Sour Ale</p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      3%
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      11
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      Blanche
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      Sour Ale
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </article>
 
-          <!-- Présentation bière 2 : La Solidaire -->
+          <!-- Présentation bière 3 : Etna -->
 
           <article
             class="swiper-slide flex justify-center lg:my-8 mt-6 p-6 md:mb-12 block"
@@ -434,10 +783,10 @@
               class="flex flex-col md:flex-row md:max-w-3xl md:justify-start justify-center md:mx-auto rounded-lg bg-white shadow-lg md:mb-12"
             >
               <img
-                src="../img/bières/La-Solidaire_HUB_Mockup_2021_33cl.png"
-                alt="Mockup bouteille 'La Solidaire' de 33cl"
-                title="Bière La Solidaire"
-                class="w-6/12 m-auto md:h-[32rem] md:w-full md:object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg lg:-translate-y-14 md:-translate-y-12 md:absolute"
+                src="../img/bières/ETNA_HUB_Mockup_2021_33cl.jpg"
+                alt="Mockup bouteille 'Etna' de 33cl"
+                title="Bière Etna"
+                class="w-6/12 m-auto md:h-[36rem] md:object-cover w-full md:w-52 rounded-t-lg md:rounded-none md:rounded-l-lg lg:-translate-y-20 md:-translate-y-16 md:absolute"
               />
               <div
                 class="md:ml-48 md:pb-10 md:px-10 flex flex-col justify-start"
@@ -445,18 +794,18 @@
                 <h2
                   class="text-[1.7rem] md:text-[2rem] md:mt-2 font-[goldman] m-auto md:m-0"
                 >
-                  La Solidaire
+                  Etna
                 </h2>
-                <div class="border-2 border-yellow-200 md:mt-4 md:p-8">
+                <div class="border-2 border-yellow-200 md:mt-4 md:p-4">
                   <span class="">
                     <p
                       class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
                     >
-                      <!-- Une petite lager maltée et légèrement citronnée, idéale
-                        pour la saison estivale -->
-                      Cultivé en Ouganda par des femmes, et torréfié à
-                      Tourcoing, le café Mon Cherry pousse en altitude sur des
-                      sols protégés qui lui confèrent un profil fruité.
+                      Tout le soleil de Sicile dans une bière blanche : les
+                      oranges sanguines Moro, cultivées sur les pentes de
+                      l’Etna, apportent les saveurs uniques de leur terroir
+                      volcanique. De Catane à Roubaix : deux coopératives pour
+                      une recette fraîche et militante !
                     </p>
                   </span>
                   <hr class="my-6 mx-2" />
@@ -484,17 +833,25 @@
                     >
                       Style
                     </p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">4.7%</p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">15</p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">Blonde</p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">Lager</p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      6%
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      23
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      Blanche
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      American Wheat Ale
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </article>
 
-          <!-- Présentation bière 3 : Le Manifeste -->
+          <!-- Présentation bière 4 : Lilya -->
           <article
             class="swiper-slide flex justify-center lg:my-8 mt-6 p-6 md:mb-12 block"
           >
@@ -502,10 +859,10 @@
               class="flex flex-col md:flex-row md:max-w-3xl md:justify-start justify-center md:mx-auto rounded-lg bg-white shadow-lg md:mb-12"
             >
               <img
-                src="../img/bières/Mockup_Le-Manifeste_HUB_2021_33cl.png"
-                alt="Mockup bouteille 'Le Manifeste' de 33cl"
-                title="Bière Le Manifeste"
-                class="w-6/12 m-auto md:h-[32rem] md:w-full md:object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg lg:-translate-y-14 md:-translate-y-12 md:absolute"
+                src="../img/bières/LILYA_HUB_Mockup_2022_33cl_V3.png"
+                alt="Mockup bouteille 'Lilya' de 33cl"
+                title="Bière Lilya"
+                class="w-6/12 m-auto md:h-[36rem] md:object-cover w-full md:w-52 rounded-t-lg md:rounded-none md:rounded-l-lg lg:-translate-y-20 md:-translate-y-16 md:absolute"
               />
               <div
                 class="md:ml-48 md:pb-10 md:px-10 flex flex-col justify-start"
@@ -513,16 +870,16 @@
                 <h2
                   class="text-[1.7rem] md:text-[2rem] md:mt-2 font-[goldman] m-auto md:m-0"
                 >
-                  Le Manifeste
+                  Lilya
                 </h2>
                 <div class="border-2 border-yellow-200 md:mt-4 md:p-8">
                   <span class="">
                     <p
                       class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
                     >
-                      Les malts torréfiés aux effluves de chocolat et de pain
-                      grillé se laissent facilement apprivoiser dans cette bière
-                      brune au corps léger.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Odio amet nisi et blanditiis consequatur repellat quam
+                      libero deserunt quod incidunt!
                     </p>
                   </span>
                   <hr class="my-6 mx-2" />
@@ -550,10 +907,240 @@
                     >
                       Style
                     </p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">3%</p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">11</p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">Blanche</p>
-                    <p class="mt-1.5 text-[0.8rem] md:text-base">Sour Ale</p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      3%
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      ??
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      Blanche
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      Sour Ale
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Présentation bière 5 : Line -->
+          <article
+            class="swiper-slide flex justify-center lg:my-8 mt-6 p-6 md:mb-12 block"
+          >
+            <div
+              class="flex flex-col md:flex-row md:max-w-3xl md:justify-start justify-center md:mx-auto rounded-lg bg-white shadow-lg md:mb-12"
+            >
+              <img
+                src="../img/bières/Mockup_Line_2_HUB_2021_33cl.png"
+                alt="Mockup bouteille 'Line' de 33cl"
+                title="Bière Line"
+                class="w-6/12 m-auto md:h-[36rem] md:object-cover w-full md:w-52 rounded-t-lg md:rounded-none md:rounded-l-lg lg:-translate-y-20 md:-translate-y-16 md:absolute"
+              />
+              <div
+                class="md:ml-48 md:pb-10 md:px-10 flex flex-col justify-start"
+              >
+                <h2
+                  class="text-[1.7rem] md:text-[2rem] md:mt-2 font-[goldman] m-auto md:m-0"
+                >
+                  Line
+                </h2>
+                <div class="border-2 border-yellow-200 md:mt-4 md:p-8">
+                  <span class="">
+                    <p
+                      class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Odio amet nisi et blanditiis consequatur repellat quam
+                      libero deserunt quod incidunt!
+                    </p>
+                  </span>
+                  <hr class="my-6 mx-2" />
+                  <div
+                    class="grid md:grid-rows-2 md:grid-cols-4 grid-rows-4 grid-cols-2 justify-items-center my-1 grid-flow-col gap-5 md:gap-1 md:grid-flow-row"
+                  >
+                    <img
+                      src="../img/pictos/icône-bières.png"
+                      alt="icône réprésentant des choppes de bières "
+                      title="icône bières"
+                    />
+                    <p
+                      class="font-extrabold font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+                    >
+                      IBU
+                      <span class="font-thin text-[0.9rem]">(amertume)</span>
+                    </p>
+                    <p
+                      class="font-extrabold font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+                    >
+                      Couleur
+                    </p>
+                    <p
+                      class="font-extrabold font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+                    >
+                      Style
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      ??
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      ??
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      ??
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      ??
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Présentation bière 6 : Mathilda -->
+          <article
+            class="swiper-slide flex justify-center lg:my-8 mt-6 p-6 md:mb-12 block"
+          >
+            <div
+              class="flex flex-col md:flex-row md:max-w-3xl md:justify-start justify-center md:mx-auto rounded-lg bg-white shadow-lg md:mb-12"
+            >
+              <img
+                src="../img/bières/Mathilda_33cl.png"
+                alt="Mockup bouteille 'Mathilda' de 33cl"
+                title="Bière Mathilda"
+                class="w-6/12 m-auto md:h-[36rem] md:object-cover w-full md:w-52 rounded-t-lg md:rounded-none md:rounded-l-lg lg:-translate-y-20 md:-translate-y-16 md:absolute"
+              />
+              <div
+                class="md:ml-48 md:pb-10 md:px-10 flex flex-col justify-start"
+              >
+                <h2
+                  class="text-[1.7rem] md:text-[2rem] md:mt-2 font-[goldman] m-auto md:m-0"
+                >
+                  Mathilda
+                </h2>
+                <div class="border-2 border-yellow-200 md:mt-4 md:p-8">
+                  <span class="">
+                    <p
+                      class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
+                    >
+                      Une bière légère comme une plume mais au caractère bien
+                      trempé. Maltée et houblonnée, elle a déjà tout d'une
+                      grande.
+                    </p>
+                  </span>
+                  <hr class="my-6 mx-2" />
+                  <div
+                    class="grid md:grid-rows-2 md:grid-cols-4 grid-rows-4 grid-cols-2 justify-items-center my-1 grid-flow-col gap-5 md:gap-1 md:grid-flow-row"
+                  >
+                    <img
+                      src="../img/pictos/icône-bières.png"
+                      alt="icône réprésentant des choppes de bières "
+                      title="icône bières"
+                    />
+                    <p
+                      class="font-extrabold font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+                    >
+                      IBU
+                      <span class="font-thin text-[0.9rem]">(amertume)</span>
+                    </p>
+                    <p
+                      class="font-extrabold font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+                    >
+                      Couleur
+                    </p>
+                    <p
+                      class="font-extrabold font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+                    >
+                      Style
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      0.5%
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      16
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      Blonde
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      Pale Ale
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Présentation bière 7 : Krismani Yamama -->
+          <article
+            class="swiper-slide flex justify-center lg:my-8 mt-6 p-6 md:mb-12 block"
+          >
+            <div
+              class="flex flex-col md:flex-row md:max-w-3xl md:justify-start justify-center md:mx-auto rounded-lg bg-white shadow-lg md:mb-12"
+            >
+              <img
+                src="../img/bières/Mockup_Krismani-Yamama_HUB_2021_33cl_V2.png"
+                alt="Mockup bouteille 'Krismani Yamama' de 33cl"
+                title="Bière Krismani Yamama"
+                class="w-6/12 m-auto md:h-[36rem] md:object-cover w-full md:w-52 rounded-t-lg md:rounded-none md:rounded-l-lg lg:-translate-y-20 md:-translate-y-16 md:absolute"
+              />
+              <div
+                class="md:ml-48 md:pb-10 md:px-10 flex flex-col justify-start"
+              >
+                <h2
+                  class="text-[1.7rem] md:text-[2rem] md:mt-2 font-[goldman] m-auto md:m-0"
+                >
+                  Krismani Yamama
+                </h2>
+                <div class="border-2 border-yellow-200 md:mt-4 md:p-8">
+                  <span class="">
+                    <p
+                      class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Ea minus repellendus animi omnis veritatis eos laborum
+                      quisquam numquam odio praesentium.
+                    </p>
+                  </span>
+                  <hr class="my-6 mx-2" />
+                  <div
+                    class="grid md:grid-rows-2 md:grid-cols-4 grid-rows-4 grid-cols-2 justify-items-center my-1 grid-flow-col gap-5 md:gap-1 md:grid-flow-row"
+                  >
+                    <img
+                      src="../img/pictos/icône-bières.png"
+                      alt="icône réprésentant des choppes de bières "
+                      title="icône bières"
+                    />
+                    <p
+                      class="font-extrabold font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+                    >
+                      IBU
+                      <span class="font-thin text-[0.9rem]">(amertume)</span>
+                    </p>
+                    <p
+                      class="font-extrabold font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+                    >
+                      Couleur
+                    </p>
+                    <p
+                      class="font-extrabold font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+                    >
+                      Style
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      6%
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      30
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      Noire
+                    </p>
+                    <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
+                      Tropical Stout
+                    </p>
                   </div>
                 </div>
               </div>
@@ -567,6 +1154,7 @@
         <div class="swiper-pagination mb-[2rem] md:mb-12"></div>
       </div>
 
+      <!-- Bouton Notre Shop -->
       <article class="flex justify-center">
         <a
           class="flex-shrink-0 px-4 py-2 button-news bg-yellow-300 rounded-lg shadow-xs hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:ring-offset-yellow-200 m-12"
@@ -575,13 +1163,29 @@
         </a>
       </article>
 
+      <h4
+        class="font-[goldman] lg:text-[1.7rem] md:text-[1.4rem] sm:text-[1.3rem] text-[0.95rem] text-center my-8"
+      >
+        <span
+          class="font-sans lg:text-[1.2rem] md:text-base sm:text-[0.5rem] text-[0.28rem] sm:font-semibold font-extrabold"
+        >
+          ——————&nbsp; &nbsp;
+        </span>
+        Lieux où vous pouvez trouver nos bières
+        <span
+          class="font-sans lg:text-[1.2rem] md:text-base sm:text-[0.5rem] text-[0.28rem] sm:font-semibold font-extrabold"
+        >
+          &nbsp; &nbsp;——————
+        </span>
+      </h4>
+
       <!-- Open street map - Partenaires -->
       <iframe
         width="100%"
         height="300px"
         frameborder="0"
         allowfullscreen
-        src="//umap.openstreetmap.fr/fr/map/les-cooperateurs-de-la-transition_455671?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=caption&captionBar=false"
+        src="//umap.openstreetmap.fr/fr/map/les-cooperateurs-de-la-transition_455671?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false"
       ></iframe>
     </main>
 
@@ -661,7 +1265,7 @@
                 <!-- FB -->
                 <a
                   href="https://www.facebook.com/hoppyurbanbrew"
-                  class="text-yellow-400 hover:text-orange-400"
+                  class="text-purple-500 hover:text-purple-600"
                 >
                   <svg
                     class="w-9 h-9"
@@ -679,7 +1283,7 @@
                 <!-- INSTA -->
                 <a
                   href="https://www.instagram.com/hoppyurbanbrew/?hl=fr"
-                  class="text-yellow-400 hover:text-orange-400"
+                  class="text-purple-500 hover:text-purple-600"
                 >
                   <svg
                     class="w-9 h-9"
@@ -697,7 +1301,7 @@
                 <!-- TWITTER -->
                 <a
                   href="https://twitter.com/hoppyurbanbrew"
-                  class="text-yellow-400 hover:text-orange-400"
+                  class="text-purple-500 hover:text-purple-600"
                 >
                   <svg
                     class="w-9 h-9"
@@ -710,8 +1314,28 @@
                     />
                   </svg>
                 </a>
-                <a href="https://untappd.com/HoppyUrbanBrew/">
-                  <img src="../img/untappd-logo-6.png" class="mt-0.5 w-8 h-8" />
+                <!-- UNTAPPD -->
+                <a href="https://untappd.com/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 172 172"
+                    style="fill: #000000;"
+                  >
+                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                    <path
+                      d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                      fill="#a855f7"
+                    ></path>
+                    <g fill="#ffffff">
+                      <path
+                        d="M94.99213,42.44663c-0.40888,0 -0.40728,0.40568 -0.40728,0.81456v0.81456c0,0.81776 -0.81296,0.82255 -1.22184,0.82255c-0.40888,0 -0.41527,0.40409 -0.41527,1.22184c-21.67056,22.07944 -20.03185,22.48991 -23.30288,24.12543l-4.90335,2.86694c-2.04439,0.81776 -3.6847,2.45327 -4.91133,4.08879l-25.75456,35.97652c-1.22664,1.63551 -1.6419,4.08879 -0.41527,6.13318c2.86215,6.13318 9.40421,11.04132 16.35514,11.85908c2.04439,0 4.09198,-0.81616 5.31861,-2.45167l25.76254,-35.98451c1.22664,-1.63551 2.0428,-3.6815 2.45168,-5.72589l0.81456,-5.71791c0.40888,-3.67991 1.23143,-2.45646 15.1333,-29.85133c0.81776,-0.81776 1.22184,-0.82095 1.22184,-1.22983c0,-0.40888 -0.00159,-1.22184 0.40728,-1.22184h0.82255c0.40888,0 0.40728,-0.41367 0.40728,-0.82255c-0.40888,-0.40888 -0.81456,-2.04439 -2.85896,-4.08879c-2.04439,-1.63551 -3.68629,-1.62913 -4.50405,-1.62913zM77.41515,42.85391c-0.81776,0 -2.45168,0.0016 -4.49607,1.63711c-2.04439,1.63551 -2.86694,2.85576 -2.86694,3.67352c-0.40888,0.40888 -0.40888,0.82255 0,0.82255h0.82255c0.40888,0 0.40728,0.81297 0.40728,1.22184c0,0.40888 0.40409,0.41207 1.22184,1.22983c1.22664,2.86215 2.86374,5.31702 3.6815,7.77029c2.04439,-2.04439 4.49926,-4.90654 7.77029,-8.17757c-1.22664,-1.63551 -2.86055,-2.86055 -4.49606,-4.49607c0,-0.81776 0.00159,-1.22983 -0.40728,-1.22983c-0.40888,0 -1.22983,0.00319 -1.22983,-0.81456v-0.82255c0,-0.40888 0.0016,-0.81456 -0.40728,-0.81456zM96.22196,64.1124c-3.27103,6.54206 -5.72111,10.62925 -6.94774,12.67364c-1.63551,3.27103 -2.04439,3.27741 -2.04439,4.50405l0.81456,5.31063c0.40888,2.04439 1.22504,4.09038 2.45167,5.7259l25.76254,35.9845c1.22664,1.63551 3.6815,2.86056 5.72589,2.45168c6.95093,-0.81776 13.49299,-5.7259 16.35514,-11.85908c1.22664,-1.63551 0.81137,-4.09038 -0.41527,-5.7259l-25.75455,-35.97652c-1.22664,-1.63551 -2.86694,-3.27103 -4.91133,-4.08879l-4.90335,-2.86694c-1.63551,-0.81776 -2.04439,-1.63551 -6.13318,-6.13318z"
+                      ></path>
+                    </g>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -721,7 +1345,7 @@
               class="text-center pt-3 sm:pt-3 font-light flex items-center justify-center"
             >
               <form
-                class="flex flex-col mb-6 md:flex-row w-3/4 md:w-full md:space-x-3 space-y-3 md:space-y-0 justify-center"
+                class="flex flex-col mb-6 md:flex-row w-3/4 md:space-x-3 space-y-3 md:space-y-0 justify-center"
               >
                 <div class="relative">
                   <input
@@ -779,7 +1403,7 @@
 
     <a
       id="back2Top"
-      class="text-center float-right cursor-pointer fixed right-7 bottom-10 z-40 bg-slate-50/75 rounded-[1.5rem]"
+      class="text-center float-right cursor-pointer fixed right-7 bottom-10 z-40 bg-slate-50/75 rounded-[1.3rem]"
     >
       <p class="h-[20px] font-extrabold opacity-100">
         ▲

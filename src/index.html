@@ -19,253 +19,164 @@
     <link rel="manifest" href="site.webmanifest">
 
     <!-- Favicon -->
-    <link rel="icon" href="public/img/HUB-logo-simple.jpg" type="image/x-icon" />
+    <link rel="icon" href="../img/HUB-logo-simple.jpg" type="image/x-icon" />
 
-
-    <link rel="manifest" href="site.webmanifest" />
-
-    <!-- Favicon ici  -->
-    <link rel="icon" href="logo-HUB-short.png" type="image/x-icon" />
-
-    <!-- Différentes Fonts utilisées pour le site -->
+    <!-- Inter font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- font tourney -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Tourney:wght@600&display=swap"
-      rel="stylesheet"
-    />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@600&display=swap" rel="stylesheet">
     <!-- font Goldman 700 (ou400) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap"
-      rel="stylesheet"
-    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
 
     <!-- font Poppins (300, 400) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+
+
+    <!-- Tailwind elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
 
     <!-- script -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+
     <!-- Elements CSS -->
-    <!-- <link rel="stylesheet" href="src/scss/nav.scss" />
-    <link rel="stylesheet" href="css/index.min.css" /> -->
-    <!-- <link rel="stylesheet" href="src/footer.css" /> -->
-
-    <!-- Styles CSS -->
-    <link rel="stylesheet" href="../css/base.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="src/scss/nav.scss" />
+    <link rel="stylesheet" href="css/index.min.css" />
     <link rel="stylesheet" href="../css/index.css" />
-
-    <meta name="theme-color" content="#fafafa" />
+    
+  
   </head>
 
   <body>
-    <main>
-        
-    <!-- NAV 
-    <nav
-    class="relative w-full flex flex-wrap items-center justify-between py-3 bg-white text-gray-800 shadow-lg navbar navbar-expand-lg navbar-light"
-    >
-      <section class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
-        <button
-          class="navbar-toggler text-gray-200 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent1"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <svg
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="fas"
-            data-icon="bars"
-            class="w-6"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512"
-          >
-            <path
-              fill="currentColor"
-              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
-            ></path>
-          </svg>
-
-        </button> -->
-
-        <!-- nav header -->
-        <articles class="collapse navbar-collapse flex-grow justify-center" id="navbarSupportedContent1">
-          <!-- nav titles -->
-          <ul class="navbar-nav flex flex-col align-middle pl-0 list-style-none mr-auto text-base">
-            <li class="nav-item p-2">
-              <a class="nav-link font-semibold text-black hover:opacity-80 focus:opacity-80 p-0" href="#">
-                ACTU'BRASSERIE</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" id="."
-              class="nav-link font-semibold text-black hover:opacity-80 focus:opacity-80 p-0">
-                HUB'STORY</a>
-            </li>
-            <li class="nav-item p-2">
-              <a id="#" href="#"
-                class="nav-lin font-semibold text-black hover:text-orange-700 focus:opacity-80 p-0 mr-4">
-                ENGAGEMENTS</a>
-            </li>
-            <!-- logo -->
-            <li>
-
-              <img src="img/HUB-logo.png" class="w-28 h-28" ><a href="#"></a>
-
-            </li>
-            <li class="nav-item p-2">
-              <a class="nav-link font-semibold text-black hover:opacity-80 focus:opacity-80 p-0" href="#">
-                HOPPY GAMMES</a>
-            </li>
-            <li class="nav-item p-2">
-              <a href="#" id="."
-              class="nav-link font-semibold text-black hover:opacity-80 focus:opacity-80 p-0">
-                CONTACT</a>
-            </li>
-            <li class="nav-item p-2">
-              <a id="#" href="https://shop.easybeer.fr/hoppyurbanbrew"
-                class="nav-link font-semibold text-black hover:opacity-80 focus:opacity-80 p-0">
-                BEERSHOP</a>
-            </li>
-            
-          </ul>
-          <!-- Left links -->
-        </articles>
-        
-
-        
-        <!-- Right elements -->
-
-      <!-- </section>
-
-    </nav> --> 
+    <!-- Start your project here-->
 
     <!-- NAV -->
     
-<nav
-class="relative w-full flex flex-wrap items-center md:justify-around bg-white text-black shadow-sm navbar navbar-expand-lg navbar-light"
-> 
-<!-- alignment menu burger also -->
-<section class="container-fluid w-full flex flex-wrap align-items-center justify-between px-6">
-  <!-- button burger -->
-  <button
-    class="navbar-toggler flex space-x-4 text-gray-400 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#navbarSupportedContent1"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <svg
-      aria-hidden="true"
-      focusable="false"
-      data-prefix="fas"
-      data-icon="bars"
-      class="w-6"
-      role="img"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 448 512"
+    <nav
+    class="relative w-full flex flex-wrap items-center md:justify-around bg-white text-black shadow-sm navbar navbar-expand-lg navbar-light"
+    > 
+    <!-- alignment menu burger also -->
+    <section class="container-fluid w-full flex flex-wrap align-items-center justify-between px-6">
+    <!-- button burger -->
+    <button
+        class="navbar-toggler flex space-x-4 text-gray-400 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent1"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
     >
-      <path
-        fill="currentColor"
-        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
-      ></path>
-    </svg>
-    <h2 class="flex justify-center text-black">HOPPY URBAN BREW</h2>
-  </button>
-  <!-- nav menu -->
-  <div class="collapse navbar-collapse flex-grow justify-around" id="navbarSupportedContent1">
-    
-    <!-- Left links -->
-    <ul class="navbar-nav flex flex-col md:justify-around list-style-none px-12 md:px-0">
-      <!-- title button brewery -->
-      <li class="nav-item p-2">
-          <a class="nav-link flex home-title-menu text-black space-x-2 mt-7 md:mr-6" href="#">
-              <button type="button" class="inline-block rounded-full bg-yellow-300 text-white leading-normal uppercase hover:bg-yellow-400 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7">
-              <img src="public/img/pictos/2722445-brewery-flaticon.png" class="w-7 h-7" />
-              </button>
-              <h5 class="home-title-menu mt-1">La Brasserie</h5>
-          </a>
-      </li>
-      <!-- title button beers -->
-      <li class="nav-item p-2 mr-6 md:mr-12">
-          <a class="nav-link flex home-title-menu text-black space-x-2 md:mt-7" href="#">
-              <button type="button" class="inline-block rounded-full bg-yellow-300 text-white leading-normal uppercase hover:bg-yellow-400 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7">
-              <img src="public/img/pictos/1676287-beer-flaticon.png" class="w-6 h-6" />
-              </button>
-              <h5 class="home-title-menu md:mt-1">Nos bières</h5>
-          </a>
-      </li>
-      <li class="h-28 w-28 align-middle justify-center mt-5 mr-2 md:mt-0 md:mr-12">
-          <a href="#"><img src="public/img/HUB-logo-2.png" /></a> 
-      </li>
-      <li class="nav-item p-2">
-          <a class="nav-link flex home-title-menu text-black space-x-2 mt-7 md:mr-6" href="#">
-              <button type="button" class="inline-block rounded-full bg-purple-200 text-white leading-normal uppercase hover:bg-purple-300 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7">
-              <img src="public/img/pictos/3595845-contact-flaticon.png" class="w-7 h-7" />
-              </button>
-              <h5 class="home-title-menu mt-1">Nous Contacter</h5>
-          </a>
-      </li>
-      <li class="nav-item p-2">
-          <a class="nav-link flex home-title-menu text-black space-x-2 md:mt-7" href="#">
-              <button type="button" class="inline-block rounded-full bg-purple-200 text-white leading-normal uppercase hover:bg-purple-300 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7">
-              <img src="public/img/pictos/1981748-delivery-bike-flaticon.png" class="w-7 h-7" />
-              </button>
-              <h5 class="home-title-menu mt-1">BeerShop</h5>
-          </a>
-      </li>
-    </ul>
-    <!-- Left links -->
-  </div>
-  <!-- Collapsible wrapper -->
-
-  <!-- Right elements -->
-  <div class="flex items-center relative">
-    <!-- Icon -->
-    <a class="text-white opacity-60 hover:opacity-80 focus:opacity-80 mr-4" href="#">
-      <svg
+        <svg
         aria-hidden="true"
         focusable="false"
         data-prefix="fas"
-        data-icon="shopping-cart"
-        class="w-4"
+        data-icon="bars"
+        class="w-6"
         role="img"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 576 512"
-      >
+        viewBox="0 0 448 512"
+        >
         <path
-          fill="currentColor"
-          d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+            fill="currentColor"
+            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
         ></path>
-      </svg>
-    </a>
+        </svg>
+          <h2 class="flex justify-center text-black">HOPPY URBAN BREW</h2>
+    </button>
+    <!-- nav menu -->
+    <div class="collapse navbar-collapse flex-grow justify-around" id="navbarSupportedContent1">
+        
+        <!-- Left links -->
+        <ul class="navbar-nav flex flex-col md:justify-around mb-4 md:space-x-12 list-style-none px-12 md:px-0">
+        <!-- title button brewery -->
+        <li class="nav-item p-2">
+            <a class="nav-link flex home-title-menu text-black space-x-2 mt-7" href="#">
+                <button type="button" class="inline-block rounded-full bg-yellow-300 text-white leading-normal uppercase hover:bg-yellow-400 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7">
+                <img src="../img/pictos/2722445-brewery-flaticon.png" class="w-7 h-7" />
+                </button>
+                <h5 class="home-title-menu mt-1">La Brasserie</h5>
+            </a>
+        </li>
+        <!-- title button beers -->
+        <li class="nav-item p-2 mr-6">
+            <a class="nav-link flex home-title-menu text-black space-x-2 md:mt-7" href="beers.html">
+                <button type="button" class="inline-block rounded-full bg-yellow-300 text-white leading-normal uppercase hover:bg-yellow-400 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7">
+                <img src="../img/pictos/1676287-beer-flaticon.png" class="w-6 h-6" />
+                </button>
+                <h5 class="home-title-menu md:mt-1">Nos bières</h5>
+            </a>
+        </li>
+        <li class="h-28 w-28 align-middle justify-center mt-4 md:mt-0 md:mr-7">
+            <a href="index.html"><img src="../img/HUB-logo.png"></a> 
+        </li>
+        <!-- title button contact -->
+        <li class="nav-item p-2">
+            <a class="nav-link flex home-title-menu text-black space-x-2 mt-7" href="../src/contact.html">
+                <button type="button" class="inline-block rounded-full bg-purple-200 text-white leading-normal uppercase hover:bg-purple-300 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7">
+                <img src="../img/pictos/3595845-contact-flaticon.png" class="w-7 h-7" />
+                </button>
+                <h5 class="home-title-menu mt-1">Nous Contacter</h5>
+            </a>
+        </li>
+        <!-- title button shop -->
+        <li class="nav-item p-2">
+            <a class="nav-link flex home-title-menu text-black space-x-2 md:mt-7" href="#">
+                <button type="button" class="inline-block rounded-full bg-purple-200 text-white leading-normal uppercase hover:bg-purple-300 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7">
+                <img src="../img/pictos/1981748-delivery-bike-flaticon.png" class="w-7 h-7" />
+                </button>
+                <h5 class="home-title-menu mt-1">BeerShop</h5>
+            </a>
+        </li>
+        </ul>
+        <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+
+    <!-- Right elements -->
+    <div class="flex items-center relative">
+        <!-- Icon -->
+        <a class="text-white opacity-60 hover:opacity-80 focus:opacity-80 mr-4" href="#">
+        <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="shopping-cart"
+            class="w-4"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+        >
+            <path
+            fill="currentColor"
+            d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+            ></path>
+        </svg>
+        </a>
+        
+    </div>
+    <!-- Right elements -->
+    </section>
+    </nav>
     
-  </div>
-  <!-- Right elements -->
-</section>
-</nav>
+    
 
-    <!-- background 
-    <img src="https://mdbootstrap.com/img/new/slides/041.jpg" class="max-w-full h-auto" alt="..." />-->
-
-    <!-- NAVBAR 2-->
+    
+    <!-- HEADER-->
     <header>
       <!-- Background image 
       <section class="relative overflow-hidden bg-no-repeat bg-cover" style="
@@ -277,10 +188,10 @@ class="relative w-full flex flex-wrap items-center md:justify-around bg-white te
     <section class="relative overflow-hidden bg-no-repeat bg-cover">
       <!--
       <img
-        src="public/img/unsplash/elevate-nYgy58eb9aw-unsplash.jpg"
+        src="../img/unsplash/elevate-nYgy58eb9aw-unsplash.jpg"
         class="w-full h-full">
       -->
-      <img src="public/img/AU3A2328-2_hub_team.jpg" class="w-full" />
+      <img src="../img/AU3A2328-2_hub_team.jpg" class="w-full" />
         <!-- img text -->
         <section class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
           style="background-color: rgba(0, 0, 0, 0.2)">
@@ -321,10 +232,9 @@ class="relative w-full flex flex-wrap items-center md:justify-around bg-white te
         </h4>
         </article>
         
-        <img src="img/gammes/ETNA_HUB_Mockup_2021_33cl.jpg" class="md:w-1/5">
-        <img src="img/gammes/La-Solidaire_HUB_Mockup_2021_33cl.png" class="md:w-1/5">
-        <img src="img/gammes/transition-33cl.jpg" class="md:w-1/5">
-
+        <img src="../img/bières/ETNA_HUB_Mockup_2021_33cl.jpg" class="md:w-1/5">
+        <img src="../img/bières/La-Solidaire_HUB_Mockup_2021_33cl.png" class="md:w-1/5">
+        <img src="../img/bières/transition-33cl.jpg" class="md:w-1/5">
       </section>
       <section class="flex justify-center">
         <!--button -->
@@ -341,31 +251,153 @@ class="relative w-full flex flex-wrap items-center md:justify-around bg-white te
           &nbsp;La petite dernière est arrivée&nbsp;<span class="font-sans text-[1.4rem]">&nbsp; &nbsp;———</span>
       </h2>
 
+      <article
+      class="flex justify-center lg:my-8 mt-6 p-6 md:mb-12 block"
+    >
+      <div
+        class="flex flex-col md:flex-row md:max-w-3xl md:justify-start justify-center md:mx-auto rounded-lg bg-white shadow-lg md:mb-12"
+      >
 
-        <!-- partie a remplacer par code de julia -->
+      <!-- Ici le mockup de la bière, changeable en ajoutant le bon lien dans la partie src="../img/" -->
+        <img
+          src="../img/bières/Mockup_La-Felicita_HUB_2022_33cl.png"
+          alt="Mockup bouteille 'La Felicita' de 33cl"
+          title="Bière La Felicita"
+          class="w-6/12 m-auto md:h-[36rem] md:object-cover w-full md:w-52 rounded-t-lg md:rounded-none md:rounded-l-lg lg:-translate-y-20 md:-translate-y-16 md:absolute"
+        />
+        <div
+          class="md:ml-48 md:pb-10 md:px-10 flex flex-col justify-start"
+        >
+          <h2
+            class="text-[1.7rem] md:text-[2rem] md:mt-2 font-[goldman] m-auto md:m-0"
+          >
+          <!-- Ici possibilité de changer le titre selon les bières -->
+            La Felicita
+          </h2>
+          <div class="border-2 border-yellow-200 md:mt-4 md:p-8">
+            <span class="">
+              <p
+                class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
+              >
+              Bière de printemps aux goûts d'agrumes
+              </p>
+            </span>
+            <hr class="my-6 mx-2" />
+            <div
+              class="grid md:grid-rows-2 md:grid-cols-4 grid-rows-4 grid-cols-2 justify-items-center my-1 grid-flow-col gap-5 md:gap-1 md:grid-flow-row"
+            >
+              <img
+                src="../img/pictos/icône-bières.png"
+                alt="icône réprésentant des choppes de bières "
+                title="icône bières"
+              />
+              <p
+                class="font-extrabold text-center font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+              >
+                IBU
+                <span class="font-thin text-[0.9rem]">(amertume)</span>
+              </p>
+              <p
+                class="font-extrabold font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+              >
+                Couleur
+              </p>
+              <p
+                class="font-extrabold font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+              >
+                Style
+              </p>
+              <p class="mt-1.5 text-[0.8rem] md:text-base text-center">5%</p>
+              <p class="mt-1.5 text-[0.8rem] md:text-base text-center">??</p>
+              <p class="mt-1.5 text-[0.8rem] md:text-base text-center">Blonde</p>
+              <p class="mt-1.5 text-[0.8rem] md:text-base text-center">Ale Blonde</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
 
         
       </section>
 
       <!-- GALLERY -->
-      <section class="overflow-hidden text-gray-700 ">
+      <section class="overflow-hidden ">
         <h2 class="font-[goldman] text-[1.2rem] md:text-[1.5rem] text-center my-3 md:my-6 mb-12"><span class="font-sans text-[1.25rem]">———&nbsp; &nbsp;</span>
           &nbsp;Notre gamme de bières&nbsp;<span class="font-sans text-[1.4rem]">&nbsp; &nbsp;———</span>
       </h2>
         
-      <!-- code de Julia pour produits -->
+      <article
+      class="flex justify-center lg:my-8 mt-6 p-6 md:mb-12 block"
+    >
+      <div
+        class="flex flex-col md:flex-row md:max-w-3xl md:justify-start justify-center md:mx-auto rounded-lg bg-white shadow-lg md:mb-12"
+      >
+
+      <!-- Ici le mockup de la bière, changeable en ajoutant le bon lien dans la partie src="../img/" -->
+        <img
+          src="../img/bières/Mockup_La-Felicita_HUB_2022_33cl.png"
+          alt="Mockup bouteille 'La Felicita' de 33cl"
+          title="Bière La Felicita"
+          class="w-6/12 m-auto md:h-[36rem] md:object-cover w-full md:w-52 rounded-t-lg md:rounded-none md:rounded-l-lg lg:-translate-y-20 md:-translate-y-16 md:absolute"
+        />
+        <div
+          class="md:ml-48 md:pb-10 md:px-10 flex flex-col justify-start"
+        >
+          <h2
+            class="text-[1.7rem] md:text-[2rem] md:mt-2 font-[goldman] m-auto md:m-0"
+          >
+            La Felicita
+          </h2>
+          <div class="border-2 border-yellow-200 md:mt-4 md:p-8">
+            <span class="">
+              <p
+                class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
+              >
+              Bière de printemps aux goûts d'agrumes
+              </p>
+            </span>
+            <hr class="my-6 mx-2" />
+            <div
+              class="grid md:grid-rows-2 md:grid-cols-4 grid-rows-4 grid-cols-2 justify-items-center my-1 grid-flow-col gap-5 md:gap-1 md:grid-flow-row"
+            >
+              <img
+                src="../img/pictos/icône-bières.png"
+                alt="icône réprésentant des choppes de bières "
+                title="icône bières"
+              />
+              <p
+                class="font-extrabold text-center font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+              >
+                IBU
+                <span class="font-thin text-[0.9rem]">(amertume)</span>
+              </p>
+              <p
+                class="font-extrabold font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+              >
+                Couleur
+              </p>
+              <p
+                class="font-extrabold font-[goldman] text-[0.9rem] md:text-[1.1rem]"
+              >
+                Style
+              </p>
+              <p class="mt-1.5 text-[0.8rem] md:text-base text-center">5%</p>
+              <p class="mt-1.5 text-[0.8rem] md:text-base text-center">??</p>
+              <p class="mt-1.5 text-[0.8rem] md:text-base text-center">Blonde</p>
+              <p class="mt-1.5 text-[0.8rem] md:text-base text-center">Ale Blonde</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
 
         
       </section>
 
-      
-      <!-- Pour le feed Instagram -->
-      <div class="elfsight-app-d46b0653-c58b-4c0f-b883-5b78068ce440 z-0"></div>
-
-
       <!-- MAP -->
       <section class="flex-wrap md:flex justify-center bg-black gap-9 mt-2 sm:flex-auto">
-        <img src="public/img/HUB-anim.gif" class="md:w-1/4 p-2" />
+        <img src="../img/HUB-anim.gif" class="md:w-1/4 p-2" />
         <article class="p font-poppins text-white md:mt-20 mt-6 mb-2 ml-5">
           <h4 class="footer-titles">Brasserie Hoppy Urban Brew</h4>
           <p>26 rue des Fabricants, 59100 Roubaix, Hauts-de-France, FRANCE</p>
@@ -386,6 +418,7 @@ class="relative w-full flex flex-wrap items-center md:justify-around bg-white te
     </main>
 
 
+
   <!-- FOOTER -->
 
   <footer class="text-center bg-white text-gray-900 pt-2">
@@ -395,9 +428,7 @@ class="relative w-full flex flex-wrap items-center md:justify-around bg-white te
       <article class="flex flex-col md:flex-row ml-16 md:justify-evenly text-orange-600 columns-4 gap-5 ml-4 mr-2 sm:flex-col sm:mb-30">
         <!-- col 1 -->
         <article class="text-black w-52 ml-16">
-
-          <a href="index.html" alt="Brasserie HUB : accueil" title="Brasserie HUB : accueil"><img src="public/img/HUB-logo-simple.jpg" class="w-16 mb-4"></a>
-
+          <a href="../src/index.html" alt="Brasserie HUB : accueil" title="Brasserie HUB : accueil"><img src="../img/HUB-logo-simple.jpg" class="w-16 mb-4"></a>
           <h5 class="footer-logo-title">HOPPY URBAN BREW</h5>
           <p class="text-xs text-left mb-1">Située à Roubaix (France), <br />la Brasserie HUB est une micro-brasserie urbaine et responsable : un lieu de production respectueux de l'environnement et de l'humain à dimension locale.
           </p>
@@ -442,18 +473,23 @@ class="relative w-full flex flex-wrap items-center md:justify-around bg-white te
             
             <div class="flex ml-16 md:ml-0 space-x-4 sm:justify-center md:mt-0">
                 <!-- FB -->
-                <a href="https://www.facebook.com/hoppyurbanbrew" class="text-yellow-400 hover:text-orange-400">
+                <a href="https://www.facebook.com/hoppyurbanbrew" class="text-purple-500 hover:text-purple-600">
                     <svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
                 </a>
                 <!-- INSTA -->
-                <a href="https://www.instagram.com/hoppyurbanbrew/?hl=fr" class="text-yellow-400 hover:text-orange-400">
+                <a href="https://www.instagram.com/hoppyurbanbrew/?hl=fr" class="text-purple-500 hover:text-purple-600">
                     <svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
                 </a>
                 <!-- TWITTER -->
-                <a href="https://twitter.com/hoppyurbanbrew" class="text-yellow-400 hover:text-orange-400">
+                <a href="https://twitter.com/hoppyurbanbrew" class="text-purple-500 hover:text-purple-600">
                     <svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
                 </a>
-                <a href="https://untappd.com/HoppyUrbanBrew/"><img src="public/img/untappd-logo-6.png" class="mt-0.5 w-8 h-8" /></a>
+                <!-- UNTAPPD -->
+                <a href="https://untappd.com/"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  width="32" height="32"
+                  viewBox="0 0 172 172"
+                  style=" fill:#000000;"><path d="M0,172v-172h172v172z" fill="none"></path><path d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z" fill="#a855f7"></path><g fill="#ffffff"><path d="M94.99213,42.44663c-0.40888,0 -0.40728,0.40568 -0.40728,0.81456v0.81456c0,0.81776 -0.81296,0.82255 -1.22184,0.82255c-0.40888,0 -0.41527,0.40409 -0.41527,1.22184c-21.67056,22.07944 -20.03185,22.48991 -23.30288,24.12543l-4.90335,2.86694c-2.04439,0.81776 -3.6847,2.45327 -4.91133,4.08879l-25.75456,35.97652c-1.22664,1.63551 -1.6419,4.08879 -0.41527,6.13318c2.86215,6.13318 9.40421,11.04132 16.35514,11.85908c2.04439,0 4.09198,-0.81616 5.31861,-2.45167l25.76254,-35.98451c1.22664,-1.63551 2.0428,-3.6815 2.45168,-5.72589l0.81456,-5.71791c0.40888,-3.67991 1.23143,-2.45646 15.1333,-29.85133c0.81776,-0.81776 1.22184,-0.82095 1.22184,-1.22983c0,-0.40888 -0.00159,-1.22184 0.40728,-1.22184h0.82255c0.40888,0 0.40728,-0.41367 0.40728,-0.82255c-0.40888,-0.40888 -0.81456,-2.04439 -2.85896,-4.08879c-2.04439,-1.63551 -3.68629,-1.62913 -4.50405,-1.62913zM77.41515,42.85391c-0.81776,0 -2.45168,0.0016 -4.49607,1.63711c-2.04439,1.63551 -2.86694,2.85576 -2.86694,3.67352c-0.40888,0.40888 -0.40888,0.82255 0,0.82255h0.82255c0.40888,0 0.40728,0.81297 0.40728,1.22184c0,0.40888 0.40409,0.41207 1.22184,1.22983c1.22664,2.86215 2.86374,5.31702 3.6815,7.77029c2.04439,-2.04439 4.49926,-4.90654 7.77029,-8.17757c-1.22664,-1.63551 -2.86055,-2.86055 -4.49606,-4.49607c0,-0.81776 0.00159,-1.22983 -0.40728,-1.22983c-0.40888,0 -1.22983,0.00319 -1.22983,-0.81456v-0.82255c0,-0.40888 0.0016,-0.81456 -0.40728,-0.81456zM96.22196,64.1124c-3.27103,6.54206 -5.72111,10.62925 -6.94774,12.67364c-1.63551,3.27103 -2.04439,3.27741 -2.04439,4.50405l0.81456,5.31063c0.40888,2.04439 1.22504,4.09038 2.45167,5.7259l25.76254,35.9845c1.22664,1.63551 3.6815,2.86056 5.72589,2.45168c6.95093,-0.81776 13.49299,-5.7259 16.35514,-11.85908c1.22664,-1.63551 0.81137,-4.09038 -0.41527,-5.7259l-25.75455,-35.97652c-1.22664,-1.63551 -2.86694,-3.27103 -4.91133,-4.08879l-4.90335,-2.86694c-1.63551,-0.81776 -2.04439,-1.63551 -6.13318,-6.13318z"></path></g></svg>
+                </a>
             </div>
         </div>
           <!---->
@@ -475,67 +511,48 @@ class="relative w-full flex flex-wrap items-center md:justify-around bg-white te
     
     <section class="text-sm text-black text-center p-3 mt-4" style="background-color: rgba(0, 0, 0, 0.1);">
       <p>© 2022 
-      Hoppy Urban Brew, brasserie à Roubaix, France / <a href="src/cgv.html" alt="Conditions Générales de Vente" title="Conditions Générales de Vente">CGV</a> / <a href="src/legals.html" alt="Mentions légales" title="Mentions Légales">Mentions l&eacute;gales</a></p>
+      Hoppy Urban Brew, brasserie à Roubaix, France / <a href="cgv.html" alt="Conditions Générales de Vente" title="Conditions Générales de Vente">CGV</a> / <a href="legals.html" alt="Mentions légales" title="Mentions Légales">Mentions l&eacute;gales</a></p>
     </section>
     <section class="text-xs text-black text-center p-3 mb-2" style="background-color: rgba(0, 0, 0, 0.0);">
       L'abus d'alcool est dangereux pour la santé, à consommer avec modération.
     </section>
   </footer>
-      
 
     <!-- Bouton scroll back to top -->
 
     <a
-      id="back2Top"
-      class="text-center float-right cursor-pointer fixed right-7 bottom-10 z-40"
-    >
-      <p class="h-[30px] font-extrabold">
-        ▲
-        <!-- ↑ -->
-      </p>
-      <img
-        src="img/logo-HUB-short-removebg-preview.png"
-        alt="Scroll back to top"
-        title="Haut de page"
-        class="h-[50px] w-[50px]"
-      />
-    </a>
+    id="back2Top"
+    class="text-center float-right cursor-pointer fixed right-7 bottom-10 z-40 bg-slate-50/75 rounded-[1.3rem]"
+  >
+    <p class="h-[20px] font-extrabold opacity-100">
+      ▲
+      <!-- ↑ -->
+    </p>
+    <img
+      src="../img/logo-HUB-short-removebg-preview.png"
+      alt="Scroll back to top"
+      title="Haut de page"
+      class="h-[35px] w-[35px] md:h-[50px] md:w-[50px] opacity-100"
+    />
+  </a>
 
-    <script>
-      {
-        const back2Top = document.querySelector('#back2Top')
-        back2Top.addEventListener('click', (e) => {
-          e.preventDefault()
-          window.scroll({ top: 0, left: 0, behavior: 'smooth' })
-        })
-      }
-    </script>
-    <!-- Fin Scroll to Top -->
+  <script>
+    {
+      const back2Top = document.querySelector('#back2Top')
+      back2Top.addEventListener('click', (e) => {
+        e.preventDefault()
+        window.scroll({ top: 0, left: 0, behavior: 'smooth' })
+      })
+    }
+  </script>
+  <!-- End your project here-->
 
-    <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-    <!--Script pour le feed Instagram-->
-    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<!-- scripts -->
+<script type="text/javascript" src="js/index.min.js"></script>
 
-    <!--Pour Flowbite-->
-    <script src="../path/to/flowbite/dist/flowbite.js"></script>
-
-    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-      window.ga = function () {
-        ga.q.push(arguments)
-      }
-      ga.q = []
-      ga.l = +new Date()
-      ga('create', 'UA-XXXXX-Y', 'auto')
-      ga('set', 'anonymizeIp', true)
-      ga('set', 'transport', 'beacon')
-      ga('send', 'pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
-  </body>
+<!-- Form scripts -->
+<script src=" https://unpkg.com/formik/dist/formik.umd.production.min.js "> </script>
+</body>
 </html>

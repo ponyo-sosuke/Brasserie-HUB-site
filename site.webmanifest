@@ -1,12 +1,12 @@
 {
-  "short_name": "",
-  "name": "",
+  "short_name": "HUB",
+  "name": "Brasserie Hoppy Urban Brew",
   "icons": [{
-    "src": "icon.png",
-    "type": "image/png",
+    "src": "img/HUB-logo-simple.jpg",
+    "type": "image/jpg",
     "sizes": "192x192"
   }],
   "start_url": "/?utm_source=homescreen",
-  "background_color": "#fafafa",
+  "background_color": "#EBE6DD",
   "theme_color": "#fafafa"
 }

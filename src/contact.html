@@ -4,22 +4,29 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>HUB</title>
 
-    <meta name="description" content="" />
+    <title>Brasserie HUB</title>
 
-    <!-- google -->
+    <meta
+      name="description"
+      content="Située à Roubaix (France),
+    la Brasserie HUB est une micro-brasserie urbaine et responsable : un lieu de production respectueux de l'environnement et de l'humain à dimension locale. "
+    />
+    <meta
+      name="Keywords"
+      content="brasserie Nord, brasserie Lille, brasserie Roubaix, brasserie roubaisienne, micro-brasserie, micro brasserie, micro-brasserie Lille, micro-brasserie Roubaix, micro-brasserie Nord, bière, bières, bière locale, bières locales, bière artisanale, brasserie artisanale, brasserie locale, visite, visite brasserie, visite brasserie Lille, Roubaix, Lille, Nord, HUB, Hoppy Urban Brew, brasserie HUB, brasserie Hoppy Urban Brew, fabrication bière, artisan brasseur"
+    />
+
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:locale:alternate" content="en_GB" />
-    <meta property="og:title" content="HUB Hoppy Urban Brew" />
+    <meta property="og:title" content="HUB" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
 
-    <link rel="manifest" href="site.webmanifest" />
+    <link rel="manifest" href="../site.webmanifest" />
 
     <!-- Favicon -->
     <link rel="icon" href="../img/HUB-logo-simple.jpg" type="image/x-icon" />
@@ -70,18 +77,12 @@
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 
     <!-- Elements CSS -->
-    <link rel="stylesheet" href="src/scss/nav.scss" />
-    <link rel="stylesheet" href="css/index.min.css" />
     <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/square.css" />
-
-    <!-- Custom styles -->
-    <style></style>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/age-verification.css" />
   </head>
 
   <body>
-    <!-- Start your project here-->
-
     <!-- NAV -->
 
     <nav
@@ -172,7 +173,7 @@
             <li class="nav-item p-2">
               <a
                 class="nav-link flex home-title-menu text-black space-x-2 mt-7"
-                href="../src/contact.html"
+                href="contact.html"
               >
                 <button
                   type="button"
@@ -760,7 +761,7 @@
                 <div class="relative">
                   <input
                     type="text"
-                    id='"form-subscribe-Subscribe'
+                    id="form-subscribe-Subscribe"
                     class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-sm hover:bg-gray-100 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent"
                     placeholder="Email"
                   />
@@ -801,7 +802,7 @@
         </p>
       </section>
       <section
-        class="text-xs text-black text-center p-3 mb-2"
+        class="text-xs text-black text-center p-3"
         style="background-color: rgba(0, 0, 0, 0);"
       >
         L'abus d'alcool est dangereux pour la santé, à consommer avec
@@ -838,11 +839,13 @@
     </script>
     <!-- Fin Scroll to Top -->
 
-    <!-- End your project here-->
-    <!-- scripts -->
-    <script type="text/javascript" src="js/index.min.js"></script>
+    <!-- Pour la vérification d'âge -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="../js/age-verification.js"></script>
 
-    <!-- Form scripts -->
-    <script src=" https://unpkg.com/formik/dist/formik.umd.production.min.js "></script>
+    <!-- Scripts -->
+    <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="../js/plugins.js"></script>
   </body>
 </html>

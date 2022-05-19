@@ -47,13 +47,17 @@
 
 #modal_content h2 {
 	margin: 0 0 0 0;
-	font:normal 15px/1.3em 'Gill Sans W01 Medium', Helvetica,arial,sans-serif;
+	font:normal 15px/1.3em;
+	font-family: 'Goldman', cursive;
+
 }
 
 #modal_content p {
 	max-width: 75%;
 	margin: 1.2em auto 0;
-	font:11px/1.5em "proxima-nova", Helvetica,arial,sans-serif;
+	font:11px/1.5em;
+	font-family: 'Poppins', sans-serif;
+
 }
 
 #modal_content nav {font-size: 16px; display:table; width: 282px;}
@@ -82,17 +86,17 @@
 	text-decoration: none;
 	padding: 1em;
 	color: #fff;
-	font-family: 'Goldman', cursive;;
+	font-family: 'Goldman', cursive;
 	text-transform: none;
 	letter-spacing: 0;
 }
 
 #modal_content nav .av_go {
-	background-color: #7e5bef;
+	background-color: #a855f7;
 }
 
 #modal_content nav .av_no {
-	background-color: #ff49db;
+	background-color: #f068d5d2;
 }
 
 #modal_content nav .av_btn:hover {

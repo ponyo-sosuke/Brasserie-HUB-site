@@ -6,7 +6,7 @@
       #fs-frm optgroup,
       #fs-frm label,
       #fs-frm #card-element:disabled {
-        font-family: inherit;
+        font-family: 'Poppins', sans-serif;
         font-size: 100%;
         color: inherit;
         border: none;

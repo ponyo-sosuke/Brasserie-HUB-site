@@ -20,7 +20,7 @@
 	position: fixed;
 	z-index: 1101;
 	margin: 0 auto;
-	background-color:#fff;
+	background-color: #EBE6DD;
 	border:4px solid #444;
 	border-radius: 100%;
 	font-size: 12px;
@@ -36,7 +36,7 @@
 	background-position: center 2em;
 	background-repeat: no-repeat;
 	background-size: 90px auto;
-	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4xLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4yIiBiYXNlUHJvZmlsZT0idGlueSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiDQoJIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTAwcHgiIGhlaWdodD0iMTAwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IHg9IjY2IiB5PSI0NSIgZmlsbD0iIzMzMzMzMyIgd2lkdGg9IjUiIGhlaWdodD0iOCIvPg0KPHJlY3QgeD0iMzkiIHk9IjQ1IiBmaWxsPSIjMzMzMzMzIiB3aWR0aD0iNSIgaGVpZ2h0PSI4Ii8+DQo8cGF0aCBmaWxsPSIjMzMzMzMzIiBkPSJNMTAwLDEyYzAtNi42LTUuNC0xMi0xMi0xMkgxMkM1LjQsMCwwLDUuNCwwLDEydjc2YzAsNi42LDUuNCwxMiwxMiwxMmg3NmM2LjYsMCwxMi01LjQsMTItMTJWMTJ6IE0zMiw1NGgtOQ0KCVY0NGgzdjloNlY1NHogTTQ3LDUzaC0ydjFoLTd2LTFoLTJ2LThoMnYtMWg3djFoMlY1M3ogTTYwLDQ1aC03djhoNHYtM2gtMXYtMmg0djVoLTF2MWgtOHYtMWgtMXYtOGgxdi0xaDlWNDV6IE03NCw1M2gtMnYxaC03di0xDQoJaC0ydi04aDJ2LTFoN3YxaDJWNTN6Ii8+DQo8L3N2Zz4NCg==);
+	background-image: url(../img/logo-HUB-short-removebg-preview.png);
 }
 
 #modal_content .content_wrapper {
@@ -74,25 +74,25 @@
 }
 
 #modal_content nav a.av_btn {
-	display:block;
-	text-align:center;
+	display: block;
+	text-align: center;
 	width: 65px;
 	border-radius: 23px;
-	margin:1em auto 0;
+	margin: 0 auto;
 	text-decoration: none;
-	padding:1em;
+	padding: 1em;
 	color: #fff;
-	font:normal .7em/1em 'AmericanTypwrterITCW01- 731031';
+	font-family: 'Goldman', cursive;;
 	text-transform: none;
 	letter-spacing: 0;
 }
 
 #modal_content nav .av_go {
-	background-color: #7fbf4d;
+	background-color: #7e5bef;
 }
 
 #modal_content nav .av_no {
-	background-color: #938d95;
+	background-color: #ff49db;
 }
 
 #modal_content nav .av_btn:hover {

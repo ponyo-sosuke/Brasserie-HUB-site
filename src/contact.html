@@ -80,6 +80,7 @@
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/age-verification.css" />
+    <link rel="stylesheet" href="../css/contact-form.css" />
   </head>
 
   <body>
@@ -341,7 +342,7 @@
             <img src="../img/HUB-anim.gif" class="w-3/4" />
           </div>
           <p class="leading-loose text-black dark:text-white text-md">
-            HUB Hoppy Urban Brew, Roubaix
+            Hoppy Urban Brew, Roubaix
           </p>
         </div>
         <!-- case 3 -->
@@ -475,126 +476,61 @@
             </div>
           </article>
         </div>
-        <!-- case 4 -->
+
+        <!-- case 4 avec formulaire -->
         <div
           class="bg-gray-100 w-full border-b md:w-1/2 md:border-r-0 md:border-b-0 lg:w-1/2 lg:border-b-0 p-8"
         >
           <!-- title -->
-          <h3 class="font-[Tourney] text-xl mt-4">Et si on se disait tout !</h3>
+          <h3 class="font-[Tourney] text-xl mb-4">Et si on se disait tout !</h3>
 
           <!-- form contact -->
           <form
-            class="font-[poppins] text-sm leading-loose mx-2 items-center rounded-b-lg border-white mt-2 p-4"
+            id="fs-frm"
+            name="simple-contact-form"
+            accept-charset="utf-8"
+            action="https://formspree.io/f/xjvlpdnn"
+            method="post"
           >
-            <div class="field">
-              <label class="label">Nom & prénom</label>
-              <div class="control">
-                <input class="input" type="text" placeholder="Text input" />
-              </div>
-            </div>
-
-            <div class="field">
-              <label class="label">Nom utilisateur</label>
-              <div class="control has-icons-left has-icons-right">
-                <input
-                  class="input is-success"
-                  type="text"
-                  placeholder="Text input"
-                  value="bulma"
-                />
-                <span class="icon is-small is-left">
-                  <i class="fas fa-user"></i>
-                </span>
-                <span class="icon is-small is-right">
-                  <i class="fas fa-check"></i>
-                </span>
-              </div>
-              <p class="help is-success text-gray-400">
-                This username is available
-              </p>
-            </div>
-
-            <div class="field">
-              <label class="label">Email</label>
-              <div class="control has-icons-left has-icons-right">
-                <input
-                  class="input is-danger"
-                  type="email"
-                  placeholder="Email input"
-                  value="hello@"
-                />
-                <span class="icon is-small is-left">
-                  <i class="fas fa-envelope"></i>
-                </span>
-                <span class="icon is-small is-right">
-                  <i class="fas fa-exclamation-triangle"></i>
-                </span>
-              </div>
-              <p class="help is-danger">This email is invalid</p>
-            </div>
-
-            <div class="field">
-              <label class="label">Sujet</label>
-              <div class="control">
-                <div class="select">
-                  <select
-                    class="font-[Poppins] text-sm w-60 p-2 mt-1 mb-2 rounded-lg"
-                  >
-                    <option>Selectionner la raison</option>
-                    <option>Informations</option>
-                    <option>With options</option>
-                    <option>With options</option>
-                    <option>With options</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div class="field">
-              <label class="label">Message</label>
-              <div class="control text-gray-400">
-                <textarea
-                  class="textarea w-80 h-24"
-                  placeholder="Textarea"
-                ></textarea>
-              </div>
-            </div>
-
-            <div class="field">
-              <div class="control">
-                <label class="checkbox">
-                  <input type="checkbox" />
-                  I agree to the
-                  <a href="#">terms and conditions</a>
-                </label>
-              </div>
-            </div>
-
-            <div class="field">
-              <div class="control">
-                <label class="radio">
-                  <input type="radio" name="question" />
-                  Yes
-                </label>
-                <label class="radio">
-                  <input type="radio" name="question" />
-                  No
-                </label>
-              </div>
-            </div>
-
-            <div class="field is-grouped">
-              <div class="control">
-                <button
-                  class="button is-link button-plus px-6 py-2.5 border-2 border-purple-500 text-purple-500 leading-tight uppercase rounded mt-4 mb-6 hover:bg-purple-600 hover:text-white focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
-                >
-                  Valider
-                </button>
-              </div>
-              <div class="control">
-                <button class="button is-link is-light">Cancel</button>
-              </div>
-            </div>
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name">Nom complet</label>
+              <input
+                type="text"
+                name="name"
+                id="full-name"
+                placeholder="Nom de famille et prénom"
+                required=""
+              />
+              <label for="email-address">Adresse mail</label>
+              <input
+                type="email"
+                name="_replyto"
+                id="email-address"
+                placeholder="email@domain.fr"
+                required=""
+              />
+              <label for="subject">Sujet</label>
+              <input
+                name="subject"
+                placeholder="Préciser le sujet de votre message...."
+                required=""
+              />
+              <label for="message">Message</label>
+              <textarea
+                rows="5"
+                name="message"
+                id="message"
+                placeholder="Votre message ici..."
+                required=""
+              ></textarea>
+              <input
+                type="hidden"
+                name="_subject"
+                id="email-subject"
+                value="Contact Form Submission"
+              />
+            </fieldset>
+            <input type="submit" value="Submit" />
           </form>
         </div>
       </section>
@@ -809,6 +745,15 @@
         modération.
       </section>
     </footer>
+
+    <!--Clear form after submission-->
+    <script>
+      window.onbeforeunload = () => {
+        for (const form of document.getElementsByTagName('form')) {
+          form.reset()
+        }
+      }
+    </script>
 
     <!-- Bouton scroll back to top -->
 

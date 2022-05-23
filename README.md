@@ -3,4 +3,4 @@ Création d'un site fonctionnel pour notre stage dans la brasserie Hoppy Urban B
 <br>
 Utilisation de ***Tailwind***
 <br>
-https://juliabadita.github.io/Brasserie-HUB/
+Projet sur Github pages : https://juliabadita.github.io/Brasserie-HUB/

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en_US_fr">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -21,15 +21,14 @@
     />
 
     <meta property="og:locale" content="fr_FR" />
-    <meta property="og:locale:alternate" content="en_GB" />
     <meta property="og:title" content="HUB" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="" />
 
-    <link rel="manifest" href="../site.webmanifest" />
+    <link rel="manifest" href="./site.webmanifest" />
 
     <!-- Favicon -->
-    <link rel="icon" href="/img/HUB-logo-simple.jpg" type="image/x-icon" />
+    <link rel="icon" href="./img/HUB-logo-simple.jpg" type="image/x-icon" />
     <!-- Inter font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
@@ -77,9 +76,9 @@
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 
     <!-- Elements CSS -->
-    <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/base.css" />
-    <link rel="stylesheet" href="../css/age-verification.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/age-verification.css" />
   </head>
 
   <body>
@@ -98,7 +97,6 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent1"
-          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
@@ -117,7 +115,7 @@
               d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
             ></path>
           </svg>
-          <h2 class="flex justify-center text-black">HOPPY URBAN BREW</h2>
+          <span class="flex justify-center text-black">HOPPY URBAN BREW</span>
         </button>
         <!-- nav menu -->
         <div
@@ -132,17 +130,17 @@
             <li class="nav-item p-2">
               <a
                 class="nav-link flex home-title-menu text-black space-x-2 mt-7"
-                href="hub.html"
+                href="./hub.html"
               >
-                <button
-                  type="button"
+                <div
                   class="inline-block rounded-full bg-yellow-300 text-white leading-normal uppercase hover:bg-yellow-400 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7"
                 >
                   <img
-                    src="../img/pictos/2722445-brewery-flaticon.png"
+                    src="./img/pictos/2722445-brewery-flaticon.png"
+                    alt=""
                     class="w-7 h-7"
                   />
-                </button>
+                </div>
                 <h5 class="home-title-menu mt-1">La Brasserie</h5>
               </a>
             </li>
@@ -150,40 +148,42 @@
             <li class="nav-item p-2 mr-6">
               <a
                 class="nav-link flex home-title-menu text-black space-x-2 md:mt-7"
-                href="beers.html"
+                href="./beers.html"
               >
-                <button
-                  type="button"
+                <div
                   class="inline-block rounded-full bg-yellow-300 text-white leading-normal uppercase hover:bg-yellow-400 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7"
                 >
                   <img
                     src="../img/pictos/1676287-beer-flaticon.png"
+                    alt=""
                     class="w-6 h-6"
                   />
-                </button>
+                </div>
                 <h5 class="home-title-menu md:mt-1">Nos bières</h5>
               </a>
             </li>
             <li
               class="h-28 w-28 align-middle justify-center mt-4 md:mt-0 md:mr-7"
             >
-              <a href="index.html"><img src="../img/HUB-logo.png" /></a>
+              <a href="index.html">
+                <img src="../img/HUB-logo.png" alt="logo de la brasserie HUB" />
+              </a>
             </li>
             <!-- title button contact -->
             <li class="nav-item p-2">
               <a
                 class="nav-link flex home-title-menu text-black space-x-2 mt-7"
-                href="../src/contact.html"
+                href="./contact.html"
               >
-                <button
-                  type="button"
+                <div
                   class="inline-block rounded-full bg-purple-200 text-white leading-normal uppercase hover:bg-purple-300 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7"
                 >
                   <img
-                    src="../img/pictos/3595845-contact-flaticon.png"
+                    src="./img/pictos/3595845-contact-flaticon.png"
+                    alt=""
                     class="w-7 h-7"
                   />
-                </button>
+                </div>
                 <h5 class="home-title-menu mt-1">Nous Contacter</h5>
               </a>
             </li>
@@ -195,15 +195,15 @@
                 target="_blank"
                 rel="noreferrer"
               >
-                <button
-                  type="button"
+                <div
                   class="inline-block rounded-full bg-purple-200 text-white leading-normal uppercase hover:bg-purple-300 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7"
                 >
                   <img
-                    src="../img/pictos/1981748-delivery-bike-flaticon.png"
+                    src="./img/pictos/1981748-delivery-bike-flaticon.png"
+                    alt=""
                     class="w-7 h-7"
                   />
-                </button>
+                </div>
                 <h5 class="home-title-menu mt-1">BeerShop</h5>
               </a>
             </li>
@@ -219,7 +219,7 @@
         <ol class="inline-flex items-center space-x-1 md:space-x-2">
           <li class="inline-flex items-center">
             <a
-              href="index.html"
+              href="./index.html"
               class="inline-flex items-center text-[0.875rem] font-regular text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
             >
               <svg
@@ -267,6 +267,7 @@
       >
         <img
           src="../img/2020_1222_AG_BrasserieHub-11-2048x1365.jpg"
+          alt="image d'illustration bières HUB"
           class="w-3/5"
         />
         <div
@@ -274,14 +275,13 @@
         >
           <!-- header -->
           <div class="flex space-x-4 items-center">
-            <div class="w-12 h-12">
+            <figure class="w-12 h-12">
               <img
-                alt="avatar"
                 src="../img/HUB-logo-simple.jpg"
+                alt="avatar logo HUB"
                 class="rounded-full w-full h-full object-cover"
               />
-              <div></div>
-            </div>
+            </figure>
             <div class="space-y-2">
               <div class="flex space-x-2 items-center">
                 <h2 class="text-lg uppercase font-[Poppins] text-semibold">
@@ -303,14 +303,19 @@
                 <div class="text-xs text-slate-400">Official</div>
                 <!--button -->
                 <div class="text-sm">
-                  <button
-                    type="button"
+                  <div
                     class="font-[Poppins] ml-4 px-4 py-2.5 mb-1 border-2 border-white text-white leading-tight uppercase rounded mt-1 hover:border-0 hover:bg-purple-600 hover:text-white focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
                     data-mdb-ripple="true"
                     data-mdb-ripple-color="light"
                   >
-                    VOIR PLUS
-                  </button>
+                    <a
+                      href="https://www.instagram.com/hoppyurbanbrew/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      VOIR PLUS
+                    </a>
+                  </div>
                 </div>
               </div>
               <p class="text-sm text-slate-300">Roubaix, France</p>
@@ -318,49 +323,46 @@
           </div>
 
           <!-- image grid-->
-          <div class="grid grid-cols-6 col-span-2 gap-2">
-            <div class="overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
+          <div
+            class="grid md:grid-cols-6 md:col-span-2 grid-cols-1 col-span-1 gap-2"
+          >
+            <figure class="overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
               <img
                 class="h-full w-full object-cover"
-                src="../img/bières/17782-mariejo.jpg"
-                alt=""
+                src="./img/taproom-hub.jpg"
+                alt="taproom HUB"
               />
-            </div>
-            <div class="overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
+            </figure>
+            <figure class="overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
               <img
                 class="h-full w-full object-cover"
-                src="../img/2020_1222_AG_BrasserieHub-17-2048x1365.jpg"
-                alt=""
+                src="./img/2020_1222_AG_BrasserieHub-17-2048x1365.jpg"
+                alt="illustration brassage bière par la team HUB"
               />
-            </div>
-            <div class="overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
+            </figure>
+            <figure class="overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
+              <img
+                src="./img/screw-duet-1.png"
+                class="h-full w-full object-cover"
+                alt="équipe HUB - duo"
+              />
+            </figure>
+            <figure class="overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
               <img
                 class="h-full w-full object-cover"
-                src="../img/screw-duet 1.png"
-                alt=""
+                src="./img/img4.jpg"
+                alt="image d'illustration de notre bière Line"
               />
-            </div>
-            <div class="overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
-              <img
-                class="h-full w-full object-cover"
-                src="../img/bières/340f0dcd-4b65-4c73-a72c-56889a4ffbcf.jpg"
-                alt=""
-              />
-            </div>
-            <div
+            </figure>
+            <figure
               class="relative overflow-hidden rounded-xl col-span-2 max-h-[10rem]"
             >
-              <div
-                class="text-white text-xl absolute inset-0 bg-slate-900/80 flex justify-center items-center"
-              >
-                + 23
-              </div>
               <img
                 class="h-full w-full object-cover"
-                src="../img/2020_1222_AG_BrasserieHub-20-scaled1.png"
-                alt=""
+                src="./img/img3.jpg"
+                alt="brassage par la team HUB"
               />
-            </div>
+            </figure>
           </div>
         </div>
       </div>
@@ -382,7 +384,7 @@
       <!-- article 1 -->
       <section class="py-4 px-4 mb-4">
         <div class="mx-auto max-w-6xl flex flex-col md:flex-row">
-          <dl class="ml-6 mr-2 w-full md:w-3/7 md:ml-24">
+          <article class="ml-6 mr-2 w-full md:w-3/7 md:ml-24">
             <h2 class="font-[Goldman] text-2xl justify-center mt-4 mb-6">
               HUB pour Hoppy Urban Brew
             </h2>
@@ -417,16 +419,20 @@
                 Roubaix.
               </p>
             </div>
-          </dl>
+          </article>
         </div>
       </section>
 
       <!-- valeurs -->
       <div class="flex justify-center bg-purple-100 p-4">
-        <img src="../img/Infographie_Brasserie_HUB.jpg" class="w-4/12" />
+        <img
+          src="./img/Infographie_Brasserie_HUB.jpg"
+          alt="poster valeurs de la brasserie"
+          class="w-4/12"
+        />
       </div>
 
-      <!-- timeline -->
+      <!-- time-datetimeline -->
       <section class="mt-2 mb-4 px-12">
         <ol class="items-center sm:flex">
           <!-- date 1 -->
@@ -436,7 +442,8 @@
                 class="flex z-10 justify-center items-center w-6 h-6 bg-purple-200 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0"
               >
                 <img
-                  src="../img/pictos/icons8-bottle-cap-96.png"
+                  src="./img/pictos/icons8-bottle-cap-96.png"
+                  alt="picto capsule bière pour l'historique"
                   class="w-6 h-6"
                 />
               </div>
@@ -448,11 +455,11 @@
               <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
                 2022
               </h3>
-              <time
+              <time-datetime
                 class="block mb-2 text-sm font-normal leading-none text-purple-600 dark:text-gray-500"
               >
                 AVRIL
-              </time>
+              </time-datetime>
               <p class="text-sm font-normal text-gray-700 dark:text-gray-400">
                 Brasserie : Ouverture de la Taproom.
               </p>
@@ -466,6 +473,7 @@
               >
                 <img
                   src="../img/pictos/icons8-bottle-cap-96.png"
+                  alt="picto capsule bière pour l'historique"
                   class="w-6 h-6"
                 />
               </div>
@@ -477,11 +485,11 @@
               <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
                 2021
               </h3>
-              <time
+              <time-datetime
                 class="block mb-2 text-sm font-normal leading-none text-purple-600 dark:text-gray-500"
               >
                 SEPTEMBRE
-              </time>
+              </time-datetime>
               <p class="text-sm font-normal text-gray-700 dark:text-gray-400">
                 Nous accueillons notre premier apprenti, Maxime.
               </p>
@@ -495,6 +503,7 @@
               >
                 <img
                   src="../img/pictos/icons8-bottle-cap-96.png"
+                  alt="picto capsule bière pour l'historique"
                   class="w-6 h-6"
                 />
               </div>
@@ -506,11 +515,11 @@
               <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
                 2021
               </h3>
-              <time
+              <time-datetime
                 class="block mb-2 text-sm font-normal leading-none text-purple-600 dark:text-gray-500"
               >
                 JANVIER
-              </time>
+              </time-datetime>
               <p class="text-sm font-normal text-gray-700 dark:text-gray-400">
                 L'équipe s’agrandit, avec l'arrivée de Mathilde.
               </p>
@@ -524,6 +533,7 @@
               >
                 <img
                   src="../img/pictos/icons8-bottle-cap-96.png"
+                  alt="picto capsule bière pour l'historique"
                   class="w-6 h-6"
                 />
               </div>
@@ -535,11 +545,11 @@
               <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
                 2020
               </h3>
-              <time
+              <time-datetime
                 class="block mb-2 text-sm font-normal leading-none text-purple-600 dark:text-gray-500"
               >
                 FEVRIER
-              </time>
+              </time-datetime>
               <p class="text-sm font-normal text-gray-700 dark:text-gray-400">
                 Inauguration de la brasserie à Roubaix.
               </p>
@@ -553,6 +563,7 @@
               >
                 <img
                   src="../img/pictos/icons8-bottle-cap-96.png"
+                  alt="picto capsule bière pour l'historique"
                   class="w-6 h-6"
                 />
               </div>
@@ -564,11 +575,11 @@
               <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
                 2019
               </h3>
-              <time
+              <time-datetime
                 class="block mb-2 text-sm font-normal leading-none text-purple-600 dark:text-gray-500"
               >
                 AOUT
-              </time>
+              </time-datetime>
               <p class="text-sm font-normal text-gray-700 dark:text-gray-400">
                 Création de HUB, par Alexis et Sébastien.
               </p>
@@ -578,13 +589,21 @@
       </section>
 
       <!-- PRESS title -->
-      <section class="flex ml-8 mt-4 md:justify-center">
+      <section class="flex mt-4 justify-center">
         <h1
-          class="font-[goldman] text-[1.2rem] md:text-[1.3rem] text-center md:my-2 md:my-2 mb-4 mt-2"
+          class="font-[goldman] text-[1.2rem] md:text-[1.3rem] text-center my-6"
         >
-          <span class="font-sans text-[1.25rem]">————&nbsp; &nbsp;</span>
+          <span
+            class="font-sans lg:text-[1.4rem] md:text-[1.2rem] sm:font-semibold font-extrabold sm:contents hidden"
+          >
+            ———&nbsp; &nbsp;
+          </span>
           &nbsp;La presse parle de nous&nbsp;
-          <span class="font-sans text-[1.4rem]">&nbsp; &nbsp;————</span>
+          <span
+            class="font-sans lg:text-[1.4rem] md:text-[1.2rem] sm:font-semibold font-extrabold sm:contents hidden"
+          >
+            &nbsp; &nbsp;———
+          </span>
         </h1>
       </section>
 
@@ -596,7 +615,11 @@
         <section
           class="mb-2 max-w-sm bg-white border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 p-2"
         >
-          <a href="#">
+          <a
+            href="https://www.lavoixdunord.fr/1008654/article/2021-05-20/roubaix-la-brasserie-hub-des-projets-pleins-les-cuves"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               class=""
               src="../img/press/voixdunord-HUB-mai2021.jpg"
@@ -605,7 +628,11 @@
             />
           </a>
           <div class="p-5">
-            <a href="#">
+            <a
+              href="https://www.lavoixdunord.fr/1008654/article/2021-05-20/roubaix-la-brasserie-hub-des-projets-pleins-les-cuves"
+              target="_blank"
+              rel="noreferrer"
+            >
               <h5
                 class="mb-2 font-goldman text-xl font-bold tracking-tight text-gray-900 dark:text-white leading-tight"
               >
@@ -624,7 +651,6 @@
             </p>
             <a
               href="https://www.lavoixdunord.fr/1008654/article/2021-05-20/roubaix-la-brasserie-hub-des-projets-pleins-les-cuves"
-              alt="Lire l'article"
               target="_blank"
               rel="noreferrer"
               class="inline-flex items-center py-2 px-3 border-2 border-purple-500 text-xs uppercase font-medium text-center text-purple-500 bg-white rounded-lg hover:bg-purple-600 hover:text-white focus:ring-4 focus:outline-none focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-300 dark:focus:ring-purple-400"
@@ -649,16 +675,24 @@
         <section
           class="mb-2 max-w-sm bg-white border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 p-2"
         >
-          <a href="#">
+          <a
+            href="https://www.francebleu.fr/infos/societe/zero-dechets-a-la-brasserie-hub-a-roubaix-1628266445"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               class=""
-              src="../img/press/870x489_Fbleu-zerodechets.webp"
+              src="./img/press/870x489_Fbleu-zerodechets.webp"
               alt="HUB : Brasserie zéro déchets à Roubaix"
               title="HUB : Brasserie zéro déchets à Roubaix"
             />
           </a>
           <div class="p-5">
-            <a href="#">
+            <a
+              href="https://www.francebleu.fr/infos/societe/zero-dechets-a-la-brasserie-hub-a-roubaix-1628266445"
+              target="_blank"
+              rel="noreferrer"
+            >
               <h5
                 class="mb-2 font-goldman text-xl font-bold tracking-tight text-gray-900 dark:text-white leading-tight"
               >
@@ -678,7 +712,6 @@
             </p>
             <a
               href="https://www.francebleu.fr/infos/societe/zero-dechets-a-la-brasserie-hub-a-roubaix-1628266445"
-              alt="Lire l'article"
               target="_blank"
               rel="noreferrer"
               class="inline-flex items-center py-2 px-3 border-2 border-purple-500 text-xs uppercase font-medium text-center text-purple-500 bg-white rounded-lg hover:bg-purple-600 hover:text-white focus:ring-4 focus:outline-none focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-300 dark:focus:ring-purple-400"
@@ -703,16 +736,24 @@
         <section
           class="mb-2 max-w-sm bg-white border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 p-2"
         >
-          <a href="#">
+          <a
+            href="https://www.lavoixdunord.fr/1170198/article/2022-04-23/roubaix-la-brasserie-artisanale-hub-va-amenager-une-tap-room-provisoire"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               class=""
-              src="../img/press/voixdunord-HUB-avril2022.jpg"
+              src="./img/press/voixdunord-HUB-avril2022.jpg"
               alt="Roubaix : La Brasserie aménage une Taproom provisoire"
               title="Roubaix : La Brasserie aménage une Taproom provisoire"
             />
           </a>
           <div class="p-5">
-            <a href="#">
+            <a
+              href="https://www.lavoixdunord.fr/1170198/article/2022-04-23/roubaix-la-brasserie-artisanale-hub-va-amenager-une-tap-room-provisoire"
+              target="_blank"
+              rel="noreferrer"
+            >
               <h5
                 class="mb-2 font-goldman text-xl font-bold tracking-tight text-gray-900 dark:text-white leading-tight"
               >
@@ -731,7 +772,6 @@
             </p>
             <a
               href="https://www.lavoixdunord.fr/1170198/article/2022-04-23/roubaix-la-brasserie-artisanale-hub-va-amenager-une-tap-room-provisoire"
-              alt="Lire l'article"
               target="_blank"
               rel="noreferrer"
               class="inline-flex items-center py-2 px-3 border-2 border-purple-500 text-xs uppercase font-medium text-center text-purple-500 bg-white rounded-lg hover:bg-purple-600 hover:text-white focus:ring-4 focus:outline-none focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-300 dark:focus:ring-purple-400"
@@ -757,18 +797,13 @@
       <!-- button bicolor -->
       <section class="flex justify-center mb-6">
         <!-- bicolor pink -->
-        <button
-          type="button"
+        <div
           class="button-bicolor-pink text-white mt-4 bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
         >
-          <a
-            href="index.html"
-            alt="retour à l'accueil"
-            title="Retour à l'accueil"
-          >
-            RETOUR A L'ACCUEIL
+          <a href="./index.html" title="Retour à l'accueil">
+            RETOUR À L'ACCUEIL
           </a>
-        </button>
+        </div>
       </section>
     </main>
 
@@ -783,12 +818,12 @@
         >
           <!-- col 1 -->
           <article class="text-black w-52 ml-16">
-            <a
-              href="index.html"
-              alt="Brasserie HUB : accueil"
-              title="Brasserie HUB : accueil"
-            >
-              <img src="../img/HUB-logo-simple.jpg" class="w-16 mb-4" />
+            <a href="./index.html" title="Brasserie HUB : accueil">
+              <img
+                src="./img/HUB-logo-simple.jpg"
+                alt="logo de la brasserie HUB"
+                class="w-16 mb-4"
+              />
             </a>
             <h5 class="footer-logo-title">HOPPY URBAN BREW</h5>
             <p class="text-xs text-left mb-1">
@@ -803,36 +838,57 @@
           <article class="ml-16 md:ml-0 text-black text-left max-w-28 mt-3">
             <h4 class="footer-titles">HUB'infos</h4>
             <ul class="footer-subtitles mt-2 mb-4">
-              <li>Notre actualité</li>
-              <li>Nos bières de bières</li>
-              <li>Notre histoire</li>
-              <li>Nos engagements</li>
+              <li>
+                <a href="./hub.html" class="hover:text-[#a147f6]">
+                  En savoir plus
+                </a>
+              </li>
+              <li>
+                <a href="./beers.html" class="hover:text-[#a147f6]">
+                  Nos gammes de bières
+                </a>
+              </li>
+              <li>
+                <a href="./contact.html" class="hover:text-[#a147f6]">
+                  Nous contacter
+                </a>
+              </li>
             </ul>
             <!--
-            <h4 class="footer-titles">Sur rdv</h4>
-            <ul class="footer-subtitles mt-2 mb-4">
-              <li>Brasser votre bière</li>
-              <li>Visiter la Brasserie</li>
-            </ul>-->
+              <h4 class="footer-titles">Sur rdv</h4>
+              <ul class="footer-subtitles mt-2 mb-4">
+                <li>Brasser votre bière</li>
+                <li>Visiter la Brasserie</li>
+              </ul>-->
           </article>
           <!-- col 3 -->
           <article class="text-black text-left max-w-28 mt-3">
             <h4 class="footer-titles ml-16 md:ml-0">Nous trouver</h4>
             <ul class="footer-subtitles mt-2 mb-4 ml-16 md:ml-0">
-              <li>Brasserie à Roubaix</li>
               <li>
-                <a href="https://shop.easybeer.fr/hoppyurbanbrew">
+                <a
+                  href="https://shop.easybeer.fr/hoppyurbanbrew"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="hover:text-[#a147f6]"
+                >
                   Boutique en ligne
                 </a>
               </li>
-              <li>Partenaires vendeurs</li>
             </ul>
+
+            <h4 class="footer-titles ml-16 md:ml-0">Situé au</h4>
+            <ul class="footer-subtitles mt-2 mb-4 ml-16 md:ml-0">
+              <li>26 rue des Fabricants,</li>
+              <li>59100 Roubaix</li>
+            </ul>
+
             <!-- a voir 
-            <h4 class="footer-titles ml-16 md:ml-0">Nos partenaires</h4>
-            <ul class="footer-subtitles mt-2 mb-2 ml-16 md:ml-0">
-              <li>XXX</li>
-              <li>XXX</li>
-            </ul>-->
+              <h4 class="footer-titles ml-16 md:ml-0">Nos partenaires</h4>
+              <ul class="footer-subtitles mt-2 mb-2 ml-16 md:ml-0">
+                <li>XXX</li>
+                <li>XXX</li>
+              </ul>-->
           </article>
           <!-- col 4 -->
           <article class="text-black text-left max-w-28 mt-3">
@@ -842,9 +898,7 @@
             <div
               class="mt-3 mb-4 m-auto md:ml-0 md:flex md:items-center md:justify-between"
             >
-              <div
-                class="flex ml-16 md:ml-0 space-x-4 sm:justify-center md:mt-0"
-              >
+              <div class="flex ml-16 md:ml-0 space-x-4 md:mt-0">
                 <!-- FB -->
                 <a
                   href="https://www.facebook.com/hoppyurbanbrew"
@@ -867,7 +921,7 @@
                 </a>
                 <!-- INSTA -->
                 <a
-                  href="https://www.instagram.com/hoppyurbanbrew/?hl=fr"
+                  href="https://www.instagram.com/hoppyurbanbrew"
                   target="_blank"
                   rel="noreferrer"
                   class="text-purple-500 hover:text-purple-600"
@@ -913,7 +967,6 @@
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
                     y="0px"
-                    width="32"
                     height="32"
                     viewBox="0 0 172 172"
                     style="fill: #000000;"
@@ -921,7 +974,7 @@
                     <path d="M0,172v-172h172v172z" fill="none"></path>
                     <path
                       d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
-                      fill="#a855f7"
+                      fill="#a147f6"
                     ></path>
                     <g fill="#ffffff">
                       <path
@@ -934,47 +987,53 @@
             </div>
             <!--Newsletter-->
             <!-- <h4 class="footer-titles ml-16 md:ml-0">Newsletter</h4>
-            <div
-              class="text-center pt-3 sm:pt-3 font-light flex items-center justify-center"
-            >
-              <form
-                class="flex flex-col mb-6 md:flex-row w-3/4 md:w-full md:space-x-3 space-y-3 md:space-y-0 justify-center"
-              >
-                <div class="relative">
-                  <input
-                    type="text"
-                    id="form-subscribe-Subscribe"
-                    class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-sm hover:bg-gray-100 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent"
-                    placeholder="Email"
-                  />
-                </div>
-                <button
-                  class="flex-shrink-0 px-4 py-2 button-news bg-yellow-300 rounded-lg shadow-xs hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:ring-offset-yellow-200"
-                  type="submit"
+                <div
+                  class="text-center pt-3 sm:pt-3 font-light flex items-center justify-center"
                 >
-                  S'ABONNER
-                </button>
-              </form>
-            </div> -->
+                  <form
+                    class="flex flex-col mb-6 md:flex-row w-3/4 md:w-full md:space-x-3 space-y-3 md:space-y-0 justify-center"
+                  >
+                    <div class="relative">
+                      <input
+                        type="text"
+                        id="form-subscribe-Subscribe"
+                        class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-sm hover:bg-gray-100 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <button
+                      class="flex-shrink-0 px-4 py-2 button-news bg-yellow-300 rounded-lg shadow-xs hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:ring-offset-yellow-200"
+                      type="submit"
+                    >
+                      S'ABONNER
+                    </button>
+                  </form>
+                </div> -->
           </article>
         </article>
       </section>
 
       <section
         class="text-sm text-black text-center p-3 mt-4"
-        style="background-color: rgba(0, 0, 0, 0.1);"
+        style="background-color: rgba(0, 0, 0, 0.051);"
       >
-        <p>
-          © 2022 Hoppy Urban Brew, brasserie à Roubaix, France /
+        <p class="md:text-sm text-xs">
+          <!--Partie modifiable par Seb : ici tu peux changer l'année pour la mise à jour annuelle-->
+          © 2022 Hoppy Urban Brew, brasserie à Roubaisienne |
+          <!--Fin de la partie modifiable-->
           <a
-            href="cgv.html"
-            alt="Conditions Générales de Vente"
+            href="./cgv.html"
+            class="hover:text-[#a147f6]"
             title="Conditions Générales de Vente"
           >
             CGV
           </a>
-          /
-          <a href="legals.html" alt="Mentions légales" title="Mentions Légales">
+          |
+          <a
+            href="./legals.html"
+            class="hover:text-[#a147f6]"
+            title="Mentions Légales"
+          >
             Mentions l&eacute;gales
           </a>
         </p>

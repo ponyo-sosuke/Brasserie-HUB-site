@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en_US_fr">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -21,15 +21,14 @@
     />
 
     <meta property="og:locale" content="fr_FR" />
-    <meta property="og:locale:alternate" content="en_GB" />
     <meta property="og:title" content="HUB" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="" />
 
-    <link rel="manifest" href="../site.webmanifest" />
+    <link rel="manifest" href="./site.webmanifest" />
 
     <!-- Favicon -->
-    <link rel="icon" href="../img/HUB-logo-simple.jpg" type="image/x-icon" />
+    <link rel="icon" href="./img/HUB-logo-simple.jpg" type="image/x-icon" />
 
     <!-- Différentes Fonts utilisées pour le site -->
 
@@ -84,9 +83,9 @@
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 
     <!-- Styles CSS -->
-    <link rel="stylesheet" href="../css/base.css" />
-    <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/age-verification.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/age-verification.css" />
 
     <meta name="theme-color" content="#fafafa" />
   </head>
@@ -107,7 +106,6 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent1"
-          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
@@ -126,7 +124,7 @@
               d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
             ></path>
           </svg>
-          <h2 class="flex justify-center text-black">HOPPY URBAN BREW</h2>
+          <span class="flex justify-center text-black">HOPPY URBAN BREW</span>
         </button>
         <!-- nav menu -->
         <div
@@ -141,17 +139,17 @@
             <li class="nav-item p-2">
               <a
                 class="nav-link flex home-title-menu text-black space-x-2 mt-7"
-                href="hub.html"
+                href="./hub.html"
               >
-                <button
-                  type="button"
+                <div
                   class="inline-block rounded-full bg-yellow-300 text-white leading-normal uppercase hover:bg-yellow-400 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7"
                 >
                   <img
-                    src="../img/pictos/2722445-brewery-flaticon.png"
+                    src="./img/pictos/2722445-brewery-flaticon.png"
+                    alt=""
                     class="w-7 h-7"
                   />
-                </button>
+                </div>
                 <h5 class="home-title-menu mt-1">La Brasserie</h5>
               </a>
             </li>
@@ -159,40 +157,42 @@
             <li class="nav-item p-2 mr-6">
               <a
                 class="nav-link flex home-title-menu text-black space-x-2 md:mt-7"
-                href="beers.html"
+                href="./beers.html"
               >
-                <button
-                  type="button"
+                <div
                   class="inline-block rounded-full bg-yellow-300 text-white leading-normal uppercase hover:bg-yellow-400 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7"
                 >
                   <img
-                    src="../img/pictos/1676287-beer-flaticon.png"
+                    src="./img/pictos/1676287-beer-flaticon.png"
+                    alt=""
                     class="w-6 h-6"
                   />
-                </button>
+                </div>
                 <h5 class="home-title-menu md:mt-1">Nos bières</h5>
               </a>
             </li>
             <li
               class="h-28 w-28 align-middle justify-center mt-4 md:mt-0 md:mr-7"
             >
-              <a href="index.html"><img src="../img/HUB-logo.png" /></a>
+              <a href="./index.html">
+                <img src="./img/HUB-logo.png" alt="logo de la brasserie HUB" />
+              </a>
             </li>
             <!-- title button contact -->
             <li class="nav-item p-2">
               <a
                 class="nav-link flex home-title-menu text-black space-x-2 mt-7"
-                href="contact.html"
+                href="./contact.html"
               >
-                <button
-                  type="button"
+                <div
                   class="inline-block rounded-full bg-purple-200 text-white leading-normal uppercase hover:bg-purple-300 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7"
                 >
                   <img
-                    src="../img/pictos/3595845-contact-flaticon.png"
+                    src="./img/pictos/3595845-contact-flaticon.png"
+                    alt=""
                     class="w-7 h-7"
                   />
-                </button>
+                </div>
                 <h5 class="home-title-menu mt-1">Nous Contacter</h5>
               </a>
             </li>
@@ -204,15 +204,15 @@
                 target="_blank"
                 rel="noreferrer"
               >
-                <button
-                  type="button"
+                <div
                   class="inline-block rounded-full bg-purple-200 text-white leading-normal uppercase hover:bg-purple-300 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-400 active:shadow-lg transition duration-150 ease-in-out w-7 h-7"
                 >
                   <img
-                    src="../img/pictos/1981748-delivery-bike-flaticon.png"
+                    src="./img/pictos/1981748-delivery-bike-flaticon.png"
+                    alt=""
                     class="w-7 h-7"
                   />
-                </button>
+                </div>
                 <h5 class="home-title-menu mt-1">BeerShop</h5>
               </a>
             </li>
@@ -222,72 +222,72 @@
       </section>
     </nav>
 
+    <!-- ariane -->
+    <section class="flex pt-2 pb-2">
+      <article class="flex mt-2 mx-7" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-2">
+          <li class="inline-flex items-center">
+            <a
+              href="./index.html"
+              class="inline-flex items-center text-[0.875rem] font-regular text-gray-700 hover:text-gray-800 dark:text-gray-100 dark:hover:text-white"
+            >
+              <svg
+                class="mr-2 w-4 h-4"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+                ></path>
+              </svg>
+              Accueil
+            </a>
+          </li>
+          <li aria-current="page">
+            <div class="flex items-center">
+              <svg
+                class="w-6 h-6 text-purple-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <a href="./beers.html">
+                <span
+                  class="ml-1 text-[0.875rem] font-medium text-purple-500 hover:text-purple-400 md:ml-2 dark:text-gray-500"
+                >
+                  Nos bières
+                </span>
+              </a>
+            </div>
+          </li>
+        </ol>
+      </article>
+    </section>
+
     <!-- Contenu principal de la page -->
     <main>
-      <!-- ariane -->
-      <section class="flex pt-2 pb-2">
-        <article class="flex mt-2 mx-7" aria-label="Breadcrumb">
-          <ol class="inline-flex items-center space-x-1 md:space-x-2">
-            <li class="inline-flex items-center">
-              <a
-                href="./index.html"
-                class="inline-flex items-center text-[0.875rem] font-regular text-gray-700 hover:text-gray-800 dark:text-gray-100 dark:hover:text-white"
-              >
-                <svg
-                  class="mr-2 w-4 h-4"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
-                  ></path>
-                </svg>
-                Accueil
-              </a>
-            </li>
-            <li aria-current="page">
-              <div class="flex items-center">
-                <svg
-                  class="w-6 h-6 text-purple-500"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <a href="beers.html">
-                  <span
-                    class="ml-1 text-[0.875rem] font-medium text-purple-500 hover:text-purple-400 md:ml-2 dark:text-gray-500"
-                  >
-                    Nos bières
-                  </span>
-                </a>
-              </div>
-            </li>
-          </ol>
-        </article>
-      </section>
-
       <!-- Titre Bières permanentes -->
 
       <h1
-        class="font-[goldman] lg:text-[2rem] md:text-[1.7rem] sm:text-[1.6rem] text-[1.2rem] text-center my-6"
+        class="font-[goldman] text-[1.2rem] md:text-[1.5rem] text-center my-6"
       >
         <span
-          class="font-sans lg:text-[1.4rem] md:text-[1.2rem] sm:text-[0.7rem] text-[0.5rem] sm:font-semibold font-extrabold sm:contents hidden"
+          class="font-sans lg:text-[1.4rem] md:text-[1.2rem] sm:font-semibold font-extrabold sm:contents hidden"
         >
-          ——————&nbsp; &nbsp;
+          ———&nbsp; &nbsp;
         </span>
         Nos bières permanentes
         <span
-          class="font-sans lg:text-[1.4rem] md:text-[1.2rem] sm:text-[0.7rem] text-[0.5rem] sm:font-semibold font-extrabold sm:contents hidden"
+          class="font-sans lg:text-[1.4rem] md:text-[1.2rem] sm:font-semibold font-extrabold sm:contents hidden"
         >
-          &nbsp; &nbsp;——————
+          &nbsp; &nbsp;———
         </span>
       </h1>
 
@@ -317,15 +317,13 @@
                   La Trêve
                 </h2>
                 <div class="border-2 border-yellow-200 md:mt-4 md:p-8">
-                  <span class="">
-                    <p
-                      class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
-                    >
-                      Une Pale Ale à la française toute en légèreté et brassée
-                      avec des houblons Alsaciens tirant sur des notes subtiles
-                      de fruits rouges
-                    </p>
-                  </span>
+                  <p
+                    class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
+                  >
+                    Une Pale Ale à la française toute en légèreté et brassée
+                    avec des houblons Alsaciens tirant sur des notes subtiles de
+                    fruits rouges
+                  </p>
                   <hr class="my-6 mx-2" />
                   <div
                     class="grid md:grid-rows-2 md:grid-cols-4 grid-rows-4 grid-cols-2 justify-items-center my-1 grid-flow-col gap-5 md:gap-1 md:grid-flow-row"
@@ -396,17 +394,15 @@
                   La Solidaire
                 </h2>
                 <div class="border-2 border-yellow-200 md:mt-4 md:p-8">
-                  <span class="">
-                    <p
-                      class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
-                    >
-                      <!-- Une petite lager maltée et légèrement citronnée, idéale
+                  <p
+                    class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
+                  >
+                    <!-- Une petite lager maltée et légèrement citronnée, idéale
                       pour la saison estivale -->
-                      Une petite lager bio maltée et légèrement citronnée,
-                      idéale pour pour rafraîchir les palais de nos plus braves
-                      camarades.
-                    </p>
-                  </span>
+                    Une petite lager bio maltée et légèrement citronnée, idéale
+                    pour pour rafraîchir les palais de nos plus braves
+                    camarades.
+                  </p>
                   <hr class="my-6 mx-2" />
                   <div
                     class="grid md:grid-rows-2 md:grid-cols-4 grid-rows-4 grid-cols-2 justify-items-center my-1 grid-flow-col gap-5 md:gap-1 md:grid-flow-row"
@@ -476,15 +472,13 @@
                   Le Manifeste
                 </h2>
                 <div class="border-2 border-yellow-200 md:mt-4 md:p-8">
-                  <span class="">
-                    <p
-                      class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
-                    >
-                      Les malts torréfiés aux effluves de chocolat et de pain
-                      grillé se laissent facilement apprivoiser dans cette bière
-                      brune au corps léger.
-                    </p>
-                  </span>
+                  <p
+                    class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
+                  >
+                    Les malts torréfiés aux effluves de chocolat et de pain
+                    grillé se laissent facilement apprivoiser dans cette bière
+                    brune au corps léger.
+                  </p>
                   <hr class="my-6 mx-2" />
                   <div
                     class="grid md:grid-rows-2 md:grid-cols-4 grid-rows-4 grid-cols-2 justify-items-center my-1 grid-flow-col gap-5 md:gap-1 md:grid-flow-row"
@@ -554,14 +548,12 @@
                   La Transition
                 </h2>
                 <div class="border-2 border-yellow-200 md:mt-4 md:p-8">
-                  <span class="">
-                    <p
-                      class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
-                    >
-                      Bière blonde et légèrement trouble, d'inspiration fermière
-                      aux arômes fruités
-                    </p>
-                  </span>
+                  <p
+                    class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
+                  >
+                    Bière blonde et légèrement trouble, d'inspiration fermière
+                    aux arômes fruités
+                  </p>
                   <hr class="my-6 mx-2" />
                   <div
                     class="grid md:grid-rows-2 md:grid-cols-4 grid-rows-4 grid-cols-2 justify-items-center my-1 grid-flow-col gap-5 md:gap-1 md:grid-flow-row"
@@ -619,18 +611,18 @@
       <!-- Titre Bières éphémères  -->
 
       <h3
-        class="font-[goldman] lg:text-[2rem] md:text-[1.7rem] sm:text-[1.6rem] text-[1.2rem] text-center my-6"
+        class="font-[goldman] text-[1.2rem] md:text-[1.5rem] text-center my-6"
       >
         <span
-          class="font-sans lg:text-[1.4rem] md:text-[1.2rem] sm:text-[0.7rem] text-[0.5rem] sm:font-semibold font-extrabold"
+          class="font-sans lg:text-[1.4rem] md:text-[1.2rem] sm:font-semibold font-extrabold sm:contents hidden"
         >
-          ——————&nbsp; &nbsp;
+          ———&nbsp; &nbsp;
         </span>
         Nos bières saisonnières
         <span
-          class="font-sans lg:text-[1.4rem] md:text-[1.2rem] sm:text-[0.7rem] text-[0.5rem] sm:font-semibold font-extrabold"
+          class="font-sans lg:text-[1.4rem] md:text-[1.2rem] sm:font-semibold font-extrabold sm:contents hidden"
         >
-          &nbsp; &nbsp;——————
+          &nbsp; &nbsp;———
         </span>
       </h3>
 
@@ -662,13 +654,11 @@
                   La Felicita
                 </h2>
                 <div class="border-2 border-yellow-200 md:mt-4 md:p-8">
-                  <span class="">
-                    <p
-                      class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
-                    >
-                      Bière de printemps aux goûts d'agrumes
-                    </p>
-                  </span>
+                  <p
+                    class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
+                  >
+                    Bière de printemps aux goûts d'agrumes
+                  </p>
                   <hr class="my-6 mx-2" />
                   <div
                     class="grid md:grid-rows-2 md:grid-cols-4 grid-rows-4 grid-cols-2 justify-items-center my-1 grid-flow-col gap-5 md:gap-1 md:grid-flow-row"
@@ -702,7 +692,7 @@
                       5%
                     </p>
                     <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
-                      ??
+                      20
                     </p>
                     <p class="mt-1.5 text-[0.8rem] md:text-base text-center">
                       Blonde
@@ -738,14 +728,12 @@
                   Frida
                 </h2>
                 <div class="border-2 border-yellow-200 md:mt-4 md:p-8">
-                  <span class="">
-                    <p
-                      class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
-                    >
-                      Une petite Sour Ale, légère et pleine de peps dont la
-                      confusion peut vite se faire avec un mojito
-                    </p>
-                  </span>
+                  <p
+                    class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
+                  >
+                    Une petite Sour Ale, légère et pleine de peps dont la
+                    confusion peut vite se faire avec un mojito
+                  </p>
                   <hr class="my-6 mx-2" />
                   <div
                     class="grid md:grid-rows-2 md:grid-cols-4 grid-rows-4 grid-cols-2 justify-items-center my-1 grid-flow-col gap-5 md:gap-1 md:grid-flow-row"
@@ -816,17 +804,15 @@
                   Etna
                 </h2>
                 <div class="border-2 border-yellow-200 md:mt-4 md:p-4">
-                  <span class="">
-                    <p
-                      class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
-                    >
-                      Tout le soleil de Sicile dans une bière blanche : les
-                      oranges sanguines Moro, cultivées sur les pentes de
-                      l’Etna, apportent les saveurs uniques de leur terroir
-                      volcanique. De Catane à Roubaix : deux coopératives pour
-                      une recette fraîche et militante !
-                    </p>
-                  </span>
+                  <p
+                    class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
+                  >
+                    Tout le soleil de Sicile dans une bière blanche : les
+                    oranges sanguines Moro, cultivées sur les pentes de l’Etna,
+                    apportent les saveurs uniques de leur terroir volcanique. De
+                    Catane à Roubaix : deux coopératives pour une recette
+                    fraîche et militante !
+                  </p>
                   <hr class="my-6 mx-2" />
                   <div
                     class="grid md:grid-rows-2 md:grid-cols-4 grid-rows-4 grid-cols-2 justify-items-center my-1 grid-flow-col gap-5 md:gap-1 md:grid-flow-row"
@@ -896,16 +882,14 @@
                   Lilya
                 </h2>
                 <div class="border-2 border-yellow-200 md:mt-4 md:p-8">
-                  <span class="">
-                    <p
-                      class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
-                    >
-                      Une bière blanche acidulée, type Sour Ale, qui nous
-                      transporte à Alger, sur le trajet de Lilya entre lʼécole
-                      et la maison, quand il fait beau et que le chemin sent le
-                      soleil et la feuille de figue.
-                    </p>
-                  </span>
+                  <p
+                    class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
+                  >
+                    Une bière blanche acidulée, type Sour Ale, qui nous
+                    transporte à Alger, sur le trajet de Lilya entre lʼécole et
+                    la maison, quand il fait beau et que le chemin sent le
+                    soleil et la feuille de figue.
+                  </p>
                   <hr class="my-6 mx-2" />
                   <div
                     class="grid md:grid-rows-2 md:grid-cols-4 grid-rows-4 grid-cols-2 justify-items-center my-1 grid-flow-col gap-5 md:gap-1 md:grid-flow-row"
@@ -975,15 +959,13 @@
                   Line
                 </h2>
                 <div class="border-2 border-yellow-200 md:mt-4 md:p-8">
-                  <span class="">
-                    <p
-                      class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
-                    >
-                      Une bière légère qui apporte à la fois la fraîcheur de sa
-                      couleur bleutée et celle de ses houblons exotiques. Venez
-                      découvrir une IPA surprenante de la brasserie HUB !
-                    </p>
-                  </span>
+                  <p
+                    class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
+                  >
+                    Une bière légère qui apporte à la fois la fraîcheur de sa
+                    couleur bleutée et celle de ses houblons exotiques. Venez
+                    découvrir une IPA surprenante de la brasserie HUB !
+                  </p>
                   <hr class="my-6 mx-2" />
                   <div
                     class="grid md:grid-rows-2 md:grid-cols-4 grid-rows-4 grid-cols-2 justify-items-center my-1 grid-flow-col gap-5 md:gap-1 md:grid-flow-row"
@@ -1053,15 +1035,12 @@
                   Mathilda
                 </h2>
                 <div class="border-2 border-yellow-200 md:mt-4 md:p-8">
-                  <span class="">
-                    <p
-                      class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
-                    >
-                      Une bière légère comme une plume mais au caractère bien
-                      trempé. Maltée et houblonnée, elle a déjà tout d'une
-                      grande.
-                    </p>
-                  </span>
+                  <p
+                    class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
+                  >
+                    Une bière légère comme une plume mais au caractère bien
+                    trempé. Maltée et houblonnée, elle a déjà tout d'une grande.
+                  </p>
                   <hr class="my-6 mx-2" />
                   <div
                     class="grid md:grid-rows-2 md:grid-cols-4 grid-rows-4 grid-cols-2 justify-items-center my-1 grid-flow-col gap-5 md:gap-1 md:grid-flow-row"
@@ -1131,16 +1110,14 @@
                   Krismani Yamama
                 </h2>
                 <div class="border-2 border-yellow-200 md:mt-4 md:p-8">
-                  <span class="">
-                    <p
-                      class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
-                    >
-                      Cultivé en Ouganda par des femmes, et torréfié à
-                      Tourcoing, le café Mon Cherry pousse en altitude sur des
-                      sols protégés qui lui confèrent un profil fruité. Il
-                      apporte à cette bière la douceur du climat tropical.
-                    </p>
-                  </span>
+                  <p
+                    class="text-gray-700 text-[0.8rem] md:text-[0.9rem] text-center md:text-justify my-4 font-[poppins]"
+                  >
+                    Cultivé en Ouganda par des femmes, et torréfié à Tourcoing,
+                    le café Mon Cherry pousse en altitude sur des sols protégés
+                    qui lui confèrent un profil fruité. Il apporte à cette bière
+                    la douceur du climat tropical.
+                  </p>
                   <hr class="my-6 mx-2" />
                   <div
                     class="grid md:grid-rows-2 md:grid-cols-4 grid-rows-4 grid-cols-2 justify-items-center my-1 grid-flow-col gap-5 md:gap-1 md:grid-flow-row"
@@ -1200,8 +1177,7 @@
       <!-- Bouton Notre Boutique -->
       <article class="flex justify-center">
         <!--button -->
-        <button
-          type="button"
+        <div
           class="button-plus px-6 py-2.5 border-2 border-purple-500 text-purple-500 leading-tight uppercase rounded mt-4 mb-6 hover:bg-purple-600 hover:text-white focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
           data-mdb-ripple="true"
           data-mdb-ripple-color="light"
@@ -1210,37 +1186,33 @@
             href="https://shop.easybeer.fr/hoppyurbanbrew"
             target="_blank"
             rel="noreferrer"
-            alt="Notre Shop"
           >
             Notre boutique en ligne
           </a>
-        </button>
+        </div>
       </article>
 
       <h4
-        class="font-[goldman] lg:text-[1.7rem] md:text-[1.4rem] sm:text-[1.3rem] text-[0.95rem] text-center my-8"
+        class="font-[goldman] text-[1.2rem] md:text-[1.5rem] text-center my-8"
       >
         <span
-          class="font-sans lg:text-[1.2rem] md:text-base sm:text-[0.5rem] text-[0.28rem] sm:font-semibold font-extrabold"
+          class="font-sans lg:text-[1.4rem] md:text-[1.2rem] sm:font-semibold font-extrabold sm:contents hidden"
         >
-          ——————&nbsp; &nbsp;
+          ———&nbsp; &nbsp;
         </span>
         Lieux où vous pouvez trouver nos bières
         <span
-          class="font-sans lg:text-[1.2rem] md:text-base sm:text-[0.5rem] text-[0.28rem] sm:font-semibold font-extrabold"
+          class="font-sans lg:text-[1.4rem] md:text-[1.2rem] sm:font-semibold font-extrabold sm:contents hidden"
         >
-          &nbsp; &nbsp;——————
+          &nbsp; &nbsp;———
         </span>
       </h4>
 
       <!-- Open street map - Partenaires -->
 
       <iframe
-        width="93%"
-        height="300px"
-        frameborder="0"
         allowfullscreen
-        class="m-auto"
+        class="m-auto w-[93%] h-[18.75rem]"
         src="//umap.openstreetmap.fr/fr/map/les-cooperateurs-de-la-transition_455671?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false"
       ></iframe>
 
@@ -1259,12 +1231,9 @@
             <div class="flex justify-center md:justify-start mb-6">
               <div class="text-xl">
                 <iframe
-                  class="md:ml-16"
-                  width="560"
-                  height="315"
+                  class="md:ml-16 w-[35rem] h-[19.6875rem]"
                   src="https://www.youtube.com/embed/daXAqxq4dcs"
                   title="YouTube video player"
-                  frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
@@ -1279,7 +1248,11 @@
           <!-- case 2 -->
           <div class="bg-pink-300 w-full md:w-1/2 lg:w-1/2 lg:border-r p-8">
             <div class="flex items-center mb-6 object-cover">
-              <img src="/img/pictos/7350737-quote-G.png" class="w-12 h-12" />
+              <img
+                src="/img/pictos/7350737-quote-G.png"
+                alt="picto guillemets"
+                class="w-12 h-12"
+              />
               <div class="ml-2 text-xl">
                 Hoppy Urban Brew
               </div>
@@ -1295,6 +1268,7 @@
               </div>
               <img
                 src="/img/pictos/7350738-quote-D.png"
+                alt="picto guillemets"
                 class="w-12 h-12 text-left ml-2"
               />
             </div>
@@ -1306,6 +1280,7 @@
             <div class="flex items-center mb-6">
               <img
                 src="/img/pictos/2058805-cheers-flaticon.png"
+                alt="picto bières"
                 class="w-14 h-14"
               />
               <div class="ml-2 home-title-nameBeer text-black">
@@ -1450,12 +1425,12 @@
         >
           <!-- col 1 -->
           <article class="text-black w-52 ml-16">
-            <a
-              href="index.html"
-              alt="Brasserie HUB : accueil"
-              title="Brasserie HUB : accueil"
-            >
-              <img src="../img/HUB-logo-simple.jpg" class="w-16 mb-4" />
+            <a href="./index.html" title="Brasserie HUB : accueil">
+              <img
+                src="./img/HUB-logo-simple.jpg"
+                alt="logo de la brasserie HUB"
+                class="w-16 mb-4"
+              />
             </a>
             <h5 class="footer-logo-title">HOPPY URBAN BREW</h5>
             <p class="text-xs text-left mb-1">
@@ -1470,36 +1445,57 @@
           <article class="ml-16 md:ml-0 text-black text-left max-w-28 mt-3">
             <h4 class="footer-titles">HUB'infos</h4>
             <ul class="footer-subtitles mt-2 mb-4">
-              <li>Notre actualité</li>
-              <li>Nos gammes de bières</li>
-              <li>Notre histoire</li>
-              <li>Nos engagements</li>
+              <li>
+                <a href="./hub.html" class="hover:text-[#a147f6]">
+                  En savoir plus
+                </a>
+              </li>
+              <li>
+                <a href="./beers.html" class="hover:text-[#a147f6]">
+                  Nos gammes de bières
+                </a>
+              </li>
+              <li>
+                <a href="./contact.html" class="hover:text-[#a147f6]">
+                  Nous contacter
+                </a>
+              </li>
             </ul>
             <!--
-          <h4 class="footer-titles">Sur rdv</h4>
-          <ul class="footer-subtitles mt-2 mb-4">
-            <li>Brasser votre bière</li>
-            <li>Visiter la Brasserie</li>
-          </ul>-->
+              <h4 class="footer-titles">Sur rdv</h4>
+              <ul class="footer-subtitles mt-2 mb-4">
+                <li>Brasser votre bière</li>
+                <li>Visiter la Brasserie</li>
+              </ul>-->
           </article>
           <!-- col 3 -->
           <article class="text-black text-left max-w-28 mt-3">
             <h4 class="footer-titles ml-16 md:ml-0">Nous trouver</h4>
             <ul class="footer-subtitles mt-2 mb-4 ml-16 md:ml-0">
-              <li>Brasserie à Roubaix</li>
               <li>
-                <a href="https://shop.easybeer.fr/hoppyurbanbrew">
+                <a
+                  href="https://shop.easybeer.fr/hoppyurbanbrew"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="hover:text-[#a147f6]"
+                >
                   Boutique en ligne
                 </a>
               </li>
-              <li>Partenaires vendeurs</li>
             </ul>
+
+            <h4 class="footer-titles ml-16 md:ml-0">Situé au</h4>
+            <ul class="footer-subtitles mt-2 mb-4 ml-16 md:ml-0">
+              <li>26 rue des Fabricants,</li>
+              <li>59100 Roubaix</li>
+            </ul>
+
             <!-- a voir 
-          <h4 class="footer-titles ml-16 md:ml-0">Nos partenaires</h4>
-          <ul class="footer-subtitles mt-2 mb-2 ml-16 md:ml-0">
-            <li>XXX</li>
-            <li>XXX</li>
-          </ul>-->
+              <h4 class="footer-titles ml-16 md:ml-0">Nos partenaires</h4>
+              <ul class="footer-subtitles mt-2 mb-2 ml-16 md:ml-0">
+                <li>XXX</li>
+                <li>XXX</li>
+              </ul>-->
           </article>
           <!-- col 4 -->
           <article class="text-black text-left max-w-28 mt-3">
@@ -1509,9 +1505,7 @@
             <div
               class="mt-3 mb-4 m-auto md:ml-0 md:flex md:items-center md:justify-between"
             >
-              <div
-                class="flex ml-16 md:ml-0 space-x-4 sm:justify-center md:mt-0"
-              >
+              <div class="flex ml-16 md:ml-0 space-x-4 md:mt-0">
                 <!-- FB -->
                 <a
                   href="https://www.facebook.com/hoppyurbanbrew"
@@ -1534,7 +1528,7 @@
                 </a>
                 <!-- INSTA -->
                 <a
-                  href="https://www.instagram.com/hoppyurbanbrew/?hl=fr"
+                  href="https://www.instagram.com/hoppyurbanbrew"
                   target="_blank"
                   rel="noreferrer"
                   class="text-purple-500 hover:text-purple-600"
@@ -1580,7 +1574,6 @@
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
                     y="0px"
-                    width="32"
                     height="32"
                     viewBox="0 0 172 172"
                     style="fill: #000000;"
@@ -1588,7 +1581,7 @@
                     <path d="M0,172v-172h172v172z" fill="none"></path>
                     <path
                       d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
-                      fill="#a855f7"
+                      fill="#a147f6"
                     ></path>
                     <g fill="#ffffff">
                       <path
@@ -1599,49 +1592,55 @@
                 </a>
               </div>
             </div>
-            <!-- Newsletter -->
+            <!--Newsletter-->
             <!-- <h4 class="footer-titles ml-16 md:ml-0">Newsletter</h4>
-             <div
-              class="text-center pt-3 sm:pt-3 font-light flex items-center justify-center"
-            >
-              <form
-                class="flex flex-col mb-6 md:flex-row w-3/4 md:w-full md:space-x-3 space-y-3 md:space-y-0 justify-center"
-              >
-                <div class="relative">
-                  <input
-                    type="text"
-                    id="form-subscribe-Subscribe"
-                    class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-sm hover:bg-gray-100 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent"
-                    placeholder="Email"
-                  />
-                </div>
-                <button
-                  class="flex-shrink-0 px-4 py-2 button-news bg-yellow-300 rounded-lg shadow-xs hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:ring-offset-yellow-200"
-                  type="submit"
+                <div
+                  class="text-center pt-3 sm:pt-3 font-light flex items-center justify-center"
                 >
-                  S'ABONNER
-                </button>
-              </form> 
-             </div> -->
+                  <form
+                    class="flex flex-col mb-6 md:flex-row w-3/4 md:w-full md:space-x-3 space-y-3 md:space-y-0 justify-center"
+                  >
+                    <div class="relative">
+                      <input
+                        type="text"
+                        id="form-subscribe-Subscribe"
+                        class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-sm hover:bg-gray-100 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:border-transparent"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <button
+                      class="flex-shrink-0 px-4 py-2 button-news bg-yellow-300 rounded-lg shadow-xs hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:ring-offset-yellow-200"
+                      type="submit"
+                    >
+                      S'ABONNER
+                    </button>
+                  </form>
+                </div> -->
           </article>
         </article>
       </section>
 
       <section
         class="text-sm text-black text-center p-3 mt-4"
-        style="background-color: rgba(0, 0, 0, 0.1);"
+        style="background-color: rgba(0, 0, 0, 0.051);"
       >
-        <p>
-          © 2022 Hoppy Urban Brew, brasserie à Roubaix, France /
+        <p class="md:text-sm text-xs">
+          <!--Partie modifiable par Seb : ici tu peux changer l'année pour la mise à jour annuelle-->
+          © 2022 Hoppy Urban Brew, brasserie à Roubaisienne |
+          <!--Fin de la partie modifiable-->
           <a
-            href="cgv.html"
-            alt="Conditions Générales de Vente"
+            href="./cgv.html"
+            class="hover:text-[#a147f6]"
             title="Conditions Générales de Vente"
           >
             CGV
           </a>
-          /
-          <a href="legals.html" alt="Mentions légales" title="Mentions Légales">
+          |
+          <a
+            href="./legals.html"
+            class="hover:text-[#a147f6]"
+            title="Mentions Légales"
+          >
             Mentions l&eacute;gales
           </a>
         </p>
